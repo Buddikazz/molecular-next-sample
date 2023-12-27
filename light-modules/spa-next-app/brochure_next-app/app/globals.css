@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer base {
+  
+  @font-face {
+    font-family: 'Ciutadella Rounded';
+    src: url('../public/fonts/ciutadella/CiutadellaRounded-SmBd.eot');
+    src:
+      url('../public/fonts/ciutadella/CiutadellaRounded-SmBd.woff2') format('woff2'),
+      url('../public/fonts/ciutadella/CiutadellaRounded-SmBd.woff') format('woff'),
+      url('../public/fonts/ciutadella/CiutadellaRounded-SmBd.ttf')
+        format('truetype');
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Ciutadella Rounded';
+    src: url('../public/fonts/ciutadella/CiutadellaRounded-Bd.eot');
+    src:
+      url('../public/fonts/ciutadella/CiutadellaRounded-Bd.woff2') format('woff2'),
+      url('../public/fonts/ciutadella/CiutadellaRounded-Bd.woff') format('woff'),
+      url('../public/fonts/ciutadella/CiutadellaRounded-Bd.ttf') format('truetype');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Ciutadella Rounded';
+    src: url('../public/fonts/ciutadella/CiutadellaRounded-Md.eot');
+    src:
+      url('../public/fonts/ciutadella/CiutadellaRounded-Md.woff2') format('woff2'),
+      url('../public/fonts/ciutadella/CiutadellaRounded-Md.woff') format('woff'),
+      url('../public/fonts/ciutadella/CiutadellaRounded-Md.ttf') format('truetype');
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Ciutadella Rounded';
+    src: url('../public/fonts/ciutadella/CiutadellaRounded-Rg.eot');
+    src:
+      url('../public/fonts/ciutadella/CiutadellaRounded-Rg.woff2') format('woff2'),
+      url('../public/fonts/ciutadella/CiutadellaRounded-Rg.woff') format('woff'),
+      url('../public/fonts/ciutadella/CiutadellaRounded-Rg.ttf') format('truetype');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Proxima Nova';
+    src: url('../public/fonts/proximanova/ProximaNova-LightIt.eot');
+    src:
+    url('../public/fonts/proximanova/ProximaNova-Light.woff') format('woff'),
+    url('../public/fonts/proximanova/ProximaNova-Light.woff2') format('woff2'),
+    url('../public/fonts/proximanova/ProximaNova-Light.ttf') format('truetype');
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal;
+    
+  }
+  @font-face {
+    font-family: 'Proxima Nova';
+    src: url('../public/fonts/proximanova/ProximaNova-Regular.eot');
+    src:
+    url('../public/fonts/proximanova/ProximaNova-Regular.woff') format('woff'),
+    url('../public/fonts/proximanova/ProximaNova-Regular.woff2') format('woff2'),
+    url('../public/fonts/proximanova/ProximaNova-Regular.ttf') format('truetype');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+    
+  }
+
+  @font-face {
+    font-family: 'Proxima Nova';
+    src: url('../public/fonts/proximanova/ProximaNova-Semibold.eot');
+    src:
+    url('../public/fonts/proximanova/ProximaNova-Semibold.woff') format('woff'),
+    url('../public/fonts/proximanova/ProximaNova-Semibold.woff2') format('woff2'),
+    url('../public/fonts/proximanova/ProximaNova-Semibold.ttf') format('truetype');
+    font-display: swap;
+    font-weight: 500;
+    font-style: regular;
+    
+  }
+
+  @font-face {
+    font-family: 'DM Serif Display';
+    src:url('../public/fonts/dmfont/DMSerifDisplay-Regular.ttf') format('truetype');
+    font-display: swap;
+    font-weight: 400;
+    font-style: regular;
+    
+  }
+
+  body {
+    font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #2E2E2E;
+  }
+}

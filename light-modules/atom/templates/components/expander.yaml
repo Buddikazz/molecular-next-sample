@@ -1,0 +1,19 @@
+title: Expander
+areas:
+  expanderItems:
+    title: Expander Area
+    type: single
+    availableComponents:
+      Paragraph:
+        id: atom:components/paragraph
+      Headline:
+        id: atom:components/headline
+      RichParaText:
+        id: atom:components/rich-paragraph
+  accordionHeader:
+    title: Accordion Header
+    type: single
+    availableComponents:
+      ParaText:
+        id: atom:components/paragraph
+

@@ -1,0 +1,8 @@
+label: Paragraph Text
+form:
+  properties:
+    richText:
+      label: Text
+      $type: textField
+      i18n: true
+

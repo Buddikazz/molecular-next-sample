@@ -1,0 +1,11 @@
+title: Accordion View
+areas:
+  accordionView:
+    title: Accordion Elements
+    availableComponents:
+      Headline:
+        id: atom:components/headline
+      ParaText:
+        id: atom:components/paragraph
+      Expander:
+        id: atom:components/expander

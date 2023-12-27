@@ -1,0 +1,13 @@
+title: 'Next: Staysure Brochure'
+baseUrl: http://localhost:3000
+routeTemplate: '/api/preview?slug=/{language}{{@path}}'
+
+dialog: pages:pages/staysure-brochure
+renderType: spa
+class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
+areas:
+  body:
+    title: Body Area
+    availableComponents:
+      accordion-view:
+        id: templates:components/accordion-view
