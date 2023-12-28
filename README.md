@@ -4,9 +4,9 @@
 2) mgnl jumpstart
 3) mgnl start
 4) Visit http://localhost:8080/magnoliaAutho
-6) Create New Page by Naming "Stature Brouchure " and select "Next: Staysure Brochure" template
+6) Create New Page by Naming "staysure-brochure" and select "Next: Staysure Brochure" template
 7) Open another terminal
-8) CD spa-next-app
+8) CD spa-next-app/brochure_next-app
 9) npm install
 10) npm run dev
 
