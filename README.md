@@ -3,7 +3,7 @@
 1) cd molecular-next-sample
 2) mgnl jumpstart
 3) mgnl start
-4) Visit http://localhost:8080/magnoliaAutho
+4) Visit [http://localhost:8080/magnoliaAutho](http://localhost:8080/magnoliaAuthor)
 6) Create New Page by Naming "staysure-brochure" and select "Next: Staysure Brochure" template
 7) Open another terminal
 8) CD spa-next-app/brochure_next-app
