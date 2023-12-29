@@ -58,10 +58,11 @@ class ExpanderInteractive extends React.Component<
           >
             {accordionHeader && (
               <EditableArea
-                className="text-xl text-black p-1 font-bold font-dmserif font-semibold"
+                className="text-xl text-black p-1  font-dmserif font-semibold"
                 content={accordionHeader}
               />
             )}
+            
             <svg
               data-accordion-icon
               className={`float-right w-3 h-3 rotate-180 shrink-0 ${

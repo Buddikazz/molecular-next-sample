@@ -11,3 +11,6 @@ areas:
     availableComponents:
       accordion-view:
         id: templates:components/accordion-view
+      steper-view:
+        id: templates:components/steper-view
+        

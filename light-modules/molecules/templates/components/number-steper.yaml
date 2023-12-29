@@ -1,0 +1,22 @@
+title: Number Steper Area
+areas:
+  steperContent:
+    title: Steper Content
+    type: single
+    availableComponents:
+      ParaText:
+        id: atom:components/paragraph
+      Headline:
+        id: atom:components/headline
+      RichParaText:
+        id: atom:components/rich-paragraph
+  steperHeader:
+    title: Steper Header
+    availableComponents:
+      Headline:
+        id: atom:components/headline
+  steperNumber:
+    title: Steper Number
+    availableComponents:
+      ParaText:
+        id: atom:components/paragraph

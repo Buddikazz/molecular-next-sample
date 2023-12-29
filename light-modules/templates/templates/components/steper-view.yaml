@@ -1,0 +1,9 @@
+title: Stepper View
+areas:
+  stepperView:
+    title: Stepper Elements
+    availableComponents:
+      HeaderSteper:
+        id: molecules:components/header-steper
+      NumberStepper:
+        id: molecules:components/number-steper
