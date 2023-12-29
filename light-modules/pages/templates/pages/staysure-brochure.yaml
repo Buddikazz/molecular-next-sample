@@ -13,3 +13,5 @@ areas:
         id: templates:components/accordion-view
       textBoxWithImage-view:
         id: templates:components/textBoxWithImage-view
+      steper-view:
+        id: templates:components/steper-view

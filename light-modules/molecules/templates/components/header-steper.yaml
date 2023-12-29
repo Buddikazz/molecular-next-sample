@@ -1,0 +1,19 @@
+title: Header Steper Area
+areas:
+  steperHeader:
+    title: Steper Header
+    type: single
+    availableComponents:
+      ParaText:
+        id: atom:components/paragraph
+      Headline:
+        id: atom:components/headline
+  steperContent:
+    title: Steper Content
+    availableComponents:
+      ParaText:
+        id: atom:components/paragraph
+      Headline:
+        id: atom:components/headline
+      RichParaText:
+        id: atom:components/rich-paragraph

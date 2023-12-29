@@ -16,7 +16,7 @@ const StaysureBrochure = ({
 }:Props): JSX.Element => {
 
   return (
-    <div className="flex flex-col pl-96 pr-96"> 
+    <div className="flex flex-col pl-52 pr-52 2xl:pl-72 2xl:pr-72"> 
       { body && <EditableArea content={body} className="fullWidth" /> }
     </div>
   ) 
