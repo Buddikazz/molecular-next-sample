@@ -1,27 +1,24 @@
+import React from "react";
+import { EditableArea } from "@magnolia/react-editor";
 
-import React from 'react';
-import { EditableArea } from '@magnolia/react-editor';
-
-
-interface Props{
-  header?: object|null,
-  body?: object|null,
-  footer?: object|null,
+interface Props {
+  header?: object | null;
+  body?: object | null;
+  tableData?: object | null;
+  footer?: object | null;
 }
 
 const StaysureBrochure = ({
-  header=null,
-  body=null,
-  footer=null
-}:Props): JSX.Element => {
-
+  header = null,
+  body = null,
+  tableData = null,
+  footer = null,
+}: Props): JSX.Element => {
   return (
-    <div className="flex flex-col pl-96 pr-96"> 
-      { body && <EditableArea content={body} className="fullWidth" /> }
+    <div className="flex flex-col pl-96 pr-96">
+      {body && <EditableArea content={body} className="fullWidth" />}
     </div>
-  ) 
+  );
 };
 
-export {
-  StaysureBrochure
-};
+export { StaysureBrochure };

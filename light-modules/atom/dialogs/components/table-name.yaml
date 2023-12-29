@@ -1,0 +1,9 @@
+label: Table Col Name
+form:
+  properties:
+    richText:
+      $type: richTextField
+      label: Text editor
+      height: 500
+      tables: true
+      source: true

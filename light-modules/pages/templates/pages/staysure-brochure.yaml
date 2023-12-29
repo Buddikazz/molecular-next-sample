@@ -11,3 +11,5 @@ areas:
     availableComponents:
       accordion-view:
         id: templates:components/accordion-view
+      table-view:
+        id: templates:components/table-view

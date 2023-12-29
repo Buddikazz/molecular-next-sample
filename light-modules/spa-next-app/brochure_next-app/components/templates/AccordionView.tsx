@@ -1,21 +1,17 @@
-
-import { EditableArea } from '@magnolia/react-editor';
+import { EditableArea } from "@magnolia/react-editor";
 
 export interface AccordionViewProps {
-    accordionView: object|null
+  accordionView: object | null;
 }
 
-const AccordionView=({
-    accordionView=null,
-}:AccordionViewProps): JSX.Element=>{
-    return(
-        <div className="bg-white p-2 m-8 ba">
-            {accordionView && <EditableArea content={accordionView}  />}
-        
-        </div>
-    );
-}
+const AccordionView = ({
+  accordionView = null,
+}: AccordionViewProps): JSX.Element => {
+  return (
+    <div className="bg-white p-2 m-8 ba">
+      {accordionView && <EditableArea content={accordionView} />}
+    </div>
+  );
+};
 
-export {
-    AccordionView
-}
+export { AccordionView };
