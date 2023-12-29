@@ -12,6 +12,14 @@ form:
       $type: textField
       i18n: false
     altText:
-      label: Iamge Alt Text
+      label: Image Alt Text
+      $type: textField
+      i18n: true
+    width:
+      label: Image Width
+      $type: textField
+      i18n: true
+    height:
+      label: Image Height
       $type: textField
       i18n: true
