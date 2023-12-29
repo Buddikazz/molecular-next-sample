@@ -1,0 +1,12 @@
+title: Text Box with Image
+areas:
+  textBox:
+    title: Text box Elements
+    availableComponents:
+      RichParaText:
+        id: atom:components/rich-paragraph
+  Image:
+    title: Image Elements
+    availableComponents:
+      Image:
+        id: atom:components/image
