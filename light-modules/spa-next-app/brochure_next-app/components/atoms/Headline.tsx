@@ -8,5 +8,5 @@ export default function Headline({
     text,
     styleClass
   }:HeadlineProps) {
-    return (<h2 className={`${styleClass} font-dmserif p-1`} >{text}</h2>)
+    return (<h2 className={`${styleClass} font-ciutadella p-1 `}>{text}</h2>)
 }

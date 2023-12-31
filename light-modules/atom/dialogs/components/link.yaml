@@ -1,0 +1,15 @@
+label: Link
+form:
+  properties:
+    url:
+      label: URL
+      $type: textField
+      i18n: false
+    styleClass:
+      label: Style Class
+      $type: textField
+      i18n: false
+    text:
+      label: Text
+      $type: textField
+      i18n: true

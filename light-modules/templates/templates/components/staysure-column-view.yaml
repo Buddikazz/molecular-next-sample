@@ -1,0 +1,12 @@
+title: Staysure Column View
+areas:
+  staysureColumnView:
+    title: Column Elements
+    availableComponents:
+      ColumnItem:
+        id: molecules:components/column-item
+  columnHeader:
+    title: Column Header
+    availableComponents:
+      Headline:
+        id: atom:components/headline
