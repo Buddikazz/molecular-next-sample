@@ -9,5 +9,5 @@ export default function Paragraph({
   richText,
   styleClass
 }:ParagraphProps) {
-  return <div className={`Paragraph ${styleClass} font-ciutadella p-1`} dangerouslySetInnerHTML={{ __html: richText }} />;
+  return <div className={`${styleClass} font-ciutadella p-1`} dangerouslySetInnerHTML={{ __html: richText }} />;
 }

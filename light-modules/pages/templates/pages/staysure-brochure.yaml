@@ -13,4 +13,6 @@ areas:
         id: templates:components/accordion-view
       steper-view:
         id: templates:components/steper-view
+      staysure-column-view:
+        id: templates:components/staysure-column-view
         
