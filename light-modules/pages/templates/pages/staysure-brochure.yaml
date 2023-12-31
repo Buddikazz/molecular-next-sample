@@ -1,6 +1,6 @@
-title: 'Next: Staysure Brochure'
+title: "Next: Staysure Brochure"
 baseUrl: http://localhost:3000
-routeTemplate: '/api/preview?slug=/{language}{{@path}}'
+routeTemplate: "/api/preview?slug=/{language}{{@path}}"
 
 dialog: pages:pages/staysure-brochure
 renderType: spa
@@ -11,6 +11,8 @@ areas:
     availableComponents:
       accordion-view:
         id: templates:components/accordion-view
+      textBoxWithImage-view:
+        id: templates:components/textBoxWithImage-view
       steper-view:
         id: templates:components/steper-view
       staysure-column-view:
