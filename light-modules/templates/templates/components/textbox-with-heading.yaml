@@ -1,0 +1,13 @@
+title: Text Box with Heading
+areas:
+  textBoxWithHeading:
+    title: Text Box Elements
+    availableComponents:
+      Headline:
+        id: atom:components/headline
+      ParaText:
+        id: atom:components/paragraph
+      Button:
+        id: atom:components/button
+      Checked-Para:
+        id: atom:components/checked-paragraph

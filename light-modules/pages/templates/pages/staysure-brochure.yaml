@@ -13,4 +13,6 @@ areas:
         id: templates:components/accordion-view
       steper-view:
         id: templates:components/steper-view
+      textbox-with-heading:
+        id: templates:components/textbox-with-heading
         
