@@ -1,0 +1,7 @@
+title: Table View
+areas:
+  tableView:
+    title: Table Elements
+    availableComponents:
+      TableItem:
+        id: atom:components/table-item

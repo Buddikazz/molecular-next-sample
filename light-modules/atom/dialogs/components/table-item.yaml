@@ -1,0 +1,15 @@
+label: Table Content Text
+form:
+  properties:
+    columnOne:
+      label: ColumnOne
+      $type: textField
+      i18n: true
+    columnTwo:
+      label: ColumnTwo
+      $type: textField
+      i18n: true
+    styleClass:
+      label: Style Class
+      $type: textField
+      i18n: false
