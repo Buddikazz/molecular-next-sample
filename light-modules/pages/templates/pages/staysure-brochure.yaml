@@ -17,4 +17,6 @@ areas:
         id: templates:components/steper-view
       staysure-column-view:
         id: templates:components/staysure-column-view
+      table-view:
+        id: templates:components/table-view
         

@@ -25,7 +25,7 @@ const Image = ({
   height = undefined,
 }: ImageProps) => (
   <img
-    className={`${styleClass}`} 
+    className={`${styleClass} mx-auto`} 
     src={process.env.NEXT_PUBLIC_MGNL_HOST + '/dam/' + image?.['@id'] + image?.['@path']}
     alt={altText}
     width={width}
