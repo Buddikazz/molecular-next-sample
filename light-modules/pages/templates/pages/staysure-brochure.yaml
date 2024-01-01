@@ -19,4 +19,6 @@ areas:
         id: templates:components/staysure-column-view
       table-view:
         id: templates:components/table-view
+      textbox-with-heading:
+        id: templates:components/textbox-with-heading
         

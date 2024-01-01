@@ -1,4 +1,3 @@
-
 interface HeadlineProps{
     text:string,
     styleClass:string

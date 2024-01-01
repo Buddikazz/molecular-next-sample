@@ -9,6 +9,8 @@ import Expander from '@/components/atoms/Expander';
 import Paragraph from '@/components/atoms/Paragraph';
 import Image from '@/components/atoms/Image';
 import Headline from '@/components/atoms/Headline';
+import Button from '@/components/atoms/Button';
+import CheckedIconContent from '@/components/atoms/CheckedIconContent';
 import { AccordionView } from '@/components/templates/AccordionView';
 import { TextBoxWithImageView } from '@/components/templates/TextBoxWithImageView';
 import RichParagraph from '@/components/atoms/RichParagraph';
@@ -20,6 +22,7 @@ import { StaysureColumnView } from '@/components/templates/StaysureColumnView';
 import { ColumnItem } from '@/components/molecules/ColumnItem';
 import { TableView } from '@/components/templates/TableView';
 import TableItem from '@/components/atoms/TableItem';
+import { TextBoxWithHeading } from '@/components/templates/TextBoxWithHeading';
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
@@ -37,6 +40,8 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       'atom:components/image': Image,
       'atom:components/link': Link,
       'atom:components/table-item': TableItem,
+      'atom:components/button': Button,
+      'atom:components/checked-paragraph': CheckedIconContent,
       //molecules
       'molecules:components/header-steper': HeaderSteper,
       'molecules:components/number-steper': NumberSteper,
@@ -49,6 +54,7 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       'templates:components/staysure-column-view':StaysureColumnView,
       'templates:components/textBoxWithImage-view': TextBoxWithImageView,
       'templates:components/table-view': TableView,
+      'templates:components/textbox-with-heading':TextBoxWithHeading,
     },
   };
   console.log("props.page=", props.page, props.templateAnnotations);
