@@ -23,6 +23,9 @@ import { ColumnItem } from '@/components/molecules/ColumnItem';
 import { TableView } from '@/components/templates/TableView';
 import TableItem from '@/components/atoms/TableItem';
 import { TextBoxWithHeading } from '@/components/templates/TextBoxWithHeading';
+import { TableHeader } from '@/components/organisms/TableHeader';
+import { TableRow } from '@/components/organisms/TableRow';
+import { TableElement } from '@/components/molecules/TableElement';
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
@@ -46,6 +49,9 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       'molecules:components/header-steper': HeaderSteper,
       'molecules:components/number-steper': NumberSteper,
       'molecules:components/column-item': ColumnItem,
+      //organisms
+      'organisms:components/table-header': TableHeader,
+      'organisms:components/table-row': TableRow,
       // pages
       'pages:pages/staysure-brochure': StaysureBrochure,
       // templates
