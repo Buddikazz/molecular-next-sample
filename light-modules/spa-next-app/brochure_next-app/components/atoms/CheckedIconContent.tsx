@@ -1,8 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faMagnifyingGlass,
-    faCircleStop
-} from "@fortawesome/free-solid-svg-icons";
+
 
 interface checkedIconProps {
     richText: string;

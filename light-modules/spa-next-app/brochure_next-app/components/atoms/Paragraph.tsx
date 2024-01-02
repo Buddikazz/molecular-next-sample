@@ -1,8 +1,8 @@
 import React from 'react';
 
-interface ParagraphProps{
-  richText:string,
-  styleClass:string
+interface ParagraphProps {
+  richText: string,
+  styleClass: string
 }
 
 export default function Paragraph({

@@ -23,6 +23,11 @@ import { ColumnItem } from '@/components/molecules/ColumnItem';
 import { TableView } from '@/components/templates/TableView';
 import TableItem from '@/components/atoms/TableItem';
 import { TextBoxWithHeading } from '@/components/templates/TextBoxWithHeading';
+
+import { HeroBanner } from '@/components/templates/HeroBanner';
+
+import { CTABlockView } from '@/components/templates/CTABlock';
+import HeroHeadline from '@/components/atoms/HeroHeadline';
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
@@ -42,6 +47,7 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       'atom:components/table-item': TableItem,
       'atom:components/button': Button,
       'atom:components/checked-paragraph': CheckedIconContent,
+      'atom:components/hero-headline': HeroHeadline,
       //molecules
       'molecules:components/header-steper': HeaderSteper,
       'molecules:components/number-steper': NumberSteper,
@@ -55,6 +61,8 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       'templates:components/textBoxWithImage-view': TextBoxWithImageView,
       'templates:components/table-view': TableView,
       'templates:components/textbox-with-heading':TextBoxWithHeading,
+      'templates:components/hero-banner': HeroBanner,
+      'templates:components/cta-block': CTABlockView,
     },
   };
   console.log("props.page=", props.page, props.templateAnnotations);

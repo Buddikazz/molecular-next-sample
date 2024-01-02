@@ -1,0 +1,12 @@
+title: CTA Block View
+areas:
+  ctaHeadline:
+    title: CTA Title Elements
+    availableComponents:
+      HeroHeadline:
+        id: atom:components/hero-headline
+  ctaButton:
+    title: CTA Button Elements
+    availableComponents:
+      Button:
+        id: atom:components/button
