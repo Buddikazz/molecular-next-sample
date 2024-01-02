@@ -17,4 +17,5 @@ areas:
         id: templates:components/steper-view
       staysure-column-view:
         id: templates:components/staysure-column-view
-        
+      trustBlock-view:
+        id: templates:components/trustBlock-view

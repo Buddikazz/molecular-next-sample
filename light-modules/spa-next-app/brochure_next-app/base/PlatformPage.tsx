@@ -18,6 +18,8 @@ import { SteperView } from '@/components/templates/SteperView';
 import Link from '@/components/atoms/Link';
 import { StaysureColumnView } from '@/components/templates/StaysureColumnView';
 import { ColumnItem } from '@/components/molecules/ColumnItem';
+import { TrustBlockView } from '@/components/templates/TrustBlockView';
+import { TrustBlock } from '@/components/molecules/TrustBlock';
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
@@ -38,13 +40,15 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       'molecules:components/header-steper': HeaderSteper,
       'molecules:components/number-steper': NumberSteper,
       'molecules:components/column-item': ColumnItem,
+      'molecules:components/trust-block': TrustBlock,
       // pages
       'pages:pages/staysure-brochure': StaysureBrochure,
       // templates
-      'templates:components/accordion-view':AccordionView,
-      'templates:components/steper-view':SteperView,
-      'templates:components/staysure-column-view':StaysureColumnView,
+      'templates:components/accordion-view': AccordionView,
+      'templates:components/steper-view': SteperView,
+      'templates:components/staysure-column-view': StaysureColumnView,
       'templates:components/textBoxWithImage-view': TextBoxWithImageView,
+      'templates:components/trustBlock-view': TrustBlockView,
     },
   };
   console.log("props.page=", props.page, props.templateAnnotations);
