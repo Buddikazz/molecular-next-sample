@@ -13,3 +13,9 @@ form:
       label: Text
       $type: textField
       i18n: true
+    marginLeft:
+      label: Left Margin
+      $type: textField
+    hoverTextColor:
+      label: Hover Text Color
+      $type: textField

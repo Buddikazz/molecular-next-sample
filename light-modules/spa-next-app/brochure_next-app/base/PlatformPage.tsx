@@ -23,6 +23,8 @@ import { ColumnItem } from '@/components/molecules/ColumnItem';
 import { TableView } from '@/components/templates/TableView';
 import TableItem from '@/components/atoms/TableItem';
 import { TextBoxWithHeading } from '@/components/templates/TextBoxWithHeading';
+import { Jumplink } from '@/components/molecules/Jumplink';
+import { JumplinksView } from '@/components/templates/JumplinksView';
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
@@ -46,6 +48,8 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       'molecules:components/header-steper': HeaderSteper,
       'molecules:components/number-steper': NumberSteper,
       'molecules:components/column-item': ColumnItem,
+      'molecules:components/jumplink': Jumplink,
+
       // pages
       'pages:pages/staysure-brochure': StaysureBrochure,
       // templates
@@ -55,6 +59,7 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       'templates:components/textBoxWithImage-view': TextBoxWithImageView,
       'templates:components/table-view': TableView,
       'templates:components/textbox-with-heading':TextBoxWithHeading,
+      'templates:components/jumplinks-view': JumplinksView,
     },
   };
   console.log("props.page=", props.page, props.templateAnnotations);
