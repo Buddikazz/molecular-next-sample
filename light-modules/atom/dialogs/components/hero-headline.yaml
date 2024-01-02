@@ -1,0 +1,7 @@
+label: Hero-headline
+form:
+  properties:
+    text:
+      label: Hero Headline Text
+      $type: textField
+      i18n: true

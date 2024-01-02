@@ -11,3 +11,7 @@ areas:
     availableComponents:
       accordion-view:
         id: templates:components/accordion-view
+      hero-banner:
+        id: templates:components/hero-banner
+      cta-block:
+        id: templates:components/cta-block
