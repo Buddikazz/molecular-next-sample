@@ -1,32 +1,37 @@
-import React from 'react';
+import React from "react";
 
 export interface MagnoliaImage {
-  '@id': string,
-  '@link': string,
-  '@name': string,
-  '@path': string,
-  '@type': string,
-  '@uuid': string,
+  "@id": string;
+  "@link": string;
+  "@name": string;
+  "@path": string;
+  "@type": string;
+  "@uuid": string;
 }
 
 export interface ImageProps {
-  styleClass?: string,
-  image?: MagnoliaImage | null,
-  altText?: string,
-  width?: number | undefined,
-  height?: number | undefined,
+  styleClass?: string;
+  image?: MagnoliaImage | null;
+  altText?: string;
+  width?: number | undefined;
+  height?: number | undefined;
 }
 
 const Image = ({
   styleClass = "",
-  image = { '@link': "" } as MagnoliaImage,
+  image = { "@link": "" } as MagnoliaImage,
   altText = "image",
   width = undefined,
   height = undefined,
 }: ImageProps) => (
   <img
-    className={`${styleClass} mx-auto`} 
-    src={process.env.NEXT_PUBLIC_MGNL_HOST + '/dam/' + image?.['@id'] + image?.['@path']}
+    className={`${styleClass} mx-auto`}
+    src={
+      process.env.NEXT_PUBLIC_MGNL_HOST +
+      "/dam/" +
+      image?.["@id"] +
+      image?.["@path"]
+    }
     alt={altText}
     width={width}
     height={height}

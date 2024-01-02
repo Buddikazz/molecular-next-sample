@@ -1,0 +1,8 @@
+title: Navigation Block View 123
+type: single
+areas:
+  navigationBlockView:
+    title: Navigation Block Elements 456
+    availableComponents:
+      NavigationBlock:
+        id: molecules:components/navigation-block

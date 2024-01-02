@@ -1,0 +1,13 @@
+title: Navigation Block Area 789
+areas:
+  navigationBlock:
+    title: Navigation Block Content abc
+    availableComponents:
+      ParaText:
+        id: atom:components/paragraph
+      Headline:
+        id: atom:components/headline
+      Button:
+        id: atom:components/button  
+      Image:
+        id: atom:components/image
