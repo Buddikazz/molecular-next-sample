@@ -27,3 +27,6 @@ areas:
         id: templates:components/cta-block
       trustBlock-view:
         id: templates:components/trustBlock-view
+      jumplinks-view:
+        id: templates:components/jumplinks-view
+        

@@ -1,0 +1,14 @@
+title: Jumplinks Text View
+areas:
+  linkText:
+    title: Jumplink Title
+    availableComponents:
+      Link:
+        id: atom:components/link
+  buttonText:
+    title: Jumplink Button
+    type: single
+    availableComponents:
+      Button:
+        id: atom:components/button
+  

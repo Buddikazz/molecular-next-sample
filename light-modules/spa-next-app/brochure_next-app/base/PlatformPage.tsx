@@ -32,6 +32,8 @@ import { TableHeader } from '@/components/organisms/TableHeader';
 import { TableRow } from '@/components/organisms/TableRow';
 import { TrustBlockView } from '@/components/templates/TrustBlockView';
 import { TrustBlock } from '@/components/molecules/TrustBlock';
+import { Jumplink } from '@/components/molecules/Jumplink';
+import { JumplinksView } from '@/components/templates/JumplinksView';
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
@@ -60,6 +62,8 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       'organisms:components/table-header': TableHeader,
       'organisms:components/table-row': TableRow,
       'molecules:components/trust-block': TrustBlock,
+      'molecules:components/jumplink': Jumplink,
+
       // pages
       'pages:pages/staysure-brochure': StaysureBrochure,
       // templates
@@ -72,6 +76,7 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       'templates:components/hero-banner': HeroBanner,
       'templates:components/cta-block': CTABlockView,
       'templates:components/trustBlock-view': TrustBlockView,
+      'templates:components/jumplinks-view': JumplinksView,
     },
   };
   console.log("props.page=", props.page, props.templateAnnotations);
