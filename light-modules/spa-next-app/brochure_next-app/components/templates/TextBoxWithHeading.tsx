@@ -8,7 +8,7 @@ const TextBoxWithHeading=({
     textBoxWithHeading=null,
 }:TextBoxProps): JSX.Element=>{
     return(
-        <div className="bg-white p-2 m-8 ba">
+        <div className="bg-white p-2 mt-4 mb-4">
             {textBoxWithHeading && <EditableArea content={textBoxWithHeading}  />}
         
         </div>

@@ -1,5 +1,4 @@
 
-
 interface checkedIconProps {
     richText: string;
 }

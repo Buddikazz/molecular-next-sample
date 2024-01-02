@@ -1,13 +1,30 @@
-import React from 'react';
+import React from "react";
 
 interface ParagraphProps {
-  richText: string,
-  styleClass: string
+  richText: string;
+  colourTextSelect: any;
+  sizeTextSelect: any;
+  checkboxBold: any;
+  checkboxUnderline: any;
+  fontTypeSelect: any;
 }
 
 export default function Paragraph({
   richText,
-  styleClass
-}:ParagraphProps) {
-  return <div className={`${styleClass} font-ciutadella p-1`} dangerouslySetInnerHTML={{ __html: richText }} />;
+  colourTextSelect,
+  sizeTextSelect,
+  checkboxBold,
+  checkboxUnderline,
+  fontTypeSelect,
+}: ParagraphProps) {
+  return (
+    <div
+      className={`text-${colourTextSelect} text-${sizeTextSelect} font-${
+        checkboxBold && "bold"
+      } ${
+        checkboxUnderline && " underline"
+      } font-${fontTypeSelect} p-1`}
+      dangerouslySetInnerHTML={{ __html: richText }}
+    />
+  );
 }

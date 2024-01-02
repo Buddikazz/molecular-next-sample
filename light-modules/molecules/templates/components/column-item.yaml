@@ -4,5 +4,5 @@ areas:
     availableComponents:
       ParaText:
         id: atom:components/image
-      Headline:
+      Link:
         id: atom:components/link

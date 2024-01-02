@@ -28,6 +28,8 @@ import { HeroBanner } from '@/components/templates/HeroBanner';
 
 import { CTABlockView } from '@/components/templates/CTABlock';
 import HeroHeadline from '@/components/atoms/HeroHeadline';
+import { TableHeader } from '@/components/organisms/TableHeader';
+import { TableRow } from '@/components/organisms/TableRow';
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
@@ -52,6 +54,9 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       'molecules:components/header-steper': HeaderSteper,
       'molecules:components/number-steper': NumberSteper,
       'molecules:components/column-item': ColumnItem,
+      //organisms
+      'organisms:components/table-header': TableHeader,
+      'organisms:components/table-row': TableRow,
       // pages
       'pages:pages/staysure-brochure': StaysureBrochure,
       // templates

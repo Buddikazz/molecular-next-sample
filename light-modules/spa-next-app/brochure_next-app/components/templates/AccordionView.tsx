@@ -9,7 +9,7 @@ const AccordionView=({
     accordionView=null,
 }:AccordionViewProps): JSX.Element=>{
     return(
-        <div className="bg-white p-2 m-8">
+        <div className="bg-white mt-4 mb-4">
             {accordionView && <EditableArea content={accordionView}  />}
         
         </div>

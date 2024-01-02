@@ -9,5 +9,5 @@ export default function Link({
     text,
     styleClass
   }:LinkProps) {
-    return (<a className={`${styleClass} font-dmserif p-1`} href={url}>{text}</a>)
+    return (<a className={`${styleClass} proximanova p-1 `} href={url}>{text}</a>)
 }
