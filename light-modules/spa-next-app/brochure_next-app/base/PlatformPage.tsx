@@ -38,6 +38,7 @@ import { JumplinksView } from "@/components/templates/JumplinksView";
 import CheckedParagraph from "@/components/atoms/CheckedParagraph";
 import { NavigationBlockView } from "@/components/templates/NavigationBlockView";
 import { NavigationBlock } from "@/components/molecules/NavigationBlock";
+import ColumnTextBoxView from "@/components/templates/ColumnTextBoxView";
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
@@ -82,6 +83,7 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "templates:components/expert-box": ExpertBox,
       "templates:components/trustBlock-view": TrustBlockView,
       "templates:components/jumplinks-view": JumplinksView,
+      "templates:components/column-text-box-view": ColumnTextBoxView,
     },
   };
 

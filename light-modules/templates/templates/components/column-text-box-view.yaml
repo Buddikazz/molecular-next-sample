@@ -1,0 +1,28 @@
+title: Column Text Box View
+type: single
+areas:
+  columnTextHeaderBoxView:
+    title: Column Text Box Content
+    availableComponents:
+      Headline:
+        id: atom:components/headline
+  columnTextLeftContentBoxView:
+    title: Column Text Box Left Content
+    availableComponents:
+      ParaText:
+        id: atom:components/paragraph
+      Link:
+        id: atom:components/link
+      RichParaText:
+        id: atom:components/rich-paragraph
+  columnTextRightContentBoxView:
+    title: Column Text Box Right Content
+    availableComponents:
+      Headline:
+        id: atom:components/headline
+      ParaText:
+        id: atom:components/paragraph
+      Link:
+        id: atom:components/link
+      CheckedParaText:
+        id: atom:components/checked-paragraph
