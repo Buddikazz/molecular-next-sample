@@ -6,6 +6,11 @@ dialog: pages:pages/staysure-brochure
 renderType: spa
 class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
 areas:
+  heroBanner:
+    title: Hero Banner
+    availableComponents:
+      hero-banner:
+        id: templates:components/hero-banner
   body:
     title: Body Area
     availableComponents:
@@ -21,8 +26,6 @@ areas:
         id: templates:components/table-view
       textbox-with-heading:
         id: templates:components/textbox-with-heading
-      hero-banner:
-        id: templates:components/hero-banner
       cta-block:
         id: templates:components/cta-block
       trustBlock-view:

@@ -1,18 +1,36 @@
-interface LinkProps{
-    url:string,
-    text:string,
-    styleClass?:string,
-    marginLeft?:string,
-    hoverTextColor?:string
-  }
+interface LinkProps {
+  url: string;
+  text: string;
+  marginLeft?: string;
+  hoverTextColor?: string;
+  colourTextSelect: any;
+  sizeTextSelect: any;
+  checkboxBold: any;
+  checkboxUnderline: any;
+  fontTypeSelect: any;
+}
 
 export default function Link({
-    url,
-    text,
-    styleClass,
-    marginLeft,
-    hoverTextColor
-  }:LinkProps) {
-    return (<a className={`${styleClass} ml-${marginLeft} hover:text-${hoverTextColor} font-dmserif p-1`} href={url}>{text}</a>)
-
+  url,
+  text,
+  marginLeft,
+  hoverTextColor,
+  colourTextSelect,
+  sizeTextSelect,
+  checkboxBold,
+  checkboxUnderline,
+  fontTypeSelect,
+}: LinkProps) {
+  return (
+    <a
+      className={` ml-${marginLeft} hover:text-${hoverTextColor} 
+      text-${colourTextSelect} text-${sizeTextSelect} font-${
+        checkboxBold && "bold"
+      } ${checkboxUnderline && " underline"} font-${fontTypeSelect}
+      `}
+      href={url}
+    >
+      {text}
+    </a>
+  );
 }

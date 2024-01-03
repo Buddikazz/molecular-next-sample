@@ -7,7 +7,7 @@ export default function CheckedIconContent({ richText }: checkedIconProps) {
     return (
         <>
             {/* <FontAwesomeIcon icon="fa-solid fa-check" /> */}
-            <p className={'font-ciutadella p-1'}>
+            <p className={'font-ciutadella p-1 text-white'}>
                 &#10004; {richText}
             </p>
         </>
