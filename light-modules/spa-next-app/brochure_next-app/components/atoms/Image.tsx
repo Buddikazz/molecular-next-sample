@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
 export interface MagnoliaImage {
-  '@id': string,
-  '@link': string,
-  '@name': string,
-  '@path': string,
-  '@type': string,
-  '@uuid': string,
+  "@id": string;
+  "@link": string;
+  "@name": string;
+  "@path": string;
+  "@type": string;
+  "@uuid": string;
 }
 
 export interface ImageProps {
@@ -20,7 +20,7 @@ export interface ImageProps {
 
 const Image = ({
   styleClass = "",
-  image = { '@link': "" } as MagnoliaImage,
+  image = { "@link": "" } as MagnoliaImage,
   altText = "image",
   width = undefined,
   height = undefined,
