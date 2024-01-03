@@ -35,3 +35,44 @@ form:
           - name: secondary
             label: Secondary
             value: secondary
+    rounded:
+      label: Rounded
+      $type: checkBoxField
+      buttonLabel: Select to display rounded button
+      i18n: false
+    btnColor:
+      label: Button Color
+      $type: comboBoxField
+      i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: orange
+            label: Orange
+            value: orange
+    hoverColor:
+      label: Button Hover Color
+      $type: comboBoxField
+      i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: dark-orange
+            label: Dark-orange
+            value: dark-orange
+    textColor:
+      label: Button Text Color
+      $type: comboBoxField
+      i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: orange
+            label: Orange
+            value: orange
+          - name: white
+            label: White
+            value: white
+          - name: black
+            label: Black
+            value: black
