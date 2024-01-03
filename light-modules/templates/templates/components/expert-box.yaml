@@ -1,0 +1,17 @@
+title: Expert Box View
+areas:
+  expertBoxHeadline:
+    title: Expert Box Elements
+    availableComponents:
+      Headline:
+        id: atom:components/headline
+      ParaText:
+        id: atom:components/paragraph
+      LinkText:
+        id: atom:components/link
+  expertBoxImage:
+    title: Expert Box Image Elements
+    availableComponents:
+      Image:
+        id: atom:components/image
+        

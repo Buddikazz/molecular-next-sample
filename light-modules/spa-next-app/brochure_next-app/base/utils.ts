@@ -1,7 +1,9 @@
 import { EditorContextHelper } from "@magnolia/template-annotations";
+import { draftMode } from 'next/headers'
 import { nodeName, languages, pagesApi, pageNavApi, templateAnnotationsApi } from '@/config/base-config';
 
 export async function getProps(resolvedUrl:string) {
+
   const magnoliaContext = EditorContextHelper.getMagnoliaContext(resolvedUrl, nodeName, languages);
   const props:any = {
     nodeName,
@@ -9,6 +11,7 @@ export async function getProps(resolvedUrl:string) {
   };
   // Fetching page content
   let pageUrl:string = pagesApi + magnoliaContext.nodePath + magnoliaContext.search;
+  
   const response = await fetch(pageUrl, {
     method: "GET", // *GET, POST, PUT, DELETE, etc.
     mode: "cors", // no-cors, *cors, same-origin
@@ -21,6 +24,7 @@ export async function getProps(resolvedUrl:string) {
     redirect: "follow", // manual, *follow, error
     referrerPolicy: "no-referrer",// body data type must match "Content-Type" header
   });
+
   const data2 =await response.json(); // parses JSON response into native JavaScript objects
   console.log("data2-------------------------------", data2);
   props.page= data2;
@@ -33,7 +37,10 @@ export async function getProps(resolvedUrl:string) {
     const templateAnnotationsRes = await fetch(templateAnnotationsApi + magnoliaContext.nodePath);
     props.templateAnnotations = await templateAnnotationsRes.json();
   }
+  
   global.mgnlInPageEditor = magnoliaContext.isMagnoliaEdit;
+  draftMode().enable()
+
   return {
     props
   };

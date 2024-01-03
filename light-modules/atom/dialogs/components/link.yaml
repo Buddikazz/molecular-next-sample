@@ -5,11 +5,76 @@ form:
       label: URL
       $type: textField
       i18n: false
-    styleClass:
-      label: Style Class
-      $type: textField
+    colourTextSelect:
+      $type: comboBoxField
+      label: Text Colour
       i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: Purple
+            label: Purple
+            value: purple
+          - name: black
+            label: Black
+            value: black
+          - name: white
+            label: White
+            value: white
+    sizeTextSelect:
+      $type: comboBoxField
+      label: Text Size
+      i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: sm
+            label: Small
+            value: sm
+          - name: large
+            label: Large
+            value: lg
+          - name: xl
+            label: Extra Large
+            value: xl
+    checkboxBold:
+      $type: checkBoxField
+      label: Bold
+      i18n: false
+      buttonLabel: Text Bold
+    checkboxUnderline:
+      $type: checkBoxField
+      label: Underline
+      i18n: false
+      buttonLabel: Text Underline
+    fontTypeSelect:
+      $type: comboBoxField
+      label: Font Type
+      i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: dmserif
+            label: DM Serif Display
+            value: dmserif
+          - name: ciutadella
+            label: Ciutadella Rounded
+            value: ciutadella
+          - name: proximanova
+            label: Proxima Nova
+            value: proximanova
     text:
       label: Text
       $type: textField
       i18n: true
+    checkboxUnderline:
+      $type: checkBoxField
+      label: Underline
+      i18n: false
+      buttonLabel: Text Underline
+    marginLeft:
+      label: Left Margin
+      $type: textField
+    hoverTextColor:
+      label: Hover Text Color
+      $type: textField

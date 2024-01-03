@@ -53,6 +53,19 @@ function getStaticPath(node:any, paths:any) {
 
   node["@nodes"].forEach((nodeName:any) => getStaticPath(node[nodeName], paths));
 }
+// const [urlProps, setURLProps] = useState<any>("");
+
+// useEffect(() => {
+//   const urlParams = new URLSearchParams(window.location.search);
+//   async function fetchAPI() {
+//     let urlProps = await getUrlProps(urlParams);
+//     setURLProps(urlProps)
+//   }
+
+//   fetchAPI();
+// }, []);
+
+
 
 export default async function Pathname(params:any) {
   
