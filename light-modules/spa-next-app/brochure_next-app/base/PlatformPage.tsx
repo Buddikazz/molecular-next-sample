@@ -30,6 +30,7 @@ import { CTABlockView } from '@/components/templates/CTABlock';
 import HeroHeadline from '@/components/atoms/HeroHeadline';
 import { TableHeader } from '@/components/organisms/TableHeader';
 import { TableRow } from '@/components/organisms/TableRow';
+import { ExpertBox } from '@/components/templates/ExpertBox';
 import { TrustBlockView } from '@/components/templates/TrustBlockView';
 import { TrustBlock } from '@/components/molecules/TrustBlock';
 import { Jumplink } from '@/components/molecules/Jumplink';
@@ -73,9 +74,9 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       'templates:components/staysure-column-view': StaysureColumnView,
       'templates:components/textBoxWithImage-view': TextBoxWithImageView,
       'templates:components/table-view': TableView,
-      'templates:components/textbox-with-heading':TextBoxWithHeading,
+      'templates:components/textbox-with-heading': TextBoxWithHeading,
       'templates:components/hero-banner': HeroBanner,
-      'templates:components/cta-block': CTABlockView,
+      'templates:components/expert-box': ExpertBox,
       'templates:components/trustBlock-view': TrustBlockView,
       'templates:components/jumplinks-view': JumplinksView,
     },

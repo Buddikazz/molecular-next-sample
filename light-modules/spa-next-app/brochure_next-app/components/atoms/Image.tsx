@@ -15,6 +15,7 @@ export interface ImageProps {
   altText?: string,
   width?: number | undefined,
   height?: number | undefined,
+  checkboxRounded?: string,
 }
 
 const Image = ({
@@ -23,9 +24,10 @@ const Image = ({
   altText = "image",
   width = undefined,
   height = undefined,
+  checkboxRounded = undefined,
 }: ImageProps) => (
   <img
-    className={`${styleClass} mx-auto`} 
+    className={`${styleClass} mx-auto  ${checkboxRounded && " object-container object-center bg-white rounded-full w-44 h-44"}`}
     src={process.env.NEXT_PUBLIC_MGNL_HOST + '/dam/' + image?.['@id'] + image?.['@path']}
     alt={altText}
     width={width}

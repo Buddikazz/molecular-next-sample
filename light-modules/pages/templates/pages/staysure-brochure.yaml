@@ -28,8 +28,9 @@ areas:
         id: templates:components/textbox-with-heading
       cta-block:
         id: templates:components/cta-block
+      expert-box:
+        id: templates:components/expert-box
       trustBlock-view:
         id: templates:components/trustBlock-view
       jumplinks-view:
         id: templates:components/jumplinks-view
-        

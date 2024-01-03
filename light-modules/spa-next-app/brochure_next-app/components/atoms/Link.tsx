@@ -1,4 +1,5 @@
 interface LinkProps {
+  styleClass: string,
   url: string;
   text: string;
   marginLeft?: string;
