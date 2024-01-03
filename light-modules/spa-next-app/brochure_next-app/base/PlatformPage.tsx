@@ -36,6 +36,7 @@ import { TrustBlock } from '@/components/molecules/TrustBlock';
 import { Jumplink } from '@/components/molecules/Jumplink';
 import { JumplinksView } from '@/components/templates/JumplinksView';
 import CheckedParagraph from '@/components/atoms/CheckedParagraph';
+import { BlogAuthorhipBox } from '@/components/templates/Blogauthorship';
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
@@ -79,9 +80,10 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       'templates:components/expert-box': ExpertBox,
       'templates:components/trustBlock-view': TrustBlockView,
       'templates:components/jumplinks-view': JumplinksView,
+      'templates:components/blogauthorship-box': BlogAuthorhipBox,
     },
   };
-  
+
   console.log("props.page=", props.page, props.templateAnnotations);
   return (
     <div>

@@ -30,6 +30,7 @@ const config: Config = {
         'silver': '#ecebff',
         'bubble-gum': '#ff77e9',
         'bermuda': '#78dcca',
+        'light-gray':'#f5f5f5',
       },
     },
   },

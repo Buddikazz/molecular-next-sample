@@ -34,3 +34,5 @@ areas:
         id: templates:components/trustBlock-view
       jumplinks-view:
         id: templates:components/jumplinks-view
+      blogauthorship-box:
+        id: templates:components/blogauthorship-box

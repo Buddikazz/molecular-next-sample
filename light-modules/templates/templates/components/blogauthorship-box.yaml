@@ -1,0 +1,13 @@
+title: BlogAuthorShip Box View
+areas:
+  expertBoxHeadline:
+    title: BlogAuthorShip Box Elements
+    availableComponents:
+      ParaText:
+        id: atom:components/paragraph
+  expertBoxImage:
+    title: Expert Box Image Elements
+    availableComponents:
+      Image:
+        id: atom:components/image
+        
