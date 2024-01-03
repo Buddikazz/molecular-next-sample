@@ -25,3 +25,5 @@ areas:
         id: templates:components/hero-banner
       cta-block:
         id: templates:components/cta-block
+      expert-box:
+        id: templates:components/expert-box

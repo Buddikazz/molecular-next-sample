@@ -23,3 +23,8 @@ form:
       label: Image Height
       $type: textField
       i18n: true
+    checkboxRounded:
+      $type: checkBoxField
+      label: Rounded
+      i18n: false
+      buttonLabel: Image Rounded

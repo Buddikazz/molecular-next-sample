@@ -13,3 +13,8 @@ form:
       label: Text
       $type: textField
       i18n: true
+    checkboxUnderline:
+      $type: checkBoxField
+      label: Underline
+      i18n: false
+      buttonLabel: Text Underline

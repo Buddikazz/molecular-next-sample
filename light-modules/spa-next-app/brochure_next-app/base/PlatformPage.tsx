@@ -30,6 +30,7 @@ import { CTABlockView } from '@/components/templates/CTABlock';
 import HeroHeadline from '@/components/atoms/HeroHeadline';
 import { TableHeader } from '@/components/organisms/TableHeader';
 import { TableRow } from '@/components/organisms/TableRow';
+import { ExpertBox } from '@/components/templates/ExpertBox';
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
@@ -60,14 +61,15 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       // pages
       'pages:pages/staysure-brochure': StaysureBrochure,
       // templates
-      'templates:components/accordion-view':AccordionView,
-      'templates:components/steper-view':SteperView,
-      'templates:components/staysure-column-view':StaysureColumnView,
+      'templates:components/accordion-view': AccordionView,
+      'templates:components/steper-view': SteperView,
+      'templates:components/staysure-column-view': StaysureColumnView,
       'templates:components/textBoxWithImage-view': TextBoxWithImageView,
       'templates:components/table-view': TableView,
-      'templates:components/textbox-with-heading':TextBoxWithHeading,
+      'templates:components/textbox-with-heading': TextBoxWithHeading,
       'templates:components/hero-banner': HeroBanner,
       'templates:components/cta-block': CTABlockView,
+      'templates:components/expert-box': ExpertBox,
     },
   };
   console.log("props.page=", props.page, props.templateAnnotations);
