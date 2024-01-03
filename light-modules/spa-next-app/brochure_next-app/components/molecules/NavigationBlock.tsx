@@ -1,22 +1,27 @@
 import { EditableArea } from "@magnolia/react-editor";
 
-interface NavigationBlockProps {
-  navigationBlock: object | null;
+interface NavigationTopBlockProps {
+  navigationTopBlock: object | null;
+  navigationBottomBlock: object | null;
 }
 
-const NavigationBlock = ({ navigationBlock }: NavigationBlockProps) => {
+const NavigationBlock = ({
+  navigationTopBlock,
+  navigationBottomBlock,
+}: NavigationTopBlockProps) => {
   return (
-    <div className="grid bg-white text-center ">
-      <EditableArea className="" content={navigationBlock} />
-
-      {/* <h1 className="text-center text-3xl px-5 mt-2 text-violet-900">
-        {" 111111 "}
-        <span className="block text-2xl">{"22222"}</span>
-      </h1>
-      <p className="text-center px-6">{"3333333"}</p>
-      <div className="py-3">
-        <button>{"cardInfo.btn"}</button>
-      </div> */}
+    <div className="grid bg-white text-center">
+      <div className="h-[225px]">
+        {navigationTopBlock && (
+          <EditableArea
+            style={{ maxHeight: 225 }}
+            content={navigationTopBlock}
+          />
+        )}
+      </div>
+      <div className="my-3 px-5 flex items-stretch">
+        <EditableArea className="self-start" content={navigationBottomBlock} />
+      </div>
     </div>
   );
 };

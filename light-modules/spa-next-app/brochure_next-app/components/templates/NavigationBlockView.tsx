@@ -1,25 +1,22 @@
 import { EditableArea } from "@magnolia/react-editor";
 
 export interface NavigationBlockViewProps {
+  navigationBlockHeaderContent: object | null;
   navigationBlockView: object | null;
 }
 
 const NavigationBlockView = ({
+  navigationBlockHeaderContent = null,
   navigationBlockView = null,
 }: NavigationBlockViewProps) => {
   return (
     <div className="text-center space-y-7">
-      <h1 className="text-2xl text-violet-900 font-bold">
-        Travel insurance tailored to you
-      </h1>
-      <p className="text-base">
-        We have different types of cover for whatever you have planned with most
-        medical conditions covered
-      </p>
+      <div>
+        <EditableArea content={navigationBlockHeaderContent} />
+      </div>
 
       <EditableArea
-        //   className="-mx-3 flex flex-wrap p-2 mt-5"
-        className="grid sm:grid-cols-1 md:grid-cols-3 gap-10 mx-auto max-w-6xl"
+        className="grid sm:grid-cols-1 md:grid-cols-3 gap-10 mx-auto px-3 max-w-6xl"
         content={navigationBlockView}
       />
     </div>

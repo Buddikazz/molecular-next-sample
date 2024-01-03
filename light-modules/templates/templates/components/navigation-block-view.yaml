@@ -1,8 +1,15 @@
 title: Navigation Block View 123
 type: single
 areas:
-  navigationBlockView:
-    title: Navigation Block Elements 456
+  navigationBlockHeaderContent:
+    title: Navigation Block Headline
     availableComponents:
-      NavigationBlock:
+      Headline:
+        id: atom:components/headline
+      ParaText:
+        id: atom:components/paragraph
+  navigationBlockView:
+    title: Navigation Block Elements
+    availableComponents:
+      navigationBlock:
         id: molecules:components/navigation-block

@@ -8,6 +8,7 @@ form:
     name:
       label: Label
       $type: textField
+      defaultValue: Button
       i18n: true
     isUnderLine:
       label: Is underline
@@ -20,3 +21,17 @@ form:
       chooser:
         workbenchChooser:
           appName: dam-chooser
+    type:
+      label: Button Type
+      $type: comboBoxField
+      i18n: false
+      defaultValue: primary  
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: primary
+            label: Primary
+            value: primary
+          - name: secondary
+            label: Secondary
+            value: secondary

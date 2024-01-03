@@ -1,7 +1,13 @@
-title: Navigation Block Area 789
+title: Navigation Bottom Block Area
 areas:
-  navigationBlock:
-    title: Navigation Block Content abc
+  navigationTopBlock:
+    title: Navigation Top Block Content
+    availableComponents:
+      Image:
+        id: atom:components/image
+        height: "300"
+  navigationBottomBlock:
+    title: Navigation Bottom Block Content
     availableComponents:
       ParaText:
         id: atom:components/paragraph
@@ -9,5 +15,3 @@ areas:
         id: atom:components/headline
       Button:
         id: atom:components/button  
-      Image:
-        id: atom:components/image
