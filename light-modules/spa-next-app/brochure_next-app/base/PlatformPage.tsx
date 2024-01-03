@@ -35,6 +35,8 @@ import { TrustBlock } from '@/components/molecules/TrustBlock';
 import { Jumplink } from '@/components/molecules/Jumplink';
 import { JumplinksView } from '@/components/templates/JumplinksView';
 import CheckedParagraph from '@/components/atoms/CheckedParagraph';
+import { SupportTextBlock } from '@/components/molecules/SupportTextBlock';
+import { SupportTextBoxView } from '@/components/templates/SupportTextBoxView';
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
@@ -59,11 +61,12 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       'molecules:components/header-steper': HeaderSteper,
       'molecules:components/number-steper': NumberSteper,
       'molecules:components/column-item': ColumnItem,
+      'molecules:components/trust-block': TrustBlock,
+      'molecules:components/jumplink': Jumplink,
+      'molecules:components/support-text-box-element': SupportTextBlock,
       //organisms
       'organisms:components/table-header': TableHeader,
       'organisms:components/table-row': TableRow,
-      'molecules:components/trust-block': TrustBlock,
-      'molecules:components/jumplink': Jumplink,
 
       // pages
       'pages:pages/staysure-brochure': StaysureBrochure,
@@ -78,9 +81,10 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       'templates:components/cta-block': CTABlockView,
       'templates:components/trustBlock-view': TrustBlockView,
       'templates:components/jumplinks-view': JumplinksView,
+      'templates:components/support-text-box-view': SupportTextBoxView,
     },
   };
-  
+
   console.log("props.page=", props.page, props.templateAnnotations);
   return (
     <div>

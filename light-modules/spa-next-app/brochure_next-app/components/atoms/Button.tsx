@@ -1,17 +1,14 @@
-export interface ButtonProps {
-    styleClass?: string,
-    name: string,
+interface ButtonProps {
+    name: string;
 }
 
-
-export default function Button({
-    styleClass = "",
-    name = ""
-}: ButtonProps) {
+const Button = ({ name }: ButtonProps) => {
     return (
-        <div className={` ${styleClass} w-40 flex items-center justify-center h-10 rounded-md bg-orange text-18 font-bold cursor-pointer hover:bg-dark-orange`} style={{ color: 'white' }}>
-            <i className="fas fa-caret-right mr-4"></i>
-            {name}
-        </div>
-    )
-}
+        <button className={`flex btn p-2 pr-5 items-center justify-center h-10 rounded-md bg-orange text-18 font-bold cursor-pointer hover:bg-dark-orange`}>
+            <i className="fas fa-caret-right ml-2 pr-2"></i>
+            <p className={`text-white`}>{name}</p>
+        </button>
+    );
+};
+
+export default Button;

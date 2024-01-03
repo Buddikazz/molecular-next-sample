@@ -32,4 +32,6 @@ areas:
         id: templates:components/trustBlock-view
       jumplinks-view:
         id: templates:components/jumplinks-view
+      support-text-box-view:
+        id: templates:components/support-text-box-view
         
