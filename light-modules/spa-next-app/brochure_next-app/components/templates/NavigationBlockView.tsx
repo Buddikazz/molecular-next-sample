@@ -12,13 +12,17 @@ const NavigationBlockView = ({
   return (
     <div className="text-center space-y-7">
       <div>
-        <EditableArea content={navigationBlockHeaderContent} />
+        {navigationBlockHeaderContent && (
+          <EditableArea content={navigationBlockHeaderContent} />
+        )}{" "}
       </div>
 
-      <EditableArea
-        className="grid sm:grid-cols-1 md:grid-cols-3 gap-10 mx-auto px-3 max-w-6xl"
-        content={navigationBlockView}
-      />
+      {navigationBlockView && (
+        <EditableArea
+          className="grid sm:grid-cols-1 md:grid-cols-3 gap-10 mx-auto px-3 max-w-6xl"
+          content={navigationBlockView}
+        />
+      )}
     </div>
   );
 };

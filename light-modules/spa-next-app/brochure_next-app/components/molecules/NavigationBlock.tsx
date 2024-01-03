@@ -20,7 +20,12 @@ const NavigationBlock = ({
         )}
       </div>
       <div className="my-3 px-5 flex items-stretch">
-        <EditableArea className="self-start" content={navigationBottomBlock} />
+        {navigationBottomBlock && (
+          <EditableArea
+            className="self-start"
+            content={navigationBottomBlock}
+          />
+        )}{" "}
       </div>
     </div>
   );
