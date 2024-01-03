@@ -16,18 +16,13 @@ export default function Button({
   //       : "bg-orange text-white"
   //   } text-18 cursor-pointer hover:bg-dark-orange `;
 
-  let buttonClasses = `${styleClass} border border-solid rounded px-4 py-2 min-w-[70%] max-w-max hover:bg-dark-orange`;
+  let buttonClasses = `${styleClass} border border-solid rounded px-4 py-2 min-w-64 hover:bg-dark-orange`;
 
   if (type === "primary") {
     buttonClasses += " bg-orange text-white";
   } else if (type === "secondary") {
     buttonClasses += " bg-white text-orange border-orange hover:text-white";
   }
-
-  //   const buttonStyles = {
-  //     color: type === "outline" ? "orange" : "white",
-  //     ...(type === "outline" && { hover: { font: "white" } }),
-  //   };
 
   return (
     <button className={buttonClasses}>
