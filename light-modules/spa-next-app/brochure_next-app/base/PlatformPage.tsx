@@ -82,6 +82,7 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       'templates:components/trustBlock-view': TrustBlockView,
       'templates:components/jumplinks-view': JumplinksView,
       'templates:components/video-view': VideoView,
+      'templates:components/navigation-block-view': NavigationBlockView,
     },
   };
 

@@ -24,7 +24,7 @@ export default function Button({
   if (type === "primary") {
     buttonClasses += ` bg-${btnColor} text-${textColor} hover:bg-${hoverColor}`;
   } else if (type === "secondary") {
-    buttonClasses += ` bg-white text-${btnColor} border-${btnColor} hover:text-white hover:bg-${hoverColor}`;
+    buttonClasses += ` bg-white text-${textColor} border-${btnColor} hover:text-white hover:bg-${hoverColor}`;
   }
 
   return (
