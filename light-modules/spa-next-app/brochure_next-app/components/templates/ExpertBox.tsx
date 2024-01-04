@@ -12,7 +12,7 @@ const ExpertBox = ({
 }: ExpertBoxProps): JSX.Element => {
 
     return (
-        <div className="bg-purple flex flex-row items-center p-10">
+        <div className="bg-purple flex flex-row items-center p-10 pl-40 pr-40 2xl:pl-72 2xl:pr-72">
             <div className='w-1/2'>
                 {expertBoxImage && <EditableArea content={expertBoxImage} />}
             </div>

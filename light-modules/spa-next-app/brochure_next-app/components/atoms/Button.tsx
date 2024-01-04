@@ -17,18 +17,18 @@ export default function Button({
   textColor = "",
   hoverColor = "",
 }: ButtonProps) {
-  let buttonClasses = `${styleClass} border border-solid ${
+  let buttonClasses = `flex border  ${
     rounded ? "rounded" : ""
-  } px-4 py-2 min-w-64`;
+  } px-6 py-2 `;
 
   if (type === "primary") {
-    buttonClasses += ` bg-${btnColor} text-${textColor} hover:bg-${hoverColor}`;
+    buttonClasses += ` bg-${btnColor} text-${textColor} hover:bg-${hoverColor} border-${btnColor}`;
   } else if (type === "secondary") {
-    buttonClasses += ` bg-white text-${textColor} border-${btnColor} hover:text-white hover:bg-${hoverColor}`;
+    buttonClasses += ` bg-white text-${textColor} border-orange hover:text-white hover:bg-${hoverColor}`;
   }
 
   return (
-    <button className={buttonClasses}>
+    <button className={buttonClasses+' text-center justify-center '}>
       {type === "primary" && <i className="fas fa-caret-right mr-4"></i>}
       {name}
     </button>

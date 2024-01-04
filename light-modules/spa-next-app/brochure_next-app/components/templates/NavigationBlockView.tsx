@@ -10,7 +10,7 @@ const NavigationBlockView = ({
   navigationBlockView = null,
 }: NavigationBlockViewProps) => {
   return (
-    <div className="text-center space-y-7">
+    <div className="text-center space-y-7 bg-zinc-100">
       <div>
         {navigationBlockHeaderContent && (
           <EditableArea content={navigationBlockHeaderContent} />

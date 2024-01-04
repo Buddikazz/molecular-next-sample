@@ -38,6 +38,8 @@ import { NavigationBlockView } from "@/components/templates/NavigationBlockView"
 import { NavigationBlock } from "@/components/molecules/NavigationBlock";
 import VideoComponent from '@/components/atoms/VideoComponent';
 import { VideoView } from '@/components/templates/VideoView';
+import { SupportTextBlock } from '@/components/molecules/SupportTextBlock';
+import { SupportTextBoxView } from '@/components/templates/SupportTextBoxView';
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
@@ -63,11 +65,12 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "molecules:components/number-steper": NumberSteper,
       "molecules:components/column-item": ColumnItem,
       "molecules:components/navigation-block": NavigationBlock,
+      "molecules:components/trust-block": TrustBlock,
+      "molecules:components/jumplink": Jumplink,
+      'molecules:components/support-text-box-element': SupportTextBlock,
       //organisms
       "organisms:components/table-header": TableHeader,
       "organisms:components/table-row": TableRow,
-      "molecules:components/trust-block": TrustBlock,
-      "molecules:components/jumplink": Jumplink,
       // pages
       "pages:pages/staysure-brochure": StaysureBrochure,
       // templates
@@ -83,6 +86,7 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       'templates:components/jumplinks-view': JumplinksView,
       'templates:components/video-view': VideoView,
       'templates:components/navigation-block-view': NavigationBlockView,
+      'templates:components/support-text-box-view': SupportTextBoxView,
     },
   };
 

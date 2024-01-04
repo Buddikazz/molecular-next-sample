@@ -1,0 +1,7 @@
+title: Support Text Box View
+areas:
+  supportTextBoxView:
+    title: Support Text Box Elements
+    availableComponents:
+      SupportTextBoxViewElement:
+        id: molecules:components/support-text-box-element

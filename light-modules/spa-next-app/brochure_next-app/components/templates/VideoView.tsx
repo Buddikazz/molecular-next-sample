@@ -11,7 +11,7 @@ const VideoView = ({
     videoHeadline = null, videoSubHeadline = null, videoParagraph = null, videoView = null,
 }: VideoViewProps): JSX.Element => {
     return (
-        <div className="flex  flex-col justify-center content-center mt-4 mb-4">
+        <div className="flex  flex-col justify-center content-center mt-4 mb-4 pl-40 pr-40 2xl:pl-72 2xl:pr-72">
             <div className="">
                 {videoHeadline && <EditableArea content={videoHeadline} />}
             </div>
