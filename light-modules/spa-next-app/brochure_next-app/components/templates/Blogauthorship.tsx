@@ -1,5 +1,4 @@
 import { EditableArea } from '@magnolia/react-editor';
-import { log } from 'console';
 
 export interface BlogAuthorhipBoxProps {
     expertBoxHeadline: object | null,
