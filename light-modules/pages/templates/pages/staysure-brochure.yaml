@@ -28,6 +28,10 @@ areas:
         id: templates:components/textbox-with-heading
       cta-block:
         id: templates:components/cta-block
+      navigation-block-view:
+        id: templates:components/navigation-block-view
+      expert-box:
+        id: templates:components/expert-box
       trustBlock-view:
         id: templates:components/trustBlock-view
       jumplinks-view:

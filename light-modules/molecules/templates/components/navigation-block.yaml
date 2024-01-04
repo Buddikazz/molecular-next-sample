@@ -1,0 +1,17 @@
+title: Navigation Bottom Block Area
+areas:
+  navigationTopBlock:
+    title: Navigation Top Block Content
+    availableComponents:
+      Image:
+        id: atom:components/image
+        height: "300"
+  navigationBottomBlock:
+    title: Navigation Bottom Block Content
+    availableComponents:
+      ParaText:
+        id: atom:components/paragraph
+      Headline:
+        id: atom:components/headline
+      Button:
+        id: atom:components/button  

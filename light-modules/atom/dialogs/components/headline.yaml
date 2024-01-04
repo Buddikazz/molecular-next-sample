@@ -9,3 +9,27 @@ form:
       label: Style Class
       $type: textField
       i18n: false
+    checkboxBold:
+      $type: checkBoxField
+      label: Bold
+      i18n: false
+      buttonLabel: Text Bold
+    sizeTextSelect:
+      $type: comboBoxField
+      label: Text Size
+      i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: sm
+            label: Small
+            value: sm
+          - name: large
+            label: Large
+            value: 2xl
+          - name: xl
+            label: Extra Large
+            value: 4xl
+          - name: 6xl
+            label: 6XL
+            value: 6xl
