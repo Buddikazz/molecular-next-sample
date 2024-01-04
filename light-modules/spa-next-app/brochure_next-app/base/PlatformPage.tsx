@@ -23,9 +23,7 @@ import { ColumnItem } from "@/components/molecules/ColumnItem";
 import { TableView } from "@/components/templates/TableView";
 import TableItem from "@/components/atoms/TableItem";
 import { TextBoxWithHeading } from "@/components/templates/TextBoxWithHeading";
-
 import { HeroBanner } from "@/components/templates/HeroBanner";
-
 import { CTABlockView } from "@/components/templates/CTABlock";
 import HeroHeadline from "@/components/atoms/HeroHeadline";
 import { TableHeader } from "@/components/organisms/TableHeader";
@@ -38,6 +36,8 @@ import { JumplinksView } from "@/components/templates/JumplinksView";
 import CheckedParagraph from "@/components/atoms/CheckedParagraph";
 import { NavigationBlockView } from "@/components/templates/NavigationBlockView";
 import { NavigationBlock } from "@/components/molecules/NavigationBlock";
+import VideoComponent from '@/components/atoms/VideoComponent';
+import { VideoView } from '@/components/templates/VideoView';
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
@@ -47,16 +47,17 @@ const PlatformPage = ({ props }: any): JSX.Element => {
   const config = {
     componentMappings: {
       //atom
-      "atom:components/headline": Headline,
-      "atom:components/paragraph": Paragraph,
-      "atom:components/expander": Expander,
-      "atom:components/rich-paragraph": RichParagraph,
-      "atom:components/image": Image,
-      "atom:components/link": Link,
-      "atom:components/table-item": TableItem,
-      "atom:components/button": Button,
-      "atom:components/checked-paragraph": CheckedParagraph,
-      "atom:components/hero-headline": HeroHeadline,
+      'atom:components/headline': Headline,
+      'atom:components/paragraph': Paragraph,
+      'atom:components/expander': Expander,
+      'atom:components/rich-paragraph': RichParagraph,
+      'atom:components/image': Image,
+      'atom:components/link': Link,
+      'atom:components/table-item': TableItem,
+      'atom:components/button': Button,
+      'atom:components/checked-paragraph': CheckedParagraph,
+      'atom:components/hero-headline': HeroHeadline,
+      'atom:components/video': VideoComponent,
       //molecules
       "molecules:components/header-steper": HeaderSteper,
       "molecules:components/number-steper": NumberSteper,
@@ -70,18 +71,17 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       // pages
       "pages:pages/staysure-brochure": StaysureBrochure,
       // templates
-      "templates:components/accordion-view": AccordionView,
-      "templates:components/steper-view": SteperView,
-      "templates:components/staysure-column-view": StaysureColumnView,
-      "templates:components/textBoxWithImage-view": TextBoxWithImageView,
-      "templates:components/table-view": TableView,
-      "templates:components/textbox-with-heading": TextBoxWithHeading,
-      "templates:components/hero-banner": HeroBanner,
-      "templates:components/cta-block": CTABlockView,
-      "templates:components/navigation-block-view": NavigationBlockView,
-      "templates:components/expert-box": ExpertBox,
-      "templates:components/trustBlock-view": TrustBlockView,
-      "templates:components/jumplinks-view": JumplinksView,
+      'templates:components/accordion-view': AccordionView,
+      'templates:components/steper-view': SteperView,
+      'templates:components/staysure-column-view': StaysureColumnView,
+      'templates:components/textBoxWithImage-view': TextBoxWithImageView,
+      'templates:components/table-view': TableView,
+      'templates:components/textbox-with-heading': TextBoxWithHeading,
+      'templates:components/hero-banner': HeroBanner,
+      'templates:components/cta-block': CTABlockView,
+      'templates:components/trustBlock-view': TrustBlockView,
+      'templates:components/jumplinks-view': JumplinksView,
+      'templates:components/video-view': VideoView,
     },
   };
 

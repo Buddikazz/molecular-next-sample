@@ -1,0 +1,30 @@
+title: Video View
+areas:
+  videoHeadline:
+    title: Video Title Elements
+    type: single
+    availableComponents:
+      Headline:
+        id: atom:components/headline
+      ParaText:
+        id: atom:components/paragraph
+  videoSubHeadline:
+    title: Video Subtitle Elements
+    type: single
+    availableComponents:
+      SubHeadline:
+        id: atom:components/paragraph
+  videoParagraph:
+    title: Video Paragraph Elements
+    type: single
+    availableComponents:
+      ParaText:
+        id: atom:components/paragraph
+      RichParaText:
+        id: atom:components/rich-paragraph
+  videoView:
+    title: Video View Elements
+    type: single
+    availableComponents:
+      Video:
+        id: atom:components/video

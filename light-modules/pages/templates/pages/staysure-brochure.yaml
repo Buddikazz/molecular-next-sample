@@ -36,3 +36,5 @@ areas:
         id: templates:components/trustBlock-view
       jumplinks-view:
         id: templates:components/jumplinks-view
+      video-view:
+        id: templates:components/video-view
