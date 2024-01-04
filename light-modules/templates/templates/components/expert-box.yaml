@@ -14,4 +14,8 @@ areas:
     availableComponents:
       Image:
         id: atom:components/image
-        
+  Background:
+    title: Expert Box Background Color Elements
+    availableComponents:
+      Background:
+        id: atom:components/bg-color

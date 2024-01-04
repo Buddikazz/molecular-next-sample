@@ -1,0 +1,20 @@
+label: Background color change
+form:
+  properties:
+    bgColourSelect:
+      $type: comboBoxField
+      label: Background Colour
+      i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: purple
+            label: Violet
+            value: purple
+          - name: silver
+            label: Silver
+            value: silver
+          - name: light-gray
+            label: Light-Gray
+            value: light-gray
+

@@ -23,8 +23,8 @@ export default function Paragraph({
         checkboxBold && "bold"
       } ${
         checkboxUnderline && " underline"
-      } font-${fontTypeSelect} p-1`}
+      } font-${fontTypeSelect} p-2`}
       dangerouslySetInnerHTML={{ __html: richText }}
     />
-  );
+  )
 }

@@ -38,3 +38,7 @@ areas:
         id: templates:components/jumplinks-view
       column-text-box-view:
         id: templates:components/column-text-box-view
+      video-view:
+        id: templates:components/video-view
+      support-text-box-view:
+        id: templates:components/support-text-box-view

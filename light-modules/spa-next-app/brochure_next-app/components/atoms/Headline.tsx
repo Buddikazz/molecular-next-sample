@@ -1,23 +1,23 @@
-interface HeadlineProps {
-  text: string;
-  styleClass: string;
-  checkboxBold: any;
-  sizeTextSelect: any;
-}
+interface HeadlineProps{
+    text:string,
+    colourTextSelect: any;
+    sizeTextSelect: any;
+    checkboxBold: any;
+    checkboxUnderline: any;
+    fontTypeSelect: any;
+  }
 
 export default function Headline({
-  text,
-  styleClass,
-  checkboxBold,
-  sizeTextSelect,
-}: HeadlineProps) {
-  return (
-    <h2
-      className={`${styleClass} text-${sizeTextSelect} font-ciutadella p-1 font-${
-        checkboxBold && "bold"
-      } `}
-    >
-      {text}
-    </h2>
-  );
+    text,
+    colourTextSelect,
+    sizeTextSelect,
+    checkboxBold,
+    checkboxUnderline,
+    fontTypeSelect,
+  }:HeadlineProps) {
+    return (<h2 className={`text-${colourTextSelect} text-${sizeTextSelect} font-${
+      checkboxBold && "bold"
+    } ${
+      checkboxUnderline && " underline"
+    } font-${fontTypeSelect} p-1`} >{text}</h2>)
 }

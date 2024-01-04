@@ -5,15 +5,22 @@ form:
       label: Headline Text
       $type: textField
       i18n: true
-    styleClass:
-      label: Style Class
-      $type: textField
+    colourTextSelect:
+      $type: comboBoxField
+      label: Text Colour
       i18n: false
-    checkboxBold:
-      $type: checkBoxField
-      label: Bold
-      i18n: false
-      buttonLabel: Text Bold
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: Purple
+            label: Purple
+            value: purple
+          - name: black
+            label: Black
+            value: black
+          - name: white
+            label: White
+            value: white
     sizeTextSelect:
       $type: comboBoxField
       label: Text Size
@@ -39,3 +46,29 @@ form:
           - name: 6xl
             label: 6 XL
             value: 6xl
+    checkboxBold:
+      $type: checkBoxField
+      label: Bold
+      i18n: false
+      buttonLabel: Text Bold
+    checkboxUnderline:
+      $type: checkBoxField
+      label: Underline
+      i18n: false
+      buttonLabel: Text Underline
+    fontTypeSelect:
+      $type: comboBoxField
+      label: Font Type
+      i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: dmserif
+            label: DM Serif Display
+            value: dmserif
+          - name: ciutadella
+            label: Ciutadella Rounded
+            value: ciutadella
+          - name: proximanova
+            label: Proxima Nova
+            value: proximanova
