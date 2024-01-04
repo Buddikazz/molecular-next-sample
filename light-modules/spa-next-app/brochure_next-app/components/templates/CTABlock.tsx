@@ -19,10 +19,10 @@ const CTABlockView = ({
 
     };
     return (
-        <div className="custom-bg mt-10 text-white flex flex-col items-center justify-center" style={containerStyle}>
-            <div className="p-20">  {ctaHeadline && <EditableArea content={ctaHeadline} />}</div>
+        <div className="custom-bg mt-10 h-52 text-white flex flex-col items-center justify-center" style={containerStyle}>
+            <div className="p-14">  {ctaHeadline && <EditableArea content={ctaHeadline} />}</div>
             <div className='pb-10'>
-                {ctaButton && <EditableArea content={ctaButton} />}
+                {ctaButton && <EditableArea  content={ctaButton} />}
             </div>
         </div>
     );

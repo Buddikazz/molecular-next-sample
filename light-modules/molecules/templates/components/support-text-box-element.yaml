@@ -1,0 +1,11 @@
+title: Support Text Box Area
+areas:
+  supportTextBlock:
+    title: Support Text Box Elements
+    availableComponents:
+      ParaText:
+        id: atom:components/paragraph
+      Headline:
+        id: atom:components/headline
+      Button:
+        id: atom:components/button

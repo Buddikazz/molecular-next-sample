@@ -12,9 +12,9 @@ form:
       datasource:
         $type: optionListDatasource
         options:
-          - name: violet
-            label: Violet
-            value: violet-800
+          - name: Purple
+            label: Purple
+            value: purple
           - name: black
             label: Black
             value: black

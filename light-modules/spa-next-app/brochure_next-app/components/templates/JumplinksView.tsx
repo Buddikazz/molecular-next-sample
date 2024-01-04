@@ -8,7 +8,7 @@ const JumplinksView = ({
     jumplinks = null,
 }: JumplinksViewProps): JSX.Element => {
     return (
-        <EditableArea content={jumplinks}/>
+        <EditableArea className="mt-10 items-center justify-center" content={jumplinks}/>
     );
 };
 
