@@ -31,11 +31,17 @@ form:
           - name: sm
             label: Small
             value: sm
-          - name: large
+          - name: xl
+            label: Medium
+            value: xl
+          - name: 2xl
             label: Large
             value: 2xl
-          - name: xl
+          - name: 3xl
             label: Extra Large
+            value: 3xl
+          - name: 4xl
+            label: 4XL
             value: 4xl
           - name: 6xl
             label: 6XL

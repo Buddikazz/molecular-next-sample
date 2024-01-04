@@ -9,3 +9,23 @@ form:
       label: Style Class
       $type: textField
       i18n: false
+    checkedIconColor:
+      label: Checked Icon Color
+      $type: comboBoxField
+      i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: cyan-500
+            label: Cyan
+            value: cyan-500
+          - name: orange
+            label: Orange
+            value: orange
+          - name: black
+            label: Black
+            value: black
+    clickableLink:
+      label: Clickable Link
+      $type: textField
+      i18n: true
