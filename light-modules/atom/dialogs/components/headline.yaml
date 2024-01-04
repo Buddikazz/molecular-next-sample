@@ -41,10 +41,10 @@ form:
             label: Extra Large
             value: 3xl
           - name: 4xl
-            label: 4 XL
+            label: 4XL
             value: 4xl
           - name: 6xl
-            label: 6 XL
+            label: 6XL
             value: 6xl
     checkboxBold:
       $type: checkBoxField
