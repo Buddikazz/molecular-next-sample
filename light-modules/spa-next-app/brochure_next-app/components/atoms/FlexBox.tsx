@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {EditableComponent} from "@magnolia/react-editor";
-import {ComponentHelper} from "@magnolia/react-editor";
+import {EditableComponent, ComponentHelper} from "@magnolia/react-editor";
 
 export interface MagnoliaContent {
   '@nodes': string[],

@@ -15,3 +15,18 @@ areas:
         id: templates:components/textBoxWithImage-view
       steper-view:
         id: templates:components/steper-view
+      staysure-column-view:
+        id: templates:components/staysure-column-view
+      table-view:
+        id: templates:components/table-view
+      textbox-with-heading:
+        id: templates:components/textbox-with-heading
+      hero-banner:
+        id: templates:components/hero-banner
+      cta-block:
+        id: templates:components/cta-block
+      trustBlock-view:
+        id: templates:components/trustBlock-view
+      jumplinks-view:
+        id: templates:components/jumplinks-view
+        

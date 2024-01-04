@@ -1,0 +1,27 @@
+title: Hero Banner
+areas:
+  heroImage:
+    title: HeroImage Elements
+    availableComponents:
+      Image:
+        id: atom:components/image
+  heroHeadline:
+    title: HeroTitle Elements
+    availableComponents:
+      HeroHeadline:
+        id: atom:components/hero-headline
+  heroSubTitle:
+    title: HeroSubTitle Elements
+    availableComponents:
+      ParaText:
+        id: atom:components/paragraph
+  heroButton:
+    title: Hero Button Elements
+    availableComponents:
+      Button:
+        id: atom:components/button
+  heroCheckedPara:
+    title: Hero Checked Paragraph Elements
+    availableComponents:
+      CheckedParagraph:
+        id: atom:components/checked-paragraph
