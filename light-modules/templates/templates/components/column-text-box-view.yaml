@@ -28,5 +28,10 @@ areas:
         id: atom:components/checked-paragraph
       RichParaText:
         id: atom:components/rich-paragraph
+
+
+  columnTextRightContentImageBoxView:
+    title: Column Text Box Right Content Image
+    availableComponents:
       Image:
         id: atom:components/image 
