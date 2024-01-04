@@ -1,0 +1,23 @@
+label: Video
+form:
+  properties:
+    url:
+      label: Video URL
+      $type: textField
+      i18n: true
+    styleClass:
+      label: Style Class
+      $type: textField
+      i18n: false
+    altText:
+      label: Video Alt Text
+      $type: textField
+      i18n: true
+    width:
+      label: Video Width
+      $type: textField
+      i18n: true
+    height:
+      label: Video Height
+      $type: textField
+      i18n: true
