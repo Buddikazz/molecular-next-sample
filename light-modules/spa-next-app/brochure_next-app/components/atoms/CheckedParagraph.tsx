@@ -1,20 +1,27 @@
-import React from 'react';
-import { FaCheck } from 'react-icons/fa';
+import React from "react";
+import { FaCheck } from "react-icons/fa";
 
 interface CheckedParagraphProps {
-    richText: string,
-    styleClass: string
+  richText: string;
+  styleClass: string;
+  checkedIconColor?: string;
 }
 
 export default function CheckedParagraph({
-    richText,
-    styleClass
+  richText,
+  styleClass,
+  checkedIconColor,
 }: CheckedParagraphProps) {
-    return <li className='flex'>
-        <div>
-            <FaCheck className="fas fa-check mr-4 mt-2 text-xl text-orange" />
-        </div>
-        <div className={`Paragraph ${styleClass}`} dangerouslySetInnerHTML={{ __html: richText }} />
+  const iconClass = `text-2xl mr-4 text-${checkedIconColor}`;
+  return (
+    <li className="flex">
+      <div>
+        <FaCheck className={iconClass} />
+      </div>
+      <div
+        className={`Paragraph ${styleClass}`}
+        dangerouslySetInnerHTML={{ __html: richText }}
+      />
     </li>
-
+  );
 }

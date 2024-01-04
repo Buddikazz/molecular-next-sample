@@ -26,3 +26,7 @@ areas:
         id: atom:components/link
       CheckedParaText:
         id: atom:components/checked-paragraph
+      RichParaText:
+        id: atom:components/rich-paragraph
+      Image:
+        id: atom:components/image 
