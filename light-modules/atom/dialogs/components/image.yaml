@@ -28,3 +28,7 @@ form:
       label: Rounded
       i18n: false
       buttonLabel: Image Rounded
+    clickableLink:
+      label: Clickable Link
+      $type: textField
+      i18n: true

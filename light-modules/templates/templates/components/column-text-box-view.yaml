@@ -15,6 +15,7 @@ areas:
         id: atom:components/link
       RichParaText:
         id: atom:components/rich-paragraph
+        
   columnTextRightContentBoxView:
     title: Column Text Box Right Content
     availableComponents:

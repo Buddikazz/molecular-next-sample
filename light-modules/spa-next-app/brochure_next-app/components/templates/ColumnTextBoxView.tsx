@@ -15,10 +15,12 @@ const ColumnTextBoxView = ({
 }: ColumnTextBoxViewProps) => {
   return (
     <div className="">
-      {columnTextHeaderBoxView && (
-        <EditableArea content={columnTextHeaderBoxView} />
-      )}{" "}
-      <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 space-x-5 ">
+      <div className="my-5">
+        {columnTextHeaderBoxView && (
+          <EditableArea content={columnTextHeaderBoxView} />
+        )}
+      </div>
+      <div className="grid gap-14 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
         <div>
           {columnTextLeftContentBoxView && (
             <EditableArea content={columnTextLeftContentBoxView} />

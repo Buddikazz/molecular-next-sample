@@ -22,3 +22,10 @@ form:
           - name: orange
             label: Orange
             value: orange
+          - name: black
+            label: Black
+            value: black
+    clickableLink:
+      label: Clickable Link
+      $type: textField
+      i18n: true
