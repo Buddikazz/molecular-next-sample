@@ -1,0 +1,7 @@
+title: Full Width Image
+areas:
+  FullImage:
+    title: Image Elements
+    availableComponents:
+      Image:
+        id: atom:components/image
