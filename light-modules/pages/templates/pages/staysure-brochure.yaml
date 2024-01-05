@@ -39,7 +39,9 @@ areas:
       video-view: 
         id: templates:components/video-view
       support-text-box-view:
-        id: templates:components/support-text-box-view  
+        id: templates:components/support-text-box-view
+      caveat-block-view:
+        id: templates:components/caveat-block-view
       popular-article-view:
         id: templates:components/popular-article-view
       column-text-box-view:

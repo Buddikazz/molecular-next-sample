@@ -36,13 +36,14 @@ import { JumplinksView } from "@/components/templates/JumplinksView";
 import CheckedParagraph from "@/components/atoms/CheckedParagraph";
 import { NavigationBlockView } from "@/components/templates/NavigationBlockView";
 import { NavigationBlock } from "@/components/molecules/NavigationBlock";
-import VideoComponent from '@/components/atoms/VideoComponent';
-import { VideoView } from '@/components/templates/VideoView';
-import { SupportTextBlock } from '@/components/molecules/SupportTextBlock';
-import { SupportTextBoxView } from '@/components/templates/SupportTextBoxView';
+import VideoComponent from "@/components/atoms/VideoComponent";
+import { VideoView } from "@/components/templates/VideoView";
+import { SupportTextBlock } from "@/components/molecules/SupportTextBlock";
+import { SupportTextBoxView } from "@/components/templates/SupportTextBoxView";
 import { PopularArticle } from "@/components/molecules/PopularArticle";
 import { PopularArticleView } from "@/components/templates/PopularArticleView";
 import ColumnTextBoxView from "@/components/templates/ColumnTextBoxView";
+import CaveatBlockView from "@/components/templates/CaveatBlockView";
 
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
@@ -71,8 +72,8 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "molecules:components/navigation-block": NavigationBlock,
       "molecules:components/trust-block": TrustBlock,
       "molecules:components/jumplink": Jumplink,
-      'molecules:components/support-text-box-element': SupportTextBlock,
-      'molecules:components/popular-article': PopularArticle,
+      "molecules:components/support-text-box-element": SupportTextBlock,
+      "molecules:components/popular-article": PopularArticle,
       //organisms
       "organisms:components/table-header": TableHeader,
       "organisms:components/table-row": TableRow,
@@ -94,7 +95,8 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "templates:components/column-text-box-view": ColumnTextBoxView,
       "templates:components/video-view": VideoView,
       "templates:components/support-text-box-view": SupportTextBoxView,
-      'templates:components/popular-article-view': PopularArticleView,
+      "templates:components/caveat-block-view": CaveatBlockView,
+      "templates:components/popular-article-view": PopularArticleView,
     },
   };
 
