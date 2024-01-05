@@ -50,3 +50,5 @@ areas:
         id: templates:components/heading-view
       full-width-image-view:
         id: templates:components/full-width-image-view
+      cta-button-view:
+        id: templates:components/cta-button-view

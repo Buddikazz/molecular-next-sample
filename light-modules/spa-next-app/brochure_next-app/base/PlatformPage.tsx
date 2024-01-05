@@ -44,9 +44,9 @@ import { PopularArticle } from "@/components/molecules/PopularArticle";
 import { PopularArticleView } from "@/components/templates/PopularArticleView";
 import ColumnTextBoxView from "@/components/templates/ColumnTextBoxView";
 import CaveatBlockView from "@/components/templates/CaveatBlockView";
-import HeadingView from "@/components/templates/HeadingView";
-
 import { FullWidthImageView } from "@/components/templates/FullWidthImageView";
+import CTAButtonView from "@/components/templates/CTAButtonView";
+import HeadingView from "@/components/templates/HeadingView";
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
@@ -99,8 +99,9 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "templates:components/support-text-box-view": SupportTextBoxView,
       "templates:components/caveat-block-view": CaveatBlockView,
       "templates:components/popular-article-view": PopularArticleView,
+      "templates:components/full-width-image-view": FullWidthImageView,
+      "templates:components/cta-button-view": CTAButtonView,
       "templates:components/heading-view": HeadingView,
-      'templates:components/full-width-image-view': FullWidthImageView,
     },
   };
 
