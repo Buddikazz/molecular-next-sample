@@ -41,6 +41,7 @@ import VideoComponent from "@/components/atoms/VideoComponent";
 import { VideoView } from "@/components/templates/VideoView";
 import { SupportTextBlock } from "@/components/molecules/SupportTextBlock";
 import { SupportTextBoxView } from "@/components/templates/SupportTextBoxView";
+import CaveatBlockView from "@/components/templates/CaveatBlockView";
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
@@ -90,6 +91,7 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "templates:components/column-text-box-view": ColumnTextBoxView,
       "templates:components/video-view": VideoView,
       "templates:components/support-text-box-view": SupportTextBoxView,
+      "templates:components/caveat-block-view": CaveatBlockView,
     },
   };
 

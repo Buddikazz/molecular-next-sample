@@ -42,3 +42,5 @@ areas:
         id: templates:components/video-view
       support-text-box-view:
         id: templates:components/support-text-box-view
+      caveat-block-view:
+        id: templates:components/caveat-block-view

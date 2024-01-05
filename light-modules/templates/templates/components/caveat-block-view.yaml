@@ -1,0 +1,9 @@
+title: Caveat Block View
+areas:
+  caveatBlockView:
+    title: Caveat Block Content
+    availableComponents:
+      Headline:
+        id: atom:components/headline
+      ParaText:
+        id: atom:components/paragraph
