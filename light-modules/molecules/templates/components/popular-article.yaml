@@ -1,0 +1,12 @@
+title: Popular Article View
+areas:
+  articleImage:
+    title: Article Image
+    availableComponents:
+      Image:
+        id: atom:components/image
+  articleLinkText:
+    title: Article link Text
+    availableComponents:
+      Link:
+        id: atom:components/link
