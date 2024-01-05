@@ -48,4 +48,5 @@ areas:
         id: templates:components/column-text-box-view
       heading-view:
         id: templates:components/heading-view
-
+      full-width-image-view:
+        id: templates:components/full-width-image-view

@@ -46,6 +46,7 @@ import ColumnTextBoxView from "@/components/templates/ColumnTextBoxView";
 import CaveatBlockView from "@/components/templates/CaveatBlockView";
 import HeadingView from "@/components/templates/HeadingView";
 
+import { FullWidthImageView } from "@/components/templates/FullWidthImageView";
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
@@ -99,6 +100,7 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "templates:components/caveat-block-view": CaveatBlockView,
       "templates:components/popular-article-view": PopularArticleView,
       "templates:components/heading-view": HeadingView,
+      'templates:components/full-width-image-view': FullWidthImageView,
     },
   };
 
