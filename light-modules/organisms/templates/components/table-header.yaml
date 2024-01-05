@@ -1,6 +1,0 @@
-title: Table Header
-areas:
-  tableHeader:
-    availableComponents:
-      TableItem:
-        id: atom:components/table-item

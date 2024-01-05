@@ -15,7 +15,7 @@ const HeaderSteper = ({
         <div className="items-center justify-center border-b-2 border-b-violet-900">
           {steperHeader && (
             <EditableArea
-              className="text-base text-purple-900 p-2  font-dmserif font-semibold"
+              className="text-base text-purple-900 p-2 font-bold font-dmserif font-semibold"
               content={steperHeader}
             />
           )}

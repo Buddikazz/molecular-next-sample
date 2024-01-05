@@ -1,8 +1,0 @@
-title: Column Area
-areas:
-  itemContent:
-    availableComponents:
-      ParaText:
-        id: atom:components/image
-      Link:
-        id: atom:components/link

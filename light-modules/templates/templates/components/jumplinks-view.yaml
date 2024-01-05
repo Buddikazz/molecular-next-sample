@@ -1,9 +1,0 @@
-title: Jumplinks
-areas:
-  jumplinks:
-    title: Jump Link Title
-    availableComponents:
-      JumplinkText:
-        id: molecules:components/jumplink
-     
- 

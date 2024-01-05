@@ -1,8 +1,0 @@
-label: Number Box
-form:
-  properties:
-    boxNumber:
-      label: Box Number
-      $type: textField
-      i18n: false
-

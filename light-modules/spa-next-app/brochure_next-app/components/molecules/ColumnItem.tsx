@@ -8,8 +8,8 @@ const ColumnItem = ({
   itemContent = null,
 }: ColumnItemProps): JSX.Element => {
   return (
-    <div className="md:w-1/2 lg:w-1/4 h-70 justify-items-center text-center ">
-      <div className="p-4 text-center border-r-2 h-full">
+    <div className="px-4 md:w-1/2 lg:w-1/3 h-70 ">
+      <div className="p-5 text-center shadow-xl h-full">
         {itemContent && (
           <EditableArea className="font-dmserif" content={itemContent} />
         )}
