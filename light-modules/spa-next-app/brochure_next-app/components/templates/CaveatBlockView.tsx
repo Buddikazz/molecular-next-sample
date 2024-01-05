@@ -1,10 +1,10 @@
 import { EditableArea } from "@magnolia/react-editor";
 
-export interface caveatBlockProps {
+export interface CaveatBlockProps {
   caveatBlockView: string;
 }
 
-const CaveatBlockView = ({ caveatBlockView }: caveatBlockProps) => {
+const CaveatBlockView = ({ caveatBlockView }: CaveatBlockProps) => {
   return (
     <div>
       {caveatBlockView && (

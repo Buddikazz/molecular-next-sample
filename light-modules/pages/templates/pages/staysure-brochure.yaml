@@ -46,4 +46,6 @@ areas:
         id: templates:components/popular-article-view
       column-text-box-view:
         id: templates:components/column-text-box-view
+      heading-view:
+        id: templates:components/heading-view
 
