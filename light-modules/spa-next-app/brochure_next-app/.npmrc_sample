@@ -1,0 +1,4 @@
+_auth = YXNoZmFhcV9haGFtZWQ6QVA3ZFNhQUhHc1dSb1l2eVBaOGU5cVNHM0N4
+email = ashfaaq.a@intervest.lk
+always-auth = true
+registry=https://staysure.jfrog.io/artifactory/api/npm/component-library-qa-virtual/
