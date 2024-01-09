@@ -52,3 +52,5 @@ areas:
         id: templates:components/full-width-image-view
       cta-button-view:
         id: templates:components/cta-button-view
+      blog-details-view:
+        id: templates:components/blog-details-view
