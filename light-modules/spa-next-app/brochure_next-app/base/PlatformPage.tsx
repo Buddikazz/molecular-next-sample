@@ -27,7 +27,7 @@ import { HeroBanner } from "@/components/templates/HeroBanner";
 import { CTABlockView } from "@/components/templates/CTABlock";
 import HeroHeadline from "@/components/atoms/HeroHeadline";
 import { TableHeader } from "@/components/organisms/TableHeader";
-import { TableRow } from "@/components/organisms/TableRow";
+import { TableRow } from "@/components/molecules/TableRow";
 import { ExpertBox } from "@/components/templates/ExpertBox";
 import { TrustBlockView } from "@/components/templates/TrustBlockView";
 import { TrustBlock } from "@/components/molecules/TrustBlock";
@@ -41,6 +41,8 @@ import VideoComponent from "@/components/atoms/VideoComponent";
 import { VideoView } from "@/components/templates/VideoView";
 import { SupportTextBlock } from "@/components/molecules/SupportTextBlock";
 import { SupportTextBoxView } from "@/components/templates/SupportTextBoxView";
+import { PolicyTableView } from "@/components/templates/PolicyTableView";
+import TableElement from "@/components/atoms/TableElement";
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
@@ -57,6 +59,7 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "atom:components/image": Image,
       "atom:components/link": Link,
       "atom:components/table-item": TableItem,
+      "atom:components/table-element": TableElement,
       "atom:components/button": Button,
       "atom:components/checked-paragraph": CheckedParagraph,
       "atom:components/hero-headline": HeroHeadline,
@@ -69,9 +72,9 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "molecules:components/trust-block": TrustBlock,
       "molecules:components/jumplink": Jumplink,
       "molecules:components/support-text-box-element": SupportTextBlock,
+      "molecules:components/table-row": TableRow,
       //organisms
       "organisms:components/table-header": TableHeader,
-      "organisms:components/table-row": TableRow,
       // pages
       "pages:pages/staysure-brochure": StaysureBrochure,
       // templates
@@ -90,6 +93,7 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "templates:components/column-text-box-view": ColumnTextBoxView,
       "templates:components/video-view": VideoView,
       "templates:components/support-text-box-view": SupportTextBoxView,
+      "templates:components/policy-table-view": PolicyTableView,
     },
   };
 

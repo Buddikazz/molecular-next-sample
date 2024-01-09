@@ -42,3 +42,5 @@ areas:
         id: templates:components/video-view
       support-text-box-view:
         id: templates:components/support-text-box-view
+      policy-table-view:
+        id: templates:components/policy-table-view
