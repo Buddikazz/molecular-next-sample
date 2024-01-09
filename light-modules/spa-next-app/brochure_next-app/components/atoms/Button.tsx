@@ -17,9 +17,8 @@ export default function Button({
   textColor = "",
   hoverColor = "",
 }: ButtonProps) {
-  let buttonClasses = `${styleClass} border border-solid ${
-    rounded ? "rounded" : ""
-  } px-4 py-2 min-w-64`;
+  let buttonClasses = `${styleClass} border border-solid ${rounded ? "rounded" : ""
+    } px-4 py-2 min-w-64`;
 
   if (type === "primary") {
     buttonClasses += ` bg-${btnColor} text-${textColor} hover:bg-${hoverColor}`;
