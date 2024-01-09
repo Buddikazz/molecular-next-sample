@@ -1,0 +1,7 @@
+title: Popular Article View
+areas:
+  popularArticle:
+    title: Popular Article Elements
+    availableComponents:
+      popularArticle:
+        id: molecules:components/popular-article

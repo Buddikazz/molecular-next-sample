@@ -36,11 +36,23 @@ areas:
         id: templates:components/trustBlock-view
       jumplinks-view:
         id: templates:components/jumplinks-view
-      column-text-box-view:
-        id: templates:components/column-text-box-view
       video-view:
         id: templates:components/video-view
       support-text-box-view:
         id: templates:components/support-text-box-view
       policy-table-view:
         id: templates:components/policy-table-view
+      caveat-block-view:
+        id: templates:components/caveat-block-view
+      popular-article-view:
+        id: templates:components/popular-article-view
+      column-text-box-view:
+        id: templates:components/column-text-box-view
+      heading-view:
+        id: templates:components/heading-view
+      full-width-image-view:
+        id: templates:components/full-width-image-view
+      cta-button-view:
+        id: templates:components/cta-button-view
+      blog-details-view:
+        id: templates:components/blog-details-view

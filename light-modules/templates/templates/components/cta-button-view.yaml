@@ -1,0 +1,7 @@
+title: CTA Button View
+areas:
+  ctaButtonView:
+    title: CTA Button Elements
+    availableComponents:
+      Button:
+        id: atom:components/button

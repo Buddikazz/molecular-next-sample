@@ -1,0 +1,7 @@
+title: Heading View
+areas:
+  headingView:
+    title: Heading Elements
+    availableComponents:
+      Heading:
+        id: atom:components/headline

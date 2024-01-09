@@ -15,6 +15,11 @@ form:
       $type: checkBoxField
       buttonLabel: Select to display title as underline
       i18n: false
+    isCaretRightIcon:
+      label: Is caret right icon
+      $type: checkBoxField
+      buttonLabel: Select to display caret right icon
+      i18n: false
     image:
       label: Icon Image
       $type: linkField
@@ -50,6 +55,9 @@ form:
           - name: orange
             label: Orange
             value: orange
+          - name: dark-orange
+            label: Dark-orange
+            value: dark-orange
     hoverColor:
       label: Button Hover Color
       $type: comboBoxField
@@ -57,6 +65,9 @@ form:
       datasource:
         $type: optionListDatasource
         options:
+          - name: orange
+            label: Orange
+            value: orange
           - name: dark-orange
             label: Dark-orange
             value: dark-orange

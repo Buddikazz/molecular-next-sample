@@ -11,7 +11,7 @@ const NavigationBlock = ({
 }: NavigationTopBlockProps) => {
   return (
     <div className="grid bg-white text-center">
-      <div className="h-[225px]">
+      <div className="">
         {navigationTopBlock && (
           <EditableArea
             style={{ maxHeight: 225 }}
