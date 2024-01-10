@@ -4,6 +4,7 @@ import { EditablePage } from "@magnolia/react-editor";
 
 // pages
 import { StaysureBrochure } from "@/components/pages/StaysureBrochure";
+import { BreadcumTestingPage } from "@/components/pages/BreadcumTestingPage";
 // templates
 import Expander from "@/components/atoms/Expander";
 import Paragraph from "@/components/atoms/Paragraph";
@@ -47,6 +48,7 @@ import CaveatBlockView from "@/components/templates/CaveatBlockView";
 import { FullWidthImageView } from "@/components/templates/FullWidthImageView";
 import CTAButtonView from "@/components/templates/CTAButtonView";
 import HeadingView from "@/components/templates/HeadingView";
+
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
@@ -81,6 +83,7 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "organisms:components/table-row": TableRow,
       // pages
       "pages:pages/staysure-brochure": StaysureBrochure,
+      "pages:pages/breadcum-testing-page": BreadcumTestingPage,
       // templates
       "templates:components/accordion-view": AccordionView,
       "templates:components/steper-view": SteperView,
