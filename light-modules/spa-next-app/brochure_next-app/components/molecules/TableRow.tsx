@@ -9,7 +9,7 @@ const TableRow = ({
 }: ColumnItemProps): JSX.Element => {
   return (
     // <div className="flex w-screen even:bg-slate-500 odd:bg-white">
-    <EditableArea className="flex flex-row  w-full  even:bg-slate-500 odd:bg-white" content={tableRow} />
+    <EditableArea className="flex flex-row  w-full  even:bg-slate-200 odd:bg-white" content={tableRow} />
     // </div>
   );
 };

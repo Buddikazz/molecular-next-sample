@@ -10,19 +10,19 @@ form:
         options:
           - name: violet
             label: Violet
-            value: violet-500
+            value: violet-700
           - name: silver
             label: Silver
             value: silver
           - name: light-gray
             label: Light-Gray
             value: light-gray
-          - name: Purple
-            label: Purple
-            value: purple-700
-          - name: Teal
-            label: Teal
-            value: teal-800
+          - name: Dark Violet
+            label: Dark Violet
+            value: violet-950
+          - name: Cyan
+            label: Cyan
+            value: cyan-950
     parentComponent:
       $type: comboBoxField
       label: Parent Component
@@ -68,6 +68,22 @@ form:
           - name: xl
             label: Extra Large
             value: xl
+    textAlign:
+      $type: comboBoxField
+      label: Text ALign
+      i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: Start
+            label: Start
+            value: start
+          - name: Center
+            label: Center
+            value: center
+          - name: Justify
+            label: Justify
+            value: justify
     icon:
       $type: comboBoxField
       label: Icon Name
