@@ -1,5 +1,4 @@
 import { EditorContextHelper } from "@magnolia/template-annotations";
-import { draftMode } from 'next/headers'
 import { nodeName, languages, pagesApi, pageNavApi, templateAnnotationsApi } from '@/config/base-config';
 
 export async function getProps(resolvedUrl:string) {
@@ -11,7 +10,7 @@ export async function getProps(resolvedUrl:string) {
   };
   // Fetching page content
   let pageUrl:string = pagesApi + magnoliaContext.nodePath + magnoliaContext.search;
-  
+  console.log("pageurl---------------",pageUrl)
   const response = await fetch(pageUrl, {
     method: "GET", // *GET, POST, PUT, DELETE, etc.
     mode: "cors", // no-cors, *cors, same-origin
@@ -34,12 +33,12 @@ export async function getProps(resolvedUrl:string) {
   console.log("props.pagenav", props.pagenav);
   // Fetch template annotations only inside Magnolia WYSIWYG
   if (magnoliaContext.isMagnolia) {
+    console.log("anotation url---------------",templateAnnotationsApi + magnoliaContext.nodePath)
     const templateAnnotationsRes = await fetch(templateAnnotationsApi + magnoliaContext.nodePath);
     props.templateAnnotations = await templateAnnotationsRes.json();
   }
   
   global.mgnlInPageEditor = magnoliaContext.isMagnoliaEdit;
-  draftMode().enable()
 
   return {
     props

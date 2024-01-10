@@ -28,7 +28,7 @@ export default function Link({
       text-${colourTextSelect} text-${sizeTextSelect} font-${
         checkboxBold && "bold"
       } ${checkboxUnderline && " underline"} font-${fontTypeSelect}
-      `}
+       `}
       href={url}
     >
       {text}

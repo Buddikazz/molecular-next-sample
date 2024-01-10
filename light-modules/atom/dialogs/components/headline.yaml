@@ -40,6 +40,9 @@ form:
           - name: 2xl
             label: 2XL
             value: 2xl
+          - name: 3xl
+            label: Extra Large
+            value: 3xl
           - name: 4xl
             label: 4XL
             value: 4xl

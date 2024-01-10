@@ -1,0 +1,46 @@
+title: "Next: Staysure Basic"
+baseUrl: http://localhost:3000
+routeTemplate: "/api/preview?slug=/{language}{{@path}}"
+
+dialog: pages:pages/basictesttest
+renderType: spa
+class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
+areas:
+  heroBanner:
+    inheritance:
+      enabled: true
+      components: all
+      nodeTypes:
+        - mgnl:component
+        - mgnl:contentNode
+  body:
+    title: Body Area
+    availableComponents:
+      accordion-view:
+        id: templates:components/accordion-view
+      textBoxWithImage-view:
+        id: templates:components/textBoxWithImage-view
+      steper-view:
+        id: templates:components/steper-view
+      staysure-column-view:
+        id: templates:components/staysure-column-view
+      table-view:
+        id: templates:components/table-view
+      textbox-with-heading:
+        id: templates:components/textbox-with-heading
+      cta-block:
+        id: templates:components/cta-block
+      navigation-block-view:
+        id: templates:components/navigation-block-view
+      expert-box:
+        id: templates:components/expert-box
+      trustBlock-view:
+        id: templates:components/trustBlock-view
+      jumplinks-view:
+        id: templates:components/jumplinks-view
+      column-text-box-view:
+        id: templates:components/column-text-box-view
+      video-view:
+        id: templates:components/video-view
+      support-text-box-view:
+        id: templates:components/support-text-box-view

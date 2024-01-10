@@ -8,11 +8,7 @@ export interface VideoProps {
   height?: number | undefined,
 }
 export default function VideoComponent({
-  styleClass = "",
   url = "",
-  altText = "image",
-  width = undefined,
-  height = undefined,
 }: VideoProps) {
   return (<div><iframe
     width="560"

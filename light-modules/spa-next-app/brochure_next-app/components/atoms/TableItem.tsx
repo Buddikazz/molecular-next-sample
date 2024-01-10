@@ -1,13 +1,11 @@
 interface TableItemProps {
   columnOne: string;
   columnTwo: string;
-  styleClass: string;
 }
 
 export default function TableItem({
   columnOne,
-  columnTwo,
-  styleClass,
+  columnTwo
 }: TableItemProps) {
   return (
     <tbody className="even:bg-gray-200 odd:bg-white border-b border-gray-400">

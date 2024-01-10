@@ -1,0 +1,22 @@
+.tpDialogBox {
+  display: none;
+}
+
+.salesBlock:hover .tpDialogBox {
+  display: block;
+}
+
+.customerBlock:hover .tpDialogBox {
+  display: block;
+}
+
+.tpDialogBox::before {
+  top: -10px;
+  content: "";
+  position: absolute;
+  right: 26px;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #522367 transparent;
+}

@@ -9,7 +9,6 @@ export interface ButtonProps {
 }
 
 export default function Button({
-  styleClass = "",
   name = "",
   type = "primary",
   rounded = false,

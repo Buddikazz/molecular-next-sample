@@ -1,4 +1,5 @@
 title: Hero Banner
+type: single
 areas:
   heroImage:
     title: HeroImage Elements
@@ -25,3 +26,9 @@ areas:
     availableComponents:
       CheckedParagraph:
         id: atom:components/checked-paragraph
+  inheritance:
+      enabled: true
+      components: all
+      nodeTypes:
+        - mgnl:component
+        - mgnl:contentNode

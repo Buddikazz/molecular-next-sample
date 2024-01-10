@@ -1,0 +1,16 @@
+workspace: website
+limit: 2
+nodeTypes:
+ - mgnl:page
+systemProperties: 
+- mgnl:createdBy
+references:
+  - name: imageReference
+    propertyName: image
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: tourTypeReference
+    propertyName: tourTypes
+    referenceResolver:
+      $type: jcrReferenceResolver
+      targetWorkspace: category

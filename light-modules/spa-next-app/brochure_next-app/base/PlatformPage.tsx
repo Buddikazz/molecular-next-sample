@@ -1,6 +1,10 @@
 "use client";
 
-import { EditablePage } from "@magnolia/react-editor";
+import {
+  EditablePage,
+  SwitchConstants,
+  SwitchContext,
+} from "@magnolia/react-editor";
 
 // pages
 import { StaysureBrochure } from "@/components/pages/StaysureBrochure";
@@ -36,30 +40,53 @@ import { JumplinksView } from "@/components/templates/JumplinksView";
 import CheckedParagraph from "@/components/atoms/CheckedParagraph";
 import { NavigationBlockView } from "@/components/templates/NavigationBlockView";
 import { NavigationBlock } from "@/components/molecules/NavigationBlock";
-import VideoComponent from '@/components/atoms/VideoComponent';
-import { VideoView } from '@/components/templates/VideoView';
-import { SupportTextBlock } from '@/components/molecules/SupportTextBlock';
-import { SupportTextBoxView } from '@/components/templates/SupportTextBoxView';
+import ColumnTextBoxView from "@/components/templates/ColumnTextBoxView";
+import VideoComponent from "@/components/atoms/VideoComponent";
+import { VideoView } from "@/components/templates/VideoView";
+import { SupportTextBlock } from "@/components/molecules/SupportTextBlock";
+import { SupportTextBoxView } from "@/components/templates/SupportTextBoxView";
+import { BasicTest } from "@/components/pages/BasicTest";
+import { useReducer } from "react";
+import Navigation from "@/components/atoms/Navigation";
+import Header from "@/components/organisms/header/header";
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
 // }
 
 const PlatformPage = ({ props }: any): JSX.Element => {
+  // Refresh code --- Begin
+  // This segment of code is optional. If it is not provided, a default one will be used.
+  const [ignored, forceUpdate] = useReducer((x) => x + 1, 0);
+  const refresh = () => {
+    forceUpdate();
+  };
+  // Refresh code --- End
+
+  const {
+    nodeName,
+    page = {},
+    pagenav = {},
+    templateAnnotations = {},
+    magnoliaContext,
+  } = props;
+  const alwaysRender = magnoliaContext.isMagnoliaEdit;
   const config = {
+    clientRefreshMethod: refresh,
+    alwaysRender: alwaysRender,
     componentMappings: {
       //atom
-      'atom:components/headline': Headline,
-      'atom:components/paragraph': Paragraph,
-      'atom:components/expander': Expander,
-      'atom:components/rich-paragraph': RichParagraph,
-      'atom:components/image': Image,
-      'atom:components/link': Link,
-      'atom:components/table-item': TableItem,
-      'atom:components/button': Button,
-      'atom:components/checked-paragraph': CheckedParagraph,
-      'atom:components/hero-headline': HeroHeadline,
-      'atom:components/video': VideoComponent,
+      "atom:components/headline": Headline,
+      "atom:components/paragraph": Paragraph,
+      "atom:components/expander": Expander,
+      "atom:components/rich-paragraph": RichParagraph,
+      "atom:components/image": Image,
+      "atom:components/link": Link,
+      "atom:components/table-item": TableItem,
+      "atom:components/button": Button,
+      "atom:components/checked-paragraph": CheckedParagraph,
+      "atom:components/hero-headline": HeroHeadline,
+      "atom:components/video": VideoComponent,
       //molecules
       "molecules:components/header-steper": HeaderSteper,
       "molecules:components/number-steper": NumberSteper,
@@ -67,32 +94,44 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "molecules:components/navigation-block": NavigationBlock,
       "molecules:components/trust-block": TrustBlock,
       "molecules:components/jumplink": Jumplink,
-      'molecules:components/support-text-box-element': SupportTextBlock,
+      "molecules:components/support-text-box-element": SupportTextBlock,
+      "molecules:components/header": Header,
       //organisms
       "organisms:components/table-header": TableHeader,
       "organisms:components/table-row": TableRow,
       // pages
       "pages:pages/staysure-brochure": StaysureBrochure,
+      "pages:pages/basictesttest": BasicTest,
       // templates
-      'templates:components/accordion-view': AccordionView,
-      'templates:components/steper-view': SteperView,
-      'templates:components/staysure-column-view': StaysureColumnView,
-      'templates:components/textBoxWithImage-view': TextBoxWithImageView,
-      'templates:components/table-view': TableView,
-      'templates:components/textbox-with-heading': TextBoxWithHeading,
-      'templates:components/hero-banner': HeroBanner,
-      'templates:components/cta-block': CTABlockView,
-      'templates:components/trustBlock-view': TrustBlockView,
-      'templates:components/jumplinks-view': JumplinksView,
-      'templates:components/video-view': VideoView,
-      'templates:components/navigation-block-view': NavigationBlockView,
-      'templates:components/support-text-box-view': SupportTextBoxView,
+      "templates:components/accordion-view": AccordionView,
+      "templates:components/steper-view": SteperView,
+      "templates:components/staysure-column-view": StaysureColumnView,
+      "templates:components/textBoxWithImage-view": TextBoxWithImageView,
+      "templates:components/table-view": TableView,
+      "templates:components/textbox-with-heading": TextBoxWithHeading,
+      "templates:components/hero-banner": HeroBanner,
+      "templates:components/cta-block": CTABlockView,
+      "templates:components/navigation-block-view": NavigationBlockView,
+      "templates:components/expert-box": ExpertBox,
+      "templates:components/trustBlock-view": TrustBlockView,
+      "templates:components/jumplinks-view": JumplinksView,
+      "templates:components/column-text-box-view": ColumnTextBoxView,
+      "templates:components/video-view": VideoView,
+      "templates:components/support-text-box-view": SupportTextBoxView,
     },
   };
 
   console.log("props.page=", props.page, props.templateAnnotations);
   return (
     <div>
+      {pagenav && (
+        <Navigation
+          content={pagenav}
+          nodeName={nodeName}
+          currentLanguage={magnoliaContext.currentLanguage}
+        />
+      )}
+
       {props.page && (
         <EditablePage
           content={props.page}

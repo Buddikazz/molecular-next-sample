@@ -1,5 +1,4 @@
 import { EditableArea } from "@magnolia/react-editor";
-import TrustPilotWidget from "./TrustPilotComponent";
 
 export interface TrustBlockProps {
   tBlockImage: object | null;
@@ -13,25 +12,20 @@ const TrustBlock = ({
   console.log(tBlockImage);
   console.log("object");
   return (
-    <div className="flex md:flex-col md:w-1/3  mx-auto ">
-      <div className="justify-center items-center ">
-        <div className="flex justify-center items-center ">
-          <TrustPilotWidget />
-        </div>
+      <div className="flex flex-col w-full mx-5">
         {tBlockImage && (
-          <div className="flex justify-center items-center ">
+          <div className="flex justify-start items-start h-full">
             <EditableArea className="p-2" content={tBlockImage} />
           </div>
         )}
 
         {tBlockText && (
           <EditableArea
-            className="p-1 font-serif text-lg text-center"
+            className="flex p-1 font-serif text-lg justify-end text-end"
             content={tBlockText}
           />
         )}
       </div>
-    </div>
   );
 };
 
