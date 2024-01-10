@@ -1,0 +1,23 @@
+title: Policy Table View
+areas:
+  header:
+    title: Header Elements
+    type: single
+    availableComponents:
+      Headline:
+        id: atom:components/headline
+      tableHeader:
+        id: molecules:components/table-row
+      tableBody:
+        id: molecules:components/table-row
+  tableHeader:
+    title: Table Header Elements
+    type: single
+    availableComponents:
+      tableRow:
+        id: molecules:components/table-row
+  tableBody:
+    title: Table Body Elements
+    availableComponents:
+      tableRow:
+        id: molecules:components/table-row
