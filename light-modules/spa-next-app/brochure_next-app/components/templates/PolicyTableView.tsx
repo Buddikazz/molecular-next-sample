@@ -11,7 +11,7 @@ export interface PolicyTableProps {
 
 const PolicyTableView = ({ header = null, tableHeader = null, tableBody = null, textWithLink = null, ctaButton = null }: PolicyTableProps): JSX.Element => {
   return (
-    <div className="">
+    <div className="bg-white">
       {header && <EditableArea content={header} />}
 
       <div className="min-w-full  items-start ">
