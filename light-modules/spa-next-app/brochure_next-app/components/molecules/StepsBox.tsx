@@ -11,8 +11,6 @@ const StepsBox = ({
     boxTitle,
     boxContent }: StepsBoxProps) => {
     return (
-        <div className="md:w-1/2 lg:w-1/2">
-            <div className="grid grid-cols-1 gap-2">
 
                 <div className="flex flex-row">
 
@@ -30,8 +28,7 @@ const StepsBox = ({
                         )}
                     </div>
                 </div>
-            </div>
-        </div>
+          
 
     );
 }

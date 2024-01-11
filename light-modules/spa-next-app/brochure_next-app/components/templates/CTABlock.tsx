@@ -50,6 +50,7 @@ const CTABlockView = ({
             <div className='pb-10'>
                 {ctaButton && <EditableArea content={ctaButton} />}
             </div>
+            
         </div>
     );
 }

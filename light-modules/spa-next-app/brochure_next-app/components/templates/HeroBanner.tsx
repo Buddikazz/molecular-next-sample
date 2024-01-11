@@ -40,6 +40,7 @@ const HeroBanner = ({
           content={heroImage}
         />
       )}
+      
     </div>
   );
 }
