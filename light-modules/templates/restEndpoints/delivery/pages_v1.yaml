@@ -1,4 +1,5 @@
-class: info.magnolia.rest.delivery.jcr.v2.JcrDeliveryEndpointDefinition
+# class: info.magnolia.rest.delivery.jcr.v2.JcrDeliveryEndpointDefinition
+$type: jcrPagesDeliveryEndpoint_v2
 workspace: website
 depth: 10
 personalized: true
