@@ -19,7 +19,7 @@ export default function Paragraph({
 }: ParagraphProps) {
   return (
     <div
-      className={`text-${colourTextSelect} text-${sizeTextSelect} font-${
+      className={`text-${colourTextSelect} text-${sizeTextSelect} font-light font-${
         checkboxBold && "bold"
       } ${
         checkboxUnderline && " underline"

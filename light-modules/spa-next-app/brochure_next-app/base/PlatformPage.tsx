@@ -50,6 +50,8 @@ import { FullWidthImageView } from "@/components/templates/FullWidthImageView";
 import CTAButtonView from "@/components/templates/CTAButtonView";
 import HeadingView from "@/components/templates/HeadingView";
 import BlogDetailsView from "@/components/templates/BlogDetailsView";
+import { StepsBox } from "@/components/molecules/StepsBox";
+import { StepsBoxView } from "@/components/templates/StepsBoxView";
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
@@ -81,6 +83,7 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "molecules:components/support-text-box-element": SupportTextBlock,
       "molecules:components/table-row": TableRow,
       "molecules:components/popular-article": PopularArticle,
+      "molecules:components/steps-box": StepsBox,
       //organisms
       "organisms:components/table-header": TableHeader,
       // pages
@@ -108,6 +111,7 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "templates:components/cta-button-view": CTAButtonView,
       "templates:components/heading-view": HeadingView,
       "templates:components/blog-details-view": BlogDetailsView,
+      "templates:components/stepsbox-view": StepsBoxView,
     },
   };
 

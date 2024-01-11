@@ -22,7 +22,7 @@ export default function CheckedParagraph({
     />
   );
   return (
-    <li className="flex justify-center items-start tb:justify-start text-center tb:text-start">
+    <li className="flex justify-center font-light font-proximanova items-start tb:justify-start text-center tb:text-start">
       <div>
         <FaCheck className={iconClass} />
       </div>
