@@ -21,7 +21,7 @@ const StaysureBrochure = ({
           <EditableArea content={heroBanner} className="fullWidth" />
         )}
       </div>
-      <div className="flex flex-col px-0 xl:pl-40 xl:pr-40 bg-primary">
+      <div className="flex flex-col px-0 xl:pl-96 xl:pr-96 bg-white">
         {body && <EditableArea content={body} className="fullWidth" />}
       </div>
     </>

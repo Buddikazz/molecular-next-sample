@@ -52,6 +52,7 @@ import HeadingView from "@/components/templates/HeadingView";
 import BlogDetailsView from "@/components/templates/BlogDetailsView";
 import { StepsBox } from "@/components/molecules/StepsBox";
 import { StepsBoxView } from "@/components/templates/StepsBoxView";
+import NumberBox from "@/components/atoms/NumberBox";
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
@@ -73,6 +74,7 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "atom:components/checked-paragraph": CheckedParagraph,
       "atom:components/hero-headline": HeroHeadline,
       "atom:components/video": VideoComponent,
+      "atom:components/number-box": NumberBox,
       //molecules
       "molecules:components/header-steper": HeaderSteper,
       "molecules:components/number-steper": NumberSteper,

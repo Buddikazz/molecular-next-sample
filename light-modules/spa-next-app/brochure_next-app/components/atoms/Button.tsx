@@ -26,7 +26,7 @@ export default function Button({
 
 
   if (type === "primary") {
-    buttonClasses += ` bg-${btnColor} text-${textColor} hover:bg-${hoverColor}`;
+    buttonClasses += ` bg-${btnColor} text-${textColor} hover:bg-${hoverColor} border-${btnColor} flex flex-row justify-center`;
   } else if (type === "secondary") {
     buttonClasses += ` bg-white text-${btnColor} border-${btnColor} hover:text-white hover:bg-${hoverColor}`;
   }

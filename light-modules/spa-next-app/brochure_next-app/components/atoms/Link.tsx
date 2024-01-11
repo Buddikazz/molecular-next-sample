@@ -26,7 +26,7 @@ export default function Link({
     <a
       className={` ml-${marginLeft} hover:text-${hoverTextColor} 
       text-${colourTextSelect} text-${sizeTextSelect} font-${checkboxBold && "bold"
-        } ${checkboxUnderline && " underline"} font-${fontTypeSelect}
+        } ${checkboxUnderline && " underline"} font-${fontTypeSelect} 
       `}
       href={url}
       target="_blank"
