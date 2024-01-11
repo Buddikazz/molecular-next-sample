@@ -25,7 +25,6 @@ const PolicyTableView = ({ header = null, tableHeader = null, tableBody = null, 
       </div>
       <EditableArea className="mt-5 " content={textWithLink} />
       <EditableArea className="mt-5" content={ctaButton} />
-
     </div>
 
   );

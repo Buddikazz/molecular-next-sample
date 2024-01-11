@@ -106,7 +106,6 @@ form:
       label: Text
       $type: textField
       i18n: true
-
     styleClass:
       label: Style Class
       $type: textField
