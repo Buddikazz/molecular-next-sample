@@ -20,9 +20,10 @@ export default function Button({
   hoverColor = "",
   isCaretRightIcon = false,
 }: ButtonProps) {
-  let buttonClasses = `${styleClass} border border-solid ${
-    rounded ? "rounded" : ""
-  } px-20 py-2 flex items-center justify-center`;
+
+  let buttonClasses = `${styleClass} justify-center flex flex-row border border-solid ${rounded ? "rounded" : ""
+    } px-4 py-2 min-w-64`;
+
 
   if (type === "primary") {
     buttonClasses += ` bg-${btnColor} text-${textColor} hover:bg-${hoverColor}`;
