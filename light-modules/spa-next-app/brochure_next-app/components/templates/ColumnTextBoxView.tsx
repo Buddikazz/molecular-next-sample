@@ -14,7 +14,7 @@ const ColumnTextBoxView = ({
   columnTextRightContentImageBoxView = null,
 }: ColumnTextBoxViewProps) => {
   return (
-    <div className="">
+    <div className="px-0 xl:pl-40 xl:pr-40">
       <div className="my-5">
         {columnTextHeaderBoxView && (
           <EditableArea content={columnTextHeaderBoxView} />

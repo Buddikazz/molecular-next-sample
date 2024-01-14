@@ -45,7 +45,7 @@ const CTABlockView = ({
     const bgStyle: any = screenWidth >= 768 ? containerStyleOne : containerStyleTwo
 
     return (
-        <div className="custom-bg mt-10 h-52 text-white flex flex-col items-center justify-center text-center " style={bgStyle}>
+        <div className="px-0 xl:pl-40 xl:pr-40 custom-bg mt-10 h-56 text-white flex flex-col items-center justify-center text-center " style={bgStyle}>
             <div className="p-8">  {ctaHeadline && <EditableArea className="text-lg" content={ctaHeadline} />}</div>
             <div className='pb-10'>
                 {ctaButton && <EditableArea content={ctaButton} />}

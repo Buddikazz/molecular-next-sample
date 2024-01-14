@@ -11,7 +11,7 @@ const SteperView = ({
 }: SteperViewProps): JSX.Element => {
   return (
     <EditableArea
-      className="-mx-3 flex flex-wrap p-2 mt-5"
+      className="-mx-3 flex flex-wrap p-2 mt-5 px-0 xl:pl-40 xl:pr-40"
       content={stepperView}
       parentTemplateId={metadata["mgnl:template"]}
     />

@@ -9,7 +9,7 @@ const TextBoxWithImageView = ({
     Image = null, textBox = null,
 }: TextBoxWithImageViewProps): JSX.Element => {
     return (
-        <div className="flex flex-col-reverse lg:flex-row lg:items-center  my-4 bg-white">
+        <div className="flex flex-col-reverse lg:flex-row lg:items-center  my-4 bg-white px-0 xl:pl-40 xl:pr-40">
             <div className=" lg:w-1/2 mx-8 mb-10 mt-6 text-center lg:text-start">
                 {textBox && <EditableArea content={textBox} />}
             </div>

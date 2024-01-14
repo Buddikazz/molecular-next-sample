@@ -6,7 +6,7 @@ export interface BlogDetailsProps {
 
 const BlogDetailsView = ({ blogDetailsView }: BlogDetailsProps) => {
   return (
-    <div>
+    <div className="px-0 xl:pl-40 xl:pr-40">
       {blogDetailsView && (
         <EditableArea
           name="caveatBlock"

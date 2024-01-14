@@ -23,21 +23,21 @@ export default function Button({
   // let buttonClasses = `${styleClass} justify-center flex flex-row border border-solid ${rounded ? "rounded" : ""
   //   } px-4 py-2 min-w-64`;
 
-  let buttonClasses = `block mx-auto ${styleClass} justify-center flex flex-row border border-solid ${
+  let buttonClasses = ` block  mx-auto ${styleClass} justify-center flex flex-row border-solid ${
     rounded ? "rounded" : ""
-  } px-4 py-2 min-w-64`;
+  } px-2 py-2 min-w-40`;
 
   if (type === "primary") {
     buttonClasses += ` bg-${btnColor} text-${textColor} hover:bg-${hoverColor}`;
   } else if (type === "secondary") {
-    buttonClasses += ` bg-white text-${btnColor} border-${btnColor} hover:text-white hover:bg-${hoverColor}`;
+    buttonClasses += ` bg-white text-${btnColor} border-orange border-2  hover:text-white hover:bg-${hoverColor}`;
   }
 
   const btnIconClass = ` text-xl mr-2`;
 
   return (
-    <button className={buttonClasses}>
-      {isCaretRightIcon && <FaCaretRight className={btnIconClass} />}
+    <button className={buttonClasses+" "}>
+      {isCaretRightIcon && <FaCaretRight className={btnIconClass+ " "} />}
       {name}
     </button>
   );

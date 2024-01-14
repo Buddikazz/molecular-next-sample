@@ -9,7 +9,7 @@ const PopularArticleView = ({
 
 }: PopularArticleViewProps): JSX.Element => {
     return (
-        <div className="pt-10">
+        <div className="pt-10 px-0 xl:pl-40 xl:pr-40">
             {popularArticle && <EditableArea className="flex flex-wrap" content={popularArticle} />}
         </div>
     );

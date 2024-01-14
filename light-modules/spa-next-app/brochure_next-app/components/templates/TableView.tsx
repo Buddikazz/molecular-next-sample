@@ -7,7 +7,7 @@ export interface TableProps {
 
 const TableView = ({ tableView = null, metadata }: TableProps): JSX.Element => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col px-0 xl:pl-40 xl:pr-40">
       <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
           <div className="shadow overflow-hidden border-b border-gray-300 sm:rounded-sm">

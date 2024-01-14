@@ -6,7 +6,7 @@ export interface CTAButtonViewProps {
 
 const CTAButtonView = ({ ctaButtonView }: CTAButtonViewProps) => {
   return (
-    <div>
+    <div className="px-0 xl:pl-40 xl:pr-40">
       {ctaButtonView && (
         <EditableArea name="ctaButton" content={ctaButtonView} />
       )}

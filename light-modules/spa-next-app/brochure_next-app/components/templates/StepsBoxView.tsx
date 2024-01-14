@@ -12,7 +12,7 @@ const StepsBoxView = ({
     stepsBoxButton = null,
 }: StepsBoxViewProps): JSX.Element => {
     return (
-        <div className="bg-oceanBlue py-[20px] pl-10 pr-10 rounded">
+        <div className="bg-oceanBlue py-[20px] pl-10 pr-10 rounded px-0 xl:pl-40 xl:pr-40">
             <div className="text-white flex justify-center items-center py-10 text-3xl font-light">
                 {stepsBoxTitle && (
                     <EditableArea content={stepsBoxTitle} />

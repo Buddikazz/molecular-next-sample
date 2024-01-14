@@ -34,7 +34,7 @@ export default function TableElement({
       >
         {icon === "" ? text : icon === "xIcon" ? <FaXmark className="justify-self-center text-l text-green-600 " /> : <FaCheck className="text-l justify-self-center text-green-600 " />}
       </div> : <div
-        className={`px-1 py-2 rounded-md font-${fontTypeSelect} flex-1 text-${textAlign}  border ${text === "" ? `border-transparent bg-white` : `border-gray-500 bg-${background} `} ${styleClass} text-${textSize} text-${textColour} font-${checkboxBold && "bold"
+        className={` px-1 py-2 rounded-md font-${fontTypeSelect} flex-1 text-${textAlign}  border ${text === "" ? `border-transparent bg-white` : `border-gray-500 bg-${background} `} ${styleClass} text-${textSize} text-${textColour} font-${checkboxBold && "bold"
           }`}
       >
         {text}
