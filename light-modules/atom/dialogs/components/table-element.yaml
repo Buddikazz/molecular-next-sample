@@ -1,0 +1,128 @@
+label: Table Data Content
+form:
+  properties:
+    background:
+      $type: comboBoxField
+      label: Background Colour
+      i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: violet
+            label: Violet
+            value: violet-700
+          - name: silver
+            label: Silver
+            value: silver
+          - name: light-gray
+            label: Light-Gray
+            value: light-gray
+          - name: Dark Violet
+            label: Dark Violet
+            value: violet-950
+          - name: Cyan
+            label: Cyan
+            value: cyan-950
+    parentComponent:
+      $type: comboBoxField
+      label: Parent Component
+      i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: Table Head
+            label: Table Head
+            value: thead
+          - name: Table Body
+            label: Table Body
+            value: tbody
+    textColour:
+      $type: comboBoxField
+      label: Text Colour
+      i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: Purple
+            label: Purple
+            value: purple
+          - name: black
+            label: Black
+            value: black
+          - name: white
+            label: White
+            value: white
+    textSize:
+      $type: comboBoxField
+      label: Text Size
+      i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: sm
+            label: Small
+            value: sm
+          - name: large
+            label: Large
+            value: lg
+          - name: xl
+            label: Extra Large
+            value: xl
+    textAlign:
+      $type: comboBoxField
+      label: Text ALign
+      i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: Start
+            label: Start
+            value: start
+          - name: Center
+            label: Center
+            value: center
+          - name: Justify
+            label: Justify
+            value: justify
+    icon:
+      $type: comboBoxField
+      label: Icon Name
+      i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: Check Icon
+            label: Check Icon
+            value: checkIcon
+          - name: X Icon
+            label: X Icon
+            value: xIcon
+    checkboxBold:
+      $type: checkBoxField
+      label: Bold
+      i18n: false
+      buttonLabel: Text Bold
+    text:
+      label: Text
+      $type: textField
+      i18n: true
+    styleClass:
+      label: Style Class
+      $type: textField
+      i18n: false
+    fontTypeSelect:
+      $type: comboBoxField
+      label: Font Type
+      i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: dmserif
+            label: DM Serif Display
+            value: dmserif
+          - name: ciutadella
+            label: Ciutadella Rounded
+            value: ciutadella
+          - name: proximanova
+            label: Proxima Nova
+            value: proximanova

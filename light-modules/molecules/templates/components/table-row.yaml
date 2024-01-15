@@ -1,0 +1,7 @@
+title: Table Row
+areas:
+  tableRow:
+    title: Table Row Elements
+    availableComponents:
+      TableElement:
+        id: atom:components/table-element

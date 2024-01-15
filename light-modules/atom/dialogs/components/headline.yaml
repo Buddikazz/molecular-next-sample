@@ -29,25 +29,29 @@ form:
         $type: optionListDatasource
         options:
           - name: sm
-            label: Small
+            label: H5
             value: sm
+          - name: base
+            label: H4
+            value: base
           - name: lg
-            label: Large
-            value: Large
-          - name: XL
-            label: XL
+            label: H3
+            value: lg
+          - name: xl
+            label: H2
             value: xl
           - name: 2xl
-            label: 2XL
+            label: H1
             value: 2xl
+
           - name: 3xl
-            label: Extra Large
+            label: 3 XL
             value: 3xl
           - name: 4xl
-            label: 4XL
+            label: 4 XL
             value: 4xl
           - name: 6xl
-            label: 6XL
+            label: 6 XL
             value: 6xl
     checkboxBold:
       $type: checkBoxField

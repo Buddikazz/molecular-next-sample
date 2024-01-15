@@ -10,8 +10,8 @@ const NavigationBlock = ({
   navigationBottomBlock,
 }: NavigationTopBlockProps) => {
   return (
-    <div className="grid bg-white shadow-xl text-center">
-      <div className="h-[200px]">
+    <div className="grid bg-white text-center">
+      <div className="">
         {navigationTopBlock && (
           <EditableArea
             style={{ maxHeight:200}}
@@ -19,12 +19,9 @@ const NavigationBlock = ({
           />
         )}
       </div>
-      <div className="my-3 px-5 flex items-stretch">
+      <div className="my-3 px-5">
         {navigationBottomBlock && (
-          <EditableArea
-            className="flex flex-col"
-            content={navigationBottomBlock}
-          />
+          <EditableArea className="" content={navigationBottomBlock} />
         )}{" "}
       </div>
     </div>

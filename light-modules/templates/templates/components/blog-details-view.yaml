@@ -1,0 +1,8 @@
+title: Blog Details View
+areas:
+  blogDetailsView:
+    title: Blog Details Content
+    type: single
+    availableComponents:
+      ParaText:
+        id: atom:components/paragraph

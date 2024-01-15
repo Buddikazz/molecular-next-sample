@@ -30,10 +30,9 @@ const Image = ({
 }: ImageProps) => {
   const imageComponent = (
     <img
-      className={`${styleClass} mx-auto  ${
-        checkboxRounded &&
+      className={`${styleClass} mx-auto  ${checkboxRounded &&
         " object-container object-center bg-white rounded-full w-44 h-44"
-      }`}
+        }`}
       src={
         process.env.NEXT_PUBLIC_MGNL_HOST +
         "/dam/" +

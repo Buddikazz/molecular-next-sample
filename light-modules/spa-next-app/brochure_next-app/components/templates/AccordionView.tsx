@@ -2,7 +2,7 @@
 import { EditableArea } from '@magnolia/react-editor';
 
 export interface AccordionViewProps {
-    accordionView: object|null
+    accordionView: object | null
 }
 
 const AccordionView=({

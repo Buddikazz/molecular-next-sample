@@ -31,29 +31,35 @@ import { HeroBanner } from "@/components/templates/HeroBanner";
 import { CTABlockView } from "@/components/templates/CTABlock";
 import HeroHeadline from "@/components/atoms/HeroHeadline";
 import { TableHeader } from "@/components/organisms/TableHeader";
-import { TableRow } from "@/components/organisms/TableRow";
+import { TableRow } from "@/components/molecules/TableRow";
 import { ExpertBox } from "@/components/templates/ExpertBox";
 import { TrustBlockView } from "@/components/templates/TrustBlockView";
 import { TrustBlock } from "@/components/molecules/TrustBlock";
 import { Jumplink } from "@/components/molecules/Jumplink";
 import { JumplinksView } from "@/components/templates/JumplinksView";
 import CheckedParagraph from "@/components/atoms/CheckedParagraph";
-import { NavigationBlockView } from "@/components/templates/NavigationBlockView";
-import { NavigationBlock } from "@/components/molecules/NavigationBlock";
-import ColumnTextBoxView from "@/components/templates/ColumnTextBoxView";
 import VideoComponent from "@/components/atoms/VideoComponent";
-import { VideoView } from "@/components/templates/VideoView";
 import { SupportTextBlock } from "@/components/molecules/SupportTextBlock";
 import { SupportTextBoxView } from "@/components/templates/SupportTextBoxView";
 import { BasicTest } from "@/components/pages/BasicTest";
-import { useReducer } from "react";
 import Navigation from "@/components/atoms/Navigation";
 import Header from "@/components/organisms/header/header";
+import { PolicyTableView } from "@/components/templates/PolicyTableView";
+import TableElement from "@/components/atoms/TableElement";
+import { PopularArticle } from "@/components/molecules/PopularArticle";
+import { PopularArticleView } from "@/components/templates/PopularArticleView";
+import ColumnTextBoxView from "@/components/templates/ColumnTextBoxView";
+import CaveatBlockView from "@/components/templates/CaveatBlockView";
+import { FullWidthImageView } from "@/components/templates/FullWidthImageView";
+import CTAButtonView from "@/components/templates/CTAButtonView";
+import HeadingView from "@/components/templates/HeadingView";
+import BlogDetailsView from "@/components/templates/BlogDetailsView";
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
 // }
 
+import { useReducer } from "react";
 const PlatformPage = ({ props }: any): JSX.Element => {
   // Refresh code --- Begin
   // This segment of code is optional. If it is not provided, a default one will be used.
@@ -83,6 +89,7 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "atom:components/image": Image,
       "atom:components/link": Link,
       "atom:components/table-item": TableItem,
+      "atom:components/table-element": TableElement,
       "atom:components/button": Button,
       "atom:components/checked-paragraph": CheckedParagraph,
       "atom:components/hero-headline": HeroHeadline,
@@ -95,10 +102,14 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "molecules:components/trust-block": TrustBlock,
       "molecules:components/jumplink": Jumplink,
       "molecules:components/support-text-box-element": SupportTextBlock,
+<<<<<<< HEAD
       "molecules:components/header": Header,
+=======
+      "molecules:components/table-row": TableRow,
+      "molecules:components/popular-article": PopularArticle,
+>>>>>>> develop
       //organisms
       "organisms:components/table-header": TableHeader,
-      "organisms:components/table-row": TableRow,
       // pages
       "pages:pages/staysure-brochure": StaysureBrochure,
       "pages:pages/basictesttest": BasicTest,
@@ -118,6 +129,13 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "templates:components/column-text-box-view": ColumnTextBoxView,
       "templates:components/video-view": VideoView,
       "templates:components/support-text-box-view": SupportTextBoxView,
+      "templates:components/policy-table-view": PolicyTableView,
+      "templates:components/caveat-block-view": CaveatBlockView,
+      "templates:components/popular-article-view": PopularArticleView,
+      "templates:components/full-width-image-view": FullWidthImageView,
+      "templates:components/cta-button-view": CTAButtonView,
+      "templates:components/heading-view": HeadingView,
+      "templates:components/blog-details-view": BlogDetailsView,
     },
   };
 
