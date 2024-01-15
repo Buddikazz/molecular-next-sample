@@ -47,3 +47,4 @@ areas:
         id: templates:components/video-view
       support-text-box-view:
         id: templates:components/support-text-box-view
+      

@@ -23,7 +23,6 @@ const TrustBlockView = ({
         <div className="flex flex-row  mb-5 divide-x  w-full cols-2">
           <div className=" md:flex-col basis-1/3">
             <div className="justify-center items-center ">
-              <TrustpilotWidget variant={'mini'}/>
               <TrustpilotBlock link={'scscscsc'}/>
             </div>
           </div>
