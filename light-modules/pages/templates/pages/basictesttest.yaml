@@ -44,3 +44,5 @@ areas:
         id: templates:components/video-view
       support-text-box-view:
         id: templates:components/support-text-box-view
+      trustpilot-list-view:
+        id: templates:components/trustpilot-list-view

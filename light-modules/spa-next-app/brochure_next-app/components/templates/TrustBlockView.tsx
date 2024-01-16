@@ -1,6 +1,6 @@
 import { EditableArea } from "@magnolia/react-editor";
 import { TrustpilotWidget } from "../molecules/TrustPilotComponent";
-import { TrustpilotBlock } from "../molecules/TrustpilotBlock";
+import { TrustpilotBlock } from "../organisms/TrustpilotBlock";
 
 export interface TrustBlockViewProps {
   header: object | null;

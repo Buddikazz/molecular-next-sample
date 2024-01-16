@@ -60,6 +60,10 @@ import BlogDetailsView from "@/components/templates/BlogDetailsView";
 // }
 
 import { useReducer } from "react";
+import { VideoView } from "@/components/templates/VideoView";
+import { NavigationBlockView } from "@/components/templates/NavigationBlockView";
+import { NavigationBlock } from "@/components/molecules/NavigationBlock";
+import { TrustBlockListView } from "@/components/templates/TrustPilotReviewList";
 const PlatformPage = ({ props }: any): JSX.Element => {
   // Refresh code --- Begin
   // This segment of code is optional. If it is not provided, a default one will be used.
@@ -102,12 +106,9 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "molecules:components/trust-block": TrustBlock,
       "molecules:components/jumplink": Jumplink,
       "molecules:components/support-text-box-element": SupportTextBlock,
-<<<<<<< HEAD
       "molecules:components/header": Header,
-=======
       "molecules:components/table-row": TableRow,
       "molecules:components/popular-article": PopularArticle,
->>>>>>> develop
       //organisms
       "organisms:components/table-header": TableHeader,
       // pages
@@ -136,6 +137,7 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "templates:components/cta-button-view": CTAButtonView,
       "templates:components/heading-view": HeadingView,
       "templates:components/blog-details-view": BlogDetailsView,
+      "templates:components/trustpilot-list-view": TrustBlockListView,
     },
   };
 

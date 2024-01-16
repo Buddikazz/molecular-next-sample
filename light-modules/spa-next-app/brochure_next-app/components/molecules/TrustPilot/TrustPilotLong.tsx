@@ -1,6 +1,8 @@
 import React from "react";
 import Trustpilot from "../../atoms/Trustpilot/Trustpilot";
 import { ratePerformance } from "@/utils/TrustpilotRating";
+import Stars from "@/components/atoms/Trustpilot/Stars/Stars";
+import Logo from "@/components/atoms/Trustpilot/Logo/Logo";
 
 interface TrustpilotLongProps {
   score: number;
@@ -8,21 +10,15 @@ interface TrustpilotLongProps {
   totalReviews: string;
 }
 const TrustpilotLong = ({ score, link, totalReviews }: TrustpilotLongProps) => (
-  <div className="flex flex-col justify-center items-start w-full">
-    <p>{ratePerformance(score)}</p> <Trustpilot rating={score} />
-    {/* <div style={{position: 'relative', height: 0, width: '100%', padding: 0, padding-bottom: '18.326693227091635%'}}> */}
-    <p className="text-sm mt-1 underline">{`TrustScore ${score}`}</p>
-    <p className="text-sm underline">
-      <a href={link} target={"_self"} rel={undefined}>
-        {`${totalReviews} reviews`}
-      </a>
-
-      {/* <Tooltip message={t('TRUSTPILOT_REVIEWS_DISCLAIMER')}>
-        <button>
-          <InfoIcon size="1em" color={theme.colors.textSecondary} />
-        </button>
-      </Tooltip> */}
-    </p>
+  <div className="grid justify-center items-center  w-full">
+    <div className="flex items-center justify-center flex-row mt-4 md:mt-0">
+      <p className="title text-lg font-bold" >{ratePerformance(score)}</p>
+      <Stars className="ml-2" rating={score} />
+    </div>
+    <div className="flex items-start flex-row mt-4 md:mt-0">
+      <p className="text-gray-500">Based on <a className="underline text-black" target={"_self"} href={link}>{`${totalReviews} reviews`}</a> on </p>
+      <Logo className="ml-2 mt-1" />
+    </div>
   </div>
 );
 export default TrustpilotLong;
