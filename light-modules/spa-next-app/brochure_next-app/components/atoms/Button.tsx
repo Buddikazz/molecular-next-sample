@@ -20,13 +20,13 @@ export default function Button({
   hoverColor = "",
   isCaretRightIcon = false,
 }: ButtonProps) {
-  
+
   let buttonClasses = `${styleClass} border border-solid ${rounded ? "rounded" : ""
     } px-4 py-2 min-w-64`;
 
 
   if (type === "primary") {
-    buttonClasses += ` bg-${btnColor} text-${textColor} hover:bg-${hoverColor}`;
+    buttonClasses += ` bg-${btnColor} text-${textColor} hover:bg-dark-orange border-${btnColor}`;
   } else if (type === "secondary") {
     buttonClasses += ` bg-white text-${btnColor} border-${btnColor} hover:text-white hover:bg-${hoverColor}`;
   }
@@ -34,9 +34,12 @@ export default function Button({
   const btnIconClass = ` text-xl mr-2`;
 
   return (
-    <button className={buttonClasses}>
+    <button className={`${buttonClasses} flex justify-center`}>
+
       {isCaretRightIcon && <FaCaretRight className={btnIconClass} />}
-      {name}
+      <div className="ml-4">
+        {name}
+      </div>
     </button>
   );
 }
