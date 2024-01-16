@@ -34,7 +34,7 @@ const ColumnTextBoxView = ({
             {columnTextRightContentImageBoxView && (
               <EditableArea
                 content={columnTextRightContentImageBoxView}
-                className="mt-7"
+                className="mt-3"
                 style={{ height: "100%", width: "auto" }}
               />
             )}
