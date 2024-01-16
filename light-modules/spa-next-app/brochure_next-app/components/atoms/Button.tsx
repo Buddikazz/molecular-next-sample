@@ -28,8 +28,7 @@ export default function Button({
   // let buttonClasses = `${styleClass} justify-center flex flex-row border border-solid ${rounded ? "rounded" : ""
   //   } px-4 py-2 min-w-64`;
 
-
-  let buttonClasses = `block mx-auto ${styleClass} justify-center flex flex-row border border-solid ${
+  let buttonClasses = `block ${styleClass} justify-center flex flex-row border border-solid ${
     rounded ? "rounded" : ""
   } px-4 py-2 min-w-64`;
 
@@ -38,6 +37,12 @@ export default function Button({
   } else if (type === "secondary") {
     buttonClasses += ` bg-white text-${btnColor} border-${btnColor} hover:text-white hover:bg-${hoverColor}`;
   }
+
+  // if (type === "primary") {
+  //   buttonClasses += ` bg-orange text-orange hover:bg-orange`;
+  // } else if (type === "secondary") {
+  //   buttonClasses += ` bg-white text-orange border-orange hover:text-white hover:bg-dark-orange`;
+  // }
 
   const btnIconClass = ` text-xl mr-2`;
 

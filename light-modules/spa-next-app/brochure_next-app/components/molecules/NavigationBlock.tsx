@@ -14,6 +14,7 @@ const NavigationBlock = ({
       <div className="">
         {navigationTopBlock && (
           <EditableArea
+            className="h-[225px] overflow-hidden"
             style={{ maxHeight: 225 }}
             content={navigationTopBlock}
           />
@@ -21,7 +22,10 @@ const NavigationBlock = ({
       </div>
       <div className="my-3 px-5">
         {navigationBottomBlock && (
-          <EditableArea className="" content={navigationBottomBlock} />
+          <EditableArea
+            className="grid place-items-center"
+            content={navigationBottomBlock}
+          />
         )}{" "}
       </div>
     </div>
