@@ -43,7 +43,6 @@ form:
           - name: 2xl
             label: H1
             value: 2xl
-
           - name: 3xl
             label: 3 XL
             value: 3xl

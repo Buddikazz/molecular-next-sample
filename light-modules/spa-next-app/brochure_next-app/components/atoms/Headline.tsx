@@ -17,9 +17,8 @@ export default function Headline({
 }: HeadlineProps) {
   return (
     <h2
-      className={`text-${colourTextSelect} text-${sizeTextSelect} font-${
-        checkboxBold && "bold"
-      } ${checkboxUnderline && " underline"} font-${fontTypeSelect} p-1`}
+      className={`text-${colourTextSelect} text-${sizeTextSelect} font-${checkboxBold && "bold"
+        } ${checkboxUnderline && " underline"} font-${fontTypeSelect} p-1`}
     >
       {text}
     </h2>

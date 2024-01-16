@@ -11,7 +11,7 @@ const SupportTextBoxView = ({
 }: SupportTextBoxViewProps): JSX.Element => {
   return (
     <EditableArea
-      className="-mx-3 flex flex-wrap p-2 mt-5"
+      className="flex flex-wrap justify-center my-5"
       content={supportTextBoxView}
       parentTemplateId={metadata["mgnl:template"]}
     />
