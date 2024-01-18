@@ -11,3 +11,5 @@ areas:
         id: atom:components/button
       Checked-Para:
         id: atom:components/checked-paragraph
+      RichParaText:
+        id: atom:components/rich-paragraph

@@ -9,7 +9,7 @@ export default function RichParagraph({
 }: RichParagraphProps) {
   return <li className='flex'>
     {/* <i className="fas fa-check mr-4 mt-2 text-xl text-orange"></i> */}
-    <div className={`font-ciutadella`} dangerouslySetInnerHTML={{ __html: richText }} />;
+    <div className={`opensans font-light py-5`} dangerouslySetInnerHTML={{ __html: richText }} />;
   </li>
 
 }

@@ -4,6 +4,7 @@ import { EditablePage } from "@magnolia/react-editor";
 
 // pages
 import { StaysureBrochure } from "@/components/pages/StaysureBrochure";
+import { BreadcumTestingPage } from "@/components/pages/BreadcumTestingPage";
 // templates
 import Expander from "@/components/atoms/Expander";
 import Paragraph from "@/components/atoms/Paragraph";
@@ -53,6 +54,9 @@ import BlogDetailsView from "@/components/templates/BlogDetailsView";
 import { StepsBox } from "@/components/molecules/StepsBox";
 import { StepsBoxView } from "@/components/templates/StepsBoxView";
 import NumberBox from "@/components/atoms/NumberBox";
+import { PageProvider } from "@/context/PageContext";
+
+
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
@@ -90,6 +94,7 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "organisms:components/table-header": TableHeader,
       // pages
       "pages:pages/staysure-brochure": StaysureBrochure,
+      "pages:pages/breadcum-testing-page": BreadcumTestingPage,
       // templates
       "templates:components/accordion-view": AccordionView,
       "templates:components/steper-view": SteperView,
@@ -118,16 +123,20 @@ const PlatformPage = ({ props }: any): JSX.Element => {
   };
 
   console.log("props.page=", props.page, props.templateAnnotations);
+ 
+  console.log("path.nav", props.pagenav);
   return (
-    <div>
-      {props.page && (
-        <EditablePage
-          content={props.page}
-          config={config}
-          templateAnnotations={props.templateAnnotations}
-        />
-      )}
-    </div>
+    <PageProvider page={props.page['@path']}>
+      <div>
+        {props.page && (
+          <EditablePage
+            content={props.page}
+            config={config}
+            templateAnnotations={props.templateAnnotations}
+          />
+        )}
+      </div>
+    </PageProvider>
   );
 };
 
