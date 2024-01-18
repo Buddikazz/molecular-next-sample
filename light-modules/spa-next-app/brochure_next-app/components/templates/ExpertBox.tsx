@@ -13,7 +13,7 @@ const ExpertBox = ({
     const bgColourSelectValue = Background?.['0']?.['bgColourSelect'] ?? 'purple';
     return (
         <>
-            <div className='w-full h-full my-4'>
+            <div className='w-full h-full my-4 '>
                 {Background && <EditableArea content={Background} />}
             </div>
             <div className={`bg-${bgColourSelectValue} flex flex-col items-center lg:items-start  md:flex-row md:items-start tb:flex-row tb:items-center p-10 md:py-10`}>

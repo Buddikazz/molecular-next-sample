@@ -3,21 +3,21 @@ import { FaCheck } from "react-icons/fa";
 
 interface CheckedParagraphProps {
   richText: string;
-  styleClass: string;
+  fontColor: string;
   checkedIconColor?: string;
   clickableLink?: string;
 }
 
 export default function CheckedParagraph({
   richText,
-  styleClass,
+  fontColor,
   checkedIconColor,
   clickableLink,
 }: CheckedParagraphProps) {
   const iconClass = `text-[16px] mr-4 text-${checkedIconColor}`;
   const content = (
     <div
-      className={`Paragraph ${styleClass}`}
+      className={`Paragraph text-${fontColor}`}
       dangerouslySetInnerHTML={{ __html: richText }}
     />
   );

@@ -21,3 +21,13 @@ areas:
     availableComponents:
       tableRow:
         id: molecules:components/table-row
+  textWithLink:
+    title: Text with link Elements
+    availableComponents:
+      RichText:
+        id: atom:components/rich-paragraph
+  ctaButton:
+    title: Button Element
+    availableComponents:
+      button:
+        id: atom:components/button

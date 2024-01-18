@@ -5,3 +5,70 @@ form:
       label: Hero Headline Text
       $type: textField
       i18n: true
+    checkboxBold:
+      $type: checkBoxField
+      label: Bold
+      i18n: false
+    colourTextSelect:
+      $type: comboBoxField
+      label: Text Colour
+      i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: Purple
+            label: Purple
+            value: purple
+          - name: black
+            label: Black
+            value: black
+          - name: white
+            label: White
+            value: white
+    sizeTextSelect:
+      $type: comboBoxField
+      label: Text Size
+      i18n: true
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: sm
+            label: H5
+            value: sm
+          - name: base
+            label: H4
+            value: base
+          - name: lg
+            label: H3
+            value: lg
+          - name: xl
+            label: H2
+            value: xl
+          - name: 2xl
+            label: H1
+            value: 2xl
+          - name: 3xl
+            label: 3 XL
+            value: 3xl
+          - name: 4xl
+            label: 4 XL
+            value: 4xl
+          - name: 6xl
+            label: 6 XL
+            value: 6xl
+    fontTypeSelect:
+      $type: comboBoxField
+      label: Font Type
+      i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: dmserif
+            label: DM Serif Display
+            value: dmserif
+          - name: ciutadella
+            label: Ciutadella Rounded
+            value: ciutadella
+          - name: proximanova
+            label: Proxima Nova
+            value: proximanova

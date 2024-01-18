@@ -39,7 +39,7 @@ const StaysureBrochure = ({
         )}
       </div>
       <Breadcrumb path={page} />
-      <div className="flex flex-col px-0 xl:pl-96 xl:pr-96 bg-white">
+      <div className="flex flex-col px-0 xl:pl-52 xl:pr-52 bg-white">
         {body && <EditableArea content={body} className="fullWidth" />}
       </div>
     </>

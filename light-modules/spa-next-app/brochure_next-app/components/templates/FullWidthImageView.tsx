@@ -6,7 +6,7 @@ export interface FullWidthImageViewProps {
 
 const FullWidthImageView = ({ FullImage }: FullWidthImageViewProps) => {
     return (
-        <div className="sm:w-auto md:w-3/4 pl-3 flex justify-end">
+        <div className="flex justify-center items-center my-10 w-auto bg-white p-5">
             {Image && <EditableArea className="mx-auto w-full" content={FullImage} />}
         </div>
 
