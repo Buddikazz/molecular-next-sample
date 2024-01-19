@@ -1,8 +1,8 @@
-title: "Next: Staysure Brochure"
+title: "Next: Breadcum Brochure"
 baseUrl: http://localhost:3000
 routeTemplate: "/api/preview?slug=/{language}{{@path}}"
 
-dialog: pages:pages/staysure-brochure
+dialog: pages:pages/breadcum-testing-page
 renderType: spa
 class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
 areas:
@@ -11,12 +11,7 @@ areas:
     availableComponents:
       hero-banner:
         id: templates:components/hero-banner
-    inheritance:
-      enabled: true
-      components: all
-      nodeTypes:
-        mgnl:component
-        mgnl:contentNode
+
   body:
     title: Body Area
     availableComponents:
@@ -42,12 +37,10 @@ areas:
         id: templates:components/trustBlock-view
       jumplinks-view:
         id: templates:components/jumplinks-view
-      video-view:
+      video-view: 
         id: templates:components/video-view
       support-text-box-view:
         id: templates:components/support-text-box-view
-      policy-table-view:
-        id: templates:components/policy-table-view
       caveat-block-view:
         id: templates:components/caveat-block-view
       popular-article-view:
@@ -60,7 +53,3 @@ areas:
         id: templates:components/full-width-image-view
       cta-button-view:
         id: templates:components/cta-button-view
-      blog-details-view:
-        id: templates:components/blog-details-view
-      stepsbox-view:
-        id: templates:components/stepsbox-view

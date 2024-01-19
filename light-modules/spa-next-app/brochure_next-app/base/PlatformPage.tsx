@@ -3,7 +3,8 @@
 import { EditablePage } from "@magnolia/react-editor";
 
 // pages
-import  StaysureBrochure  from "@/components/pages/StaysureBrochure";
+import { StaysureBrochure } from "@/components/pages/StaysureBrochure";
+import { BreadcumTestingPage } from "@/components/pages/BreadcumTestingPage";
 // templates
 import Expander from "@/components/atoms/Expander";
 import Paragraph from "@/components/atoms/Paragraph";
@@ -50,6 +51,12 @@ import { FullWidthImageView } from "@/components/templates/FullWidthImageView";
 import CTAButtonView from "@/components/templates/CTAButtonView";
 import HeadingView from "@/components/templates/HeadingView";
 import BlogDetailsView from "@/components/templates/BlogDetailsView";
+import { StepsBox } from "@/components/molecules/StepsBox";
+import { StepsBoxView } from "@/components/templates/StepsBoxView";
+import NumberBox from "@/components/atoms/NumberBox";
+import { PageProvider } from "@/context/PageContext";
+
+
 // export interface MagnoliaPageWrapperProps{
 //   templateAnnotations?:object|null,
 //   page?:object|null,
@@ -71,6 +78,7 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "atom:components/checked-paragraph": CheckedParagraph,
       "atom:components/hero-headline": HeroHeadline,
       "atom:components/video": VideoComponent,
+      "atom:components/number-box": NumberBox,
       //molecules
       "molecules:components/header-steper": HeaderSteper,
       "molecules:components/number-steper": NumberSteper,
@@ -81,10 +89,12 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "molecules:components/support-text-box-element": SupportTextBlock,
       "molecules:components/table-row": TableRow,
       "molecules:components/popular-article": PopularArticle,
+      "molecules:components/steps-box": StepsBox,
       //organisms
       "organisms:components/table-header": TableHeader,
       // pages
       "pages:pages/staysure-brochure": StaysureBrochure,
+      "pages:pages/breadcum-testing-page": BreadcumTestingPage,
       // templates
       "templates:components/accordion-view": AccordionView,
       "templates:components/steper-view": SteperView,
@@ -108,20 +118,25 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "templates:components/cta-button-view": CTAButtonView,
       "templates:components/heading-view": HeadingView,
       "templates:components/blog-details-view": BlogDetailsView,
+      "templates:components/stepsbox-view": StepsBoxView,
     },
   };
 
   console.log("props.page=", props.page, props.templateAnnotations);
+ 
+  console.log("path.nav", props.pagenav);
   return (
-    <div>
-      {props.page && (
-        <EditablePage
-          content={props.page}
-          config={config}
-          templateAnnotations={props.templateAnnotations}
-        />
-      )}
-    </div>
+    <PageProvider page={props.page['@path']}>
+      <div>
+        {props.page && (
+          <EditablePage
+            content={props.page}
+            config={config}
+            templateAnnotations={props.templateAnnotations}
+          />
+        )}
+      </div>
+    </PageProvider>
   );
 };
 

@@ -63,6 +63,9 @@ form:
           - name: proximanova
             label: Proxima Nova
             value: proximanova
+          - name: opensans
+            label: Opensans
+            value: opensans
     text:
       label: Text
       $type: textField

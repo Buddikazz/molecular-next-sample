@@ -1,31 +1,26 @@
-'use client';
-
 import React from "react";
 import { EditableArea } from "@magnolia/react-editor";
-import { usePathname } from "next/navigation";
-import { Breadcrumb } from "../atoms/Breadcrumb";
-import { useRouter } from "next/router";
+import { BreadcrumbItem } from "staysure-component-library";
 import { usePageContext } from "@/context/PageContext";
+import { Breadcrumb } from "../atoms/Breadcrumb";
 
 interface Props {
+  header?: object | null;
   body?: object | null;
+  footer?: object | null;
   heroBanner?: object | null;
 }
 
-function StaysureBrochure({
+const BreadcumTestingPage = ({
+  header = null,
   body = null,
+  footer = null,
   heroBanner = null,
-}: Props): JSX.Element {
-
-  // const path = usePathname();
-  // console.log("current path name++++++++++",path);
-  
-  // console.log("path of the page/////")
+}: Props): JSX.Element => {
 
   const {page}  = usePageContext();
   // const pagePathInString = JSON.stringify(page);
   console.log("page props again", page);
-
 
   return (
     <>
@@ -34,12 +29,13 @@ function StaysureBrochure({
           <EditableArea content={heroBanner} className="fullWidth" />
         )}
       </div>
+      {/* <BreadcrumbItem>children={"testbreadcum2"}</BreadcrumbItem> */}
       <Breadcrumb path={page} />
-      <div className="flex flex-col px-0 xl:pl-52 xl:pr-52 bg-white">
+      <div className="flex flex-col pl-40 pr-40 2xl:pl-72 2xl:pr-72">
         {body && <EditableArea content={body} className="fullWidth" />}
       </div>
     </>
   );
-}
+};
 
-export default StaysureBrochure;
+export { BreadcumTestingPage };

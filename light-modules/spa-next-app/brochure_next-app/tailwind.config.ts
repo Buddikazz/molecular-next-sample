@@ -39,6 +39,7 @@ const config: Config = {
         dmserif: ["DM Serif Display", "sans-serif"],
         ciutadella: ["Ciutadella Rounded", "sans-serif"],
         proximanova: ["Proxima Nova", "Helvetica", "Arial", "sans-serif"],
+        opensans: ["Open Sans", "sans-serif"],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -58,7 +59,8 @@ const config: Config = {
         'silver': '#ecebff',
         'bubble-gum': '#ff77e9',
         'bermuda': '#78dcca',
-        'light-gray':'#f5f5f5'
+        'light-gray':'#f5f5f5',
+         oceanBlue: "#0aa4ad"
       },
     },
   },

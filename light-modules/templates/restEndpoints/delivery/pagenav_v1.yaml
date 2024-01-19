@@ -1,3 +1,5 @@
+#To add inheritance, should add the following changes here
+#Add here - $type: jcrPagesDeliveryEndpoint_v2 and comment the class
 class: info.magnolia.rest.delivery.jcr.v2.JcrDeliveryEndpointDefinition
 workspace: website
 depth: 2
