@@ -4,22 +4,22 @@ import PlatformPage from "@/base/PlatformPage";
 import { getProps } from "@/base/utils";
 import { languages, nodeName, pageNavApi } from "../../config/base-config";
 
-export async function getUrlProps(params: any) {
-  let resolvedUrl = nodeName;
-  if (params.searchParams && params.searchParams.slug) {
-    const { searchParams } = params;
-    resolvedUrl = searchParams.slug ? searchParams.slug : nodeName;
-    if (searchParams.mgnlPreview === "false") {
-      resolvedUrl += "?mgnlPreview=false";
-    }
-  } else if (params.params) {
-    resolvedUrl = params.params.pathname
-      ? `/${params.params.pathname.join("/")}`
-      : "";
-  }
+// export async function getUrlProps(params: any) {
+//   let resolvedUrl = nodeName;
+//   if (params.searchParams && params.searchParams.slug) {
+//     const { searchParams } = params;
+//     resolvedUrl = searchParams.slug ? searchParams.slug : nodeName;
+//     if (searchParams.mgnlPreview === "false") {
+//       resolvedUrl += "?mgnlPreview=false";
+//     }
+//   } else if (params.params) {
+//     resolvedUrl = params.params.pathname
+//       ? `/${params.params.pathname.join("/")}`
+//       : "";
+//   }
 
-  return getProps(resolvedUrl);
-}
+//   return getProps(resolvedUrl);
+// }
 
 function getStaticPath(node: any, paths: any) {
   let pathname = node["@path"].replace(nodeName, "");
@@ -63,6 +63,18 @@ export async function generateStaticParams() {
 // }, []);
 
 export default async function Pathname(params: any) {
-  const urlProps = await getUrlProps(params);
+  let resolvedUrl = nodeName;
+  if (params.searchParams && params.searchParams.slug) {
+    const { searchParams } = params;
+    resolvedUrl = searchParams.slug ? searchParams.slug : nodeName;
+    if (searchParams.mgnlPreview === "false") {
+      resolvedUrl += "?mgnlPreview=false";
+    }
+  } else if (params.params) {
+    resolvedUrl = params.params.pathname
+      ? `/${params.params.pathname.join("/")}`
+      : "";
+  }
+  const urlProps = await getProps(resolvedUrl);
   return <PlatformPage props={urlProps.props} />;
 }
