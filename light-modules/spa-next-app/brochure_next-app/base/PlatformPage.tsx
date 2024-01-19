@@ -3,7 +3,7 @@
 import { EditablePage } from "@magnolia/react-editor";
 
 // pages
-import { StaysureBrochure } from "@/components/pages/StaysureBrochure";
+import  StaysureBrochure  from "@/components/pages/StaysureBrochure";
 // templates
 import Expander from "@/components/atoms/Expander";
 import Paragraph from "@/components/atoms/Paragraph";
@@ -35,14 +35,14 @@ import { Jumplink } from "@/components/molecules/Jumplink";
 import { JumplinksView } from "@/components/templates/JumplinksView";
 import CheckedParagraph from "@/components/atoms/CheckedParagraph";
 import { NavigationBlockView } from "@/components/templates/NavigationBlockView";
-import { NavigationBlock } from "@/components/molecules/NavigationBlock";
+import  NavigationBlock  from "@/components/molecules/NavigationBlock";
 import VideoComponent from "@/components/atoms/VideoComponent";
 import { VideoView } from "@/components/templates/VideoView";
 import { SupportTextBlock } from "@/components/molecules/SupportTextBlock";
 import { SupportTextBoxView } from "@/components/templates/SupportTextBoxView";
 import { PolicyTableView } from "@/components/templates/PolicyTableView";
 import TableElement from "@/components/atoms/TableElement";
-import { PopularArticle } from "@/components/molecules/PopularArticle";
+import  PopularArticle  from "@/components/molecules/PopularArticle";
 import { PopularArticleView } from "@/components/templates/PopularArticleView";
 import ColumnTextBoxView from "@/components/templates/ColumnTextBoxView";
 import CaveatBlockView from "@/components/templates/CaveatBlockView";

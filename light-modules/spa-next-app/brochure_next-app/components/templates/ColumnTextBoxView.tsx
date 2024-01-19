@@ -7,12 +7,12 @@ export interface ColumnTextBoxViewProps {
   columnTextRightContentImageBoxView: object | null;
 }
 
-const ColumnTextBoxView = ({
+function ColumnTextBoxView({
   columnTextHeaderBoxView = null,
   columnTextLeftContentBoxView = null,
   columnTextRightContentBoxView = null,
   columnTextRightContentImageBoxView = null,
-}: ColumnTextBoxViewProps) => {
+}: ColumnTextBoxViewProps) {
   return (
     <div className="bg-white p-5">
       <div className="my-5">
@@ -43,6 +43,6 @@ const ColumnTextBoxView = ({
       </div>
     </div>
   );
-};
+}
 
 export default ColumnTextBoxView;

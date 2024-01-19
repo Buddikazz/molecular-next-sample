@@ -4,9 +4,9 @@ export interface SupportTextBlockProps {
   supportTextBlock: object | null;
 }
 
-const SupportTextBlock = ({
+function SupportTextBlock({
   supportTextBlock = null,
-}: SupportTextBlockProps): JSX.Element => {
+}: SupportTextBlockProps): JSX.Element {
   return (
     <div className=" grid tb:grid-rows-2 xl:grid-rows-3  text-center ">
       <div className="p-5 md:border-r  lg:border-r-gray-400 w-auto tb:w-full">
@@ -19,6 +19,6 @@ const SupportTextBlock = ({
       </div>
     </div>
   );
-};
+}
 
 export { SupportTextBlock };

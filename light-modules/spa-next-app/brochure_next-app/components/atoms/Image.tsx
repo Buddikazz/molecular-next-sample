@@ -1,4 +1,6 @@
+/* eslint-disable react/require-default-props */
 import React from "react";
+import Image from "next/image";
 
 export interface MagnoliaImage {
   "@id": string;
@@ -19,29 +21,27 @@ export interface ImageProps {
   clickableLink?: string;
 }
 
-const Image = ({
+function ImageAtom({
   styleClass = "",
   image = { "@link": "" } as MagnoliaImage,
   altText = "image",
-  width = undefined,
-  height = undefined,
+  width = undefined || 1500,
+  height = undefined || 800,
   checkboxRounded = undefined,
   clickableLink = "",
-}: ImageProps) => {
+}: ImageProps) {
+  const src = `${process.env.NEXT_PUBLIC_MGNL_HOST}/dam/${image?.["@id"]}${image?.["@path"]}`;
   const imageComponent = (
-    <img
-      className={`${styleClass} mx-auto  ${checkboxRounded &&
+    <Image
+      className={`${styleClass} mx-auto  ${
+        checkboxRounded &&
         " object-container object-center bg-white rounded-full w-44 h-44"
-        }`}
-      src={
-        process.env.NEXT_PUBLIC_MGNL_HOST +
-        "/dam/" +
-        image?.["@id"] +
-        image?.["@path"]
-      }
-      alt={altText}
+      }`}
+      loader={() => src}
+      src={src}
       width={width}
       height={height}
+      alt={altText}
     />
   );
 
@@ -50,6 +50,6 @@ const Image = ({
   ) : (
     imageComponent
   );
-};
+}
 
-export default Image;
+export default ImageAtom;
