@@ -142,6 +142,8 @@ const PlatformPage = ({ props }: any): JSX.Element => {
   };
 
   console.log("props.page=", props.page, props.templateAnnotations);
+
+  console.log("props.page=", pagenav);
   return (
     <div>
       {pagenav && (

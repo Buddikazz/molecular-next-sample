@@ -9,7 +9,7 @@ const TrustpilotListView = ({
 }: TrustpilotListProps): JSX.Element => {
   return (
     <div className="pl-40 pr-40 2xl:pl-72 2xl:pr-72 mt-10">
-      {trustPilotListView && <TrustpilotWidget variant={'list'} />}
+      {/* {trustPilotListView && <TrustpilotWidget variant={'list'} />} */}
     </div>
   );
 };

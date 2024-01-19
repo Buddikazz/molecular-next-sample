@@ -3,17 +3,30 @@ import { TrustpilotWidget } from "../molecules/TrustPilotComponent";
 import { TrustpilotBlock } from "../organisms/TrustpilotBlock";
 
 export interface TrustBlockListViewProps {
-  header: object | null;
-  trustBlockView: object | null;
+  logoType: string | null;
+  listType: string | null;
+  pageCount: number;
+  quoteView: boolean
 }
 
 const TrustBlockListView = ({
+  logoType = null,
+  listType = null,
+  pageCount = 4,
+  quoteView = false
 }: TrustBlockListViewProps): JSX.Element => {
-  return (
-    <div className="pl-40 pr-40 2xl:pl-72 2xl:pr-72 mt-10">
-      <TrustpilotBlock type={'long'}/>
-    </div>
-  );
+
+
+  if (quoteView) {
+
+    return (<div className="mt-10 bg-slate-100">
+      <TrustpilotBlock logoType={null} listType={null} pageCount={pageCount} quoteView={true}/>
+    </div>)
+  }else{
+    return (<div className="pl-40 pr-40 2xl:pl-72 2xl:pr-72 mt-10">
+      <TrustpilotBlock logoType={logoType} listType={listType} pageCount={pageCount} quoteView={false}/>
+    </div>)
+  }
 };
 
 export { TrustBlockListView };
