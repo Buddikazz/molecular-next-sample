@@ -1,4 +1,7 @@
+/* eslint-disable react/button-has-type */
+/* eslint-disable react/require-default-props */
 import { FaCaretRight } from "react-icons/fa";
+
 export interface ButtonProps {
   styleClass?: string;
   name: string;
@@ -48,7 +51,6 @@ export default function Button({
 
   return (
     <button className={`${buttonClasses} flex justify-center`}>
-
       {isCaretRightIcon && <FaCaretRight className={btnIconClass} />}
       <div className="ml-4">
         {name}

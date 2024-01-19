@@ -8,18 +8,14 @@ import { useRouter } from "next/router";
 import { usePageContext } from "@/context/PageContext";
 
 interface Props {
-  header?: object | null;
   body?: object | null;
-  footer?: object | null;
   heroBanner?: object | null;
 }
 
-const StaysureBrochure = ({
-  header = null,
+function StaysureBrochure({
   body = null,
-  footer = null,
   heroBanner = null,
-}: Props): JSX.Element => {
+}: Props): JSX.Element {
 
   // const path = usePathname();
   // console.log("current path name++++++++++",path);
@@ -44,8 +40,6 @@ const StaysureBrochure = ({
       </div>
     </>
   );
-};
+}
 
-export { StaysureBrochure };
-
-
+export default StaysureBrochure;

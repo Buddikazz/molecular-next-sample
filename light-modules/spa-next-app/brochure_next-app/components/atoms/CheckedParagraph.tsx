@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 import React from "react";
 import { FaCheck } from "react-icons/fa";
 
@@ -18,6 +19,7 @@ export default function CheckedParagraph({
   const content = (
     <div
       className={`Paragraph text-${fontColor}`}
+      // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{ __html: richText }}
     />
   );

@@ -4,7 +4,7 @@ export interface CaveatBlockProps {
   caveatBlockView: string;
 }
 
-const CaveatBlockView = ({ caveatBlockView }: CaveatBlockProps) => {
+function CaveatBlockView({ caveatBlockView }: CaveatBlockProps) {
   return (
     <div className="bg-white p-5">
       {caveatBlockView && (
@@ -15,6 +15,6 @@ const CaveatBlockView = ({ caveatBlockView }: CaveatBlockProps) => {
       )}
     </div>
   );
-};
+}
 
 export default CaveatBlockView;

@@ -4,12 +4,12 @@ export interface HeadingViewProps {
   headingView: string;
 }
 
-const HeadingView = ({ headingView }: HeadingViewProps) => {
+function HeadingView({ headingView }: HeadingViewProps) {
   return (
     <div>
       {headingView && <EditableArea name="heading" content={headingView} />}
     </div>
   );
-};
+}
 
 export default HeadingView;

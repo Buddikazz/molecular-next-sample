@@ -1,3 +1,9 @@
+/* eslint-disable react/no-access-state-in-setstate */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/state-in-constructor */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable react/static-property-placement */
+
 "use client";
 
 import React from "react";
@@ -17,6 +23,7 @@ class ExpanderInteractive extends React.Component<
   ExpanderInteractiveState
 > {
   static contextType = EditorContext;
+
   constructor(props: any) {
     super(props);
     this.state = { isCollapsed: false };
@@ -34,14 +41,7 @@ class ExpanderInteractive extends React.Component<
 
   render() {
     const { renderer, accordionHeader } = this.props;
-
-    // Demo react context will work
-    const { content }: any = this.context;
     const { isCollapsed }: any = this.state;
-    console.log("before");
-    console.log(content);
-    console.log("after");
-
     return (
       <div
         data-testid="accordion-content"
@@ -62,7 +62,7 @@ class ExpanderInteractive extends React.Component<
                 content={accordionHeader}
               />
             )}
-            
+
             <svg
               data-accordion-icon
               className={`float-right w-3 h-3 rotate-180 shrink-0 ${

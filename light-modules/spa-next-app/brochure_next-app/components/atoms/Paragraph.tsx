@@ -2,11 +2,11 @@ import React from "react";
 
 interface ParagraphProps {
   richText: string;
-  colourTextSelect: any;
-  sizeTextSelect: any;
-  checkboxBold: any;
-  checkboxUnderline: any;
-  fontTypeSelect: any;
+  colourTextSelect: string;
+  sizeTextSelect: string;
+  checkboxBold: boolean;
+  checkboxUnderline: boolean;
+  fontTypeSelect: string;
 }
 
 export default function Paragraph({
@@ -21,10 +21,9 @@ export default function Paragraph({
     <div
       className={`text-${colourTextSelect} text-${sizeTextSelect} font-light font-${
         checkboxBold && "bold"
-      } ${
-        checkboxUnderline && " underline"
-      } font-${fontTypeSelect} p-2`}
+      } ${checkboxUnderline && " underline"} font-${fontTypeSelect} p-2`}
+      // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{ __html: richText }}
     />
-  )
+  );
 }

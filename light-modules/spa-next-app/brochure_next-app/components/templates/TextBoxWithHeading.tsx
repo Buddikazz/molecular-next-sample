@@ -1,7 +1,7 @@
-import { EditableArea } from '@magnolia/react-editor';
+import { EditableArea } from "@magnolia/react-editor";
 
 export interface TextBoxProps {
-    textBoxWithHeading: object|null
+  textBoxWithHeading: object | null;
 }
 
 // const currentUrl = window.location.href;
@@ -17,6 +17,4 @@ const TextBoxWithHeading=({
     );
 }
 
-export {
-    TextBoxWithHeading
-}
+export { TextBoxWithHeading };

@@ -1,15 +1,19 @@
-import React from 'react';
+import React from "react";
 
 interface RichParagraphProps {
-  richText: string
+  richText: string;
 }
 
-export default function RichParagraph({
-  richText
-}: RichParagraphProps) {
-  return <li className='flex'>
-    {/* <i className="fas fa-check mr-4 mt-2 text-xl text-orange"></i> */}
-    <div className={`font-ciutadella`} dangerouslySetInnerHTML={{ __html: richText }} />
-  </li>
-
+export default function RichParagraph({ richText }: RichParagraphProps) {
+  return (
+    <li className="flex">
+      {/* <i className="fas fa-check mr-4 mt-2 text-xl text-orange"></i> */}
+      <div
+        className="font-ciutadella"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: richText }}
+      />
+      
+    </li>
+  );
 }

@@ -1,10 +1,10 @@
 interface HeadlineProps {
   text: string;
-  colourTextSelect: any;
-  sizeTextSelect: any;
-  checkboxBold: any;
-  checkboxUnderline: any;
-  fontTypeSelect: any;
+  colourTextSelect: string;
+  sizeTextSelect: string;
+  checkboxBold: boolean;
+  checkboxUnderline: boolean;
+  fontTypeSelect: string;
 }
 
 export default function Headline({
