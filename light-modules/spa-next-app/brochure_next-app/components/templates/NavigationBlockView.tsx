@@ -5,10 +5,10 @@ export interface NavigationBlockViewProps {
   navigationBlockView: object | null;
 }
 
-const NavigationBlockView = ({
+function NavigationBlockView({
   navigationBlockHeaderContent = null,
   navigationBlockView = null,
-}: NavigationBlockViewProps) => {
+}: NavigationBlockViewProps) {
   return (
     <div className="text-center space-y-7 my-10">
       <div>
@@ -25,10 +25,8 @@ const NavigationBlockView = ({
           />
         )}
       </div>
-
-
     </div>
   );
-};
+}
 
 export { NavigationBlockView };

@@ -5,10 +5,10 @@ interface NavigationTopBlockProps {
   navigationBottomBlock: object | null;
 }
 
-const NavigationBlock = ({
+function NavigationBlock({
   navigationTopBlock,
   navigationBottomBlock,
-}: NavigationTopBlockProps) => {
+}: NavigationTopBlockProps) {
   return (
     <div className="grid bg-white text-center">
       <div className="">
@@ -29,6 +29,6 @@ const NavigationBlock = ({
       </div>
     </div>
   );
-};
+}
 
-export { NavigationBlock };
+export default NavigationBlock;

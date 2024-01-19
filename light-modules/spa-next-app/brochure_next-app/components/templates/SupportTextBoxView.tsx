@@ -1,14 +1,18 @@
 import { EditableArea } from "@magnolia/react-editor";
 
-export interface SupportTextBoxViewProps {
-  supportTextBoxView: object | null;
-  metadata: any;
+interface MetadataType {
+  "mgnl:template": string;
 }
 
-const SupportTextBoxView = ({
+export interface SupportTextBoxViewProps {
+  supportTextBoxView: object | null;
+  metadata: MetadataType;
+}
+
+function SupportTextBoxView({
   supportTextBoxView = null,
   metadata,
-}: SupportTextBoxViewProps): JSX.Element => {
+}: SupportTextBoxViewProps): JSX.Element {
   return (
     <EditableArea
       className="flex flex-wrap justify-center my-5"
@@ -16,6 +20,6 @@ const SupportTextBoxView = ({
       parentTemplateId={metadata["mgnl:template"]}
     />
   );
-};
+}
 
 export { SupportTextBoxView };

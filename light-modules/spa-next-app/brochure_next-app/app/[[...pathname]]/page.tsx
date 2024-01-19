@@ -1,58 +1,55 @@
-import { draftMode } from 'next/headers'
-import {  languages, nodeName, pageNavApi } from "../../config/base-config";
-import PlatformPage from '@/base/PlatformPage';
-import { getProps } from '@/base/utils';
+/* eslint-disable @typescript-eslint/no-shadow */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import PlatformPage from "@/base/PlatformPage";
+import { getProps } from "@/base/utils";
+import { languages, nodeName, pageNavApi } from "../../config/base-config";
 
-export async function getUrlProps(params:any) {
-  const { isEnabled } = draftMode();
-
+export async function getUrlProps(params: any) {
   let resolvedUrl = nodeName;
   if (params.searchParams && params.searchParams.slug) {
-    let searchParams = params.searchParams;
+    const { searchParams } = params;
     resolvedUrl = searchParams.slug ? searchParams.slug : nodeName;
     if (searchParams.mgnlPreview === "false") {
-      resolvedUrl = resolvedUrl + "?mgnlPreview=false";
+      resolvedUrl += "?mgnlPreview=false";
     }
-  } else {
-    if (params.params) {
-      resolvedUrl = params.params.pathname
-        ? "/" + params.params.pathname.join("/")
-        : "";
-    }
+  } else if (params.params) {
+    resolvedUrl = params.params.pathname
+      ? `/${params.params.pathname.join("/")}`
+      : "";
   }
-  
-  return await getProps(resolvedUrl);
+
+  return getProps(resolvedUrl);
 }
 
-export async function generateStaticParams() {
-
-  const navRes = await fetch(pageNavApi + nodeName);
-  const nav = await navRes.json();
-  const paths:any = [];
-  getStaticPath(nav, paths);
-
-  return paths;
-}
-
-function getStaticPath(node:any, paths:any) {
-
-
+function getStaticPath(node: any, paths: any) {
   let pathname = node["@path"].replace(nodeName, "");
 
   pathname = pathname.split("/");
 
   pathname.shift();
 
-  languages.forEach((language:string, i:number) => {
-    let i18nPathname = JSON.parse(JSON.stringify(pathname));
+  languages.forEach((language: string, i: number) => {
+    const i18nPathname = JSON.parse(JSON.stringify(pathname));
 
     if (i !== 0) i18nPathname.unshift(language);
 
     paths.push({ pathname: i18nPathname });
   });
 
-  node["@nodes"].forEach((nodeName:any) => getStaticPath(node[nodeName], paths));
+  node["@nodes"].forEach((nodeName: any) =>
+    getStaticPath(node[nodeName], paths),
+  );
 }
+
+export async function generateStaticParams() {
+  const navRes = await fetch(pageNavApi + nodeName);
+  const nav = await navRes.json();
+  const paths: any = [];
+  getStaticPath(nav, paths);
+
+  return paths;
+}
+
 // const [urlProps, setURLProps] = useState<any>("");
 
 // useEffect(() => {
@@ -65,11 +62,7 @@ function getStaticPath(node:any, paths:any) {
 //   fetchAPI();
 // }, []);
 
-
-
-export default async function Pathname(params:any) {
-  
-  let urlProps = await getUrlProps(params);
-  console.log("urlProps=", urlProps.props);
+export default async function Pathname(params: any) {
+  const urlProps = await getUrlProps(params);
   return <PlatformPage props={urlProps.props} />;
 }

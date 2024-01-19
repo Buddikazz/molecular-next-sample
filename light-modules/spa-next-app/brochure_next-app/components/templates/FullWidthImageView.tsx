@@ -1,16 +1,15 @@
-import { EditableArea } from '@magnolia/react-editor';
+import { EditableArea } from "@magnolia/react-editor";
 
 export interface FullWidthImageViewProps {
-    FullImage: object | null
+  FullImage: object | null;
 }
 
-const FullWidthImageView = ({ FullImage }: FullWidthImageViewProps) => {
-    return (
-        <div className="flex justify-center items-center my-10 w-auto bg-white p-5">
-            {Image && <EditableArea className="mx-auto w-full" content={FullImage} />}
-        </div>
-
-    );
+function FullWidthImageView({ FullImage }: FullWidthImageViewProps) {
+  return (
+    <div className="flex justify-center items-center my-10 w-auto bg-white p-5">
+      {Image && <EditableArea className="mx-auto w-full" content={FullImage} />}
+    </div>
+  );
 }
 
 export { FullWidthImageView };

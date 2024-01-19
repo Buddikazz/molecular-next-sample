@@ -4,17 +4,14 @@ export interface ColumnItemProps {
   tableRow: object | null;
 }
 
-const TableRow = ({
-    tableRow = null,
-}: ColumnItemProps): JSX.Element => {
+function TableRow({ tableRow = null }: ColumnItemProps): JSX.Element {
   return (
     <tbody className="even:bg-gray-200 odd:bg-white border-b border-gray-400">
-
-    <tr className="w-screen">
+      <tr className="w-screen">
         <EditableArea content={tableRow} />
-        </tr>
+      </tr>
     </tbody>
   );
-};
+}
 
 export { TableRow };

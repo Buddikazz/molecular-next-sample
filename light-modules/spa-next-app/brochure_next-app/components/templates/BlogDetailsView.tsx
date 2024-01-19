@@ -4,7 +4,7 @@ export interface BlogDetailsProps {
   blogDetailsView: string;
 }
 
-const BlogDetailsView = ({ blogDetailsView }: BlogDetailsProps) => {
+function BlogDetailsView({ blogDetailsView }: BlogDetailsProps) {
   return (
     <div>
       {blogDetailsView && (
@@ -19,6 +19,6 @@ const BlogDetailsView = ({ blogDetailsView }: BlogDetailsProps) => {
       )}
     </div>
   );
-};
+}
 
 export default BlogDetailsView;

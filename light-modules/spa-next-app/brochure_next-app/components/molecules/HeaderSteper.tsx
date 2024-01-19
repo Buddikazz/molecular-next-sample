@@ -5,10 +5,10 @@ export interface HeaderSteperProps {
   steperContent: object | null;
 }
 
-const HeaderSteper = ({
+function HeaderSteper({
   steperHeader = null,
   steperContent = null,
-}: HeaderSteperProps): JSX.Element => {
+}: HeaderSteperProps): JSX.Element {
   return (
     <div className="px-4 md:w-1/2 lg:w-1/3 h-70 ">
       <div className="p-5 text-center shadow-xl h-full">
@@ -26,6 +26,6 @@ const HeaderSteper = ({
       </div>
     </div>
   );
-};
+}
 
 export { HeaderSteper };

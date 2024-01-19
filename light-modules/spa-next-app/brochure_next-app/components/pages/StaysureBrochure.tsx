@@ -1,19 +1,16 @@
+/* eslint-disable react/require-default-props */
 import React from "react";
 import { EditableArea } from "@magnolia/react-editor";
 
 interface Props {
-  header?: object | null;
   body?: object | null;
-  footer?: object | null;
   heroBanner?: object | null;
 }
 
-const StaysureBrochure = ({
-  header = null,
+function StaysureBrochure({
   body = null,
-  footer = null,
   heroBanner = null,
-}: Props): JSX.Element => {
+}: Props): JSX.Element {
   return (
     <>
       <div className="flex">
@@ -26,6 +23,6 @@ const StaysureBrochure = ({
       </div>
     </>
   );
-};
+}
 
-export { StaysureBrochure };
+export default StaysureBrochure;
