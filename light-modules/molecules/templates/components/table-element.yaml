@@ -1,6 +1,0 @@
-title: Table Element
-areas:
-  tableElement:
-    availableComponents:
-      TableItem:
-        id: atom:components/table-item

@@ -13,7 +13,7 @@ export default function RichParagraph({ richText }: RichParagraphProps) {
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: richText }}
       />
-      ;
+      
     </li>
   );
 }
