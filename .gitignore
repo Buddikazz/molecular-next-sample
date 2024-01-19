@@ -36,3 +36,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# staysure-component-library
+.npmrc
+.npmrc_sample
