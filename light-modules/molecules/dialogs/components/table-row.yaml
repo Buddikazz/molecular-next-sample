@@ -1,0 +1,16 @@
+label: Table Row
+form:
+  properties:
+    rowType:
+      $type: comboBoxField
+      label: Use as a
+      i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: Table Header
+            label: Table Header
+            value: thead
+          - name: Table Body
+            label: Table Body
+            value: tbody

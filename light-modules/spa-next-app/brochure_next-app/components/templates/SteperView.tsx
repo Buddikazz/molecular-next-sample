@@ -16,10 +16,10 @@ function SteperView({
   return (
     <div className="pl-40 pr-40 2xl:pl-72 2xl:pr-72">
       <EditableArea
-            className="-mx-3 flex flex-wrap p-2 mt-5"
-            content={stepperView}
-            parentTemplateId={metadata["mgnl:template"]}
-          />
+        className="-mx-3 flex flex-wrap p-2 mt-5"
+        content={stepperView}
+        parentTemplateId={metadata["mgnl:template"]}
+      />
     </div>
   );
 }
