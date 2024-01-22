@@ -1,4 +1,5 @@
 title: Table Row
+dialog: molecules:components/table-row
 areas:
   tableRow:
     title: Table Row Elements
