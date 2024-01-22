@@ -1,0 +1,5 @@
+{
+  "eslint.workingDirectories": [
+    "./light-modules/spa-next-app/brochure_next-app"
+  ]
+}

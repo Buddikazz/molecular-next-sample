@@ -28,7 +28,10 @@ function ColumnTextBoxView({
         </div>
         <div>
           {columnTextRightContentBoxView && (
-            <EditableArea content={columnTextRightContentBoxView} className="flex flex-col items-start" />
+            <EditableArea
+              content={columnTextRightContentBoxView}
+              className="flex flex-col items-start"
+            />
           )}
           <div className="w-1/4">
             {columnTextRightContentImageBoxView && (
