@@ -29,7 +29,7 @@ function ImageAtom({
   height = undefined || 800,
   checkboxRounded = undefined,
   clickableLink = "",
-}: ImageProps) {
+}: ImageProps): React.JSX.Element {
   const src = `${process.env.NEXT_PUBLIC_MGNL_HOST}/dam/${image?.["@id"]}${image?.["@path"]}`;
   const imageComponent = (
     <Image

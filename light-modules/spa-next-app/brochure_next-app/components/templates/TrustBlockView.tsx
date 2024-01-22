@@ -27,4 +27,4 @@ function TrustBlockView({
   );
 }
 
-export { TrustBlockView };
+export default TrustBlockView;

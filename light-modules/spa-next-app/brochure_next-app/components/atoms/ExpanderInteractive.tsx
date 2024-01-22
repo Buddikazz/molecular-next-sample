@@ -1,9 +1,3 @@
-/* eslint-disable react/no-access-state-in-setstate */
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/state-in-constructor */
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable react/static-property-placement */
-
 "use client";
 
 import React from "react";
@@ -13,8 +7,8 @@ interface ExpanderInteractiveState {
   isCollapsed: boolean;
 }
 interface ExpanderInteractiveProps {
-  renderer: any; // Assuming RendererType is the type/interface of your renderer property
-  accordionHeader: any;
+  renderer: never; // Assuming RendererType is the type/interface of your renderer property
+  accordionHeader: never;
   // other props if any
 }
 
@@ -22,18 +16,23 @@ class ExpanderInteractive extends React.Component<
   ExpanderInteractiveProps,
   ExpanderInteractiveState
 > {
+  // eslint-disable-next-line react/static-property-placement
   static contextType = EditorContext;
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(props: any) {
     super(props);
     this.state = { isCollapsed: false };
     this.toggle = this.toggle.bind(this);
   }
 
+  // eslint-disable-next-line react/state-in-constructor
   state = { isCollapsed: false };
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   toggle(event: any) {
     this.setState({
+      // eslint-disable-next-line react/destructuring-assignment, react/no-access-state-in-setstate
       isCollapsed: !this.state.isCollapsed,
     });
     event.preventDefault();
@@ -41,6 +40,7 @@ class ExpanderInteractive extends React.Component<
 
   render() {
     const { renderer, accordionHeader } = this.props;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const { isCollapsed }: any = this.state;
     return (
       <div

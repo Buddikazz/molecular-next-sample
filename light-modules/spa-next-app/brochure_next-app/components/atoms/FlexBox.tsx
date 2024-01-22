@@ -14,7 +14,7 @@ export interface FlexBoxProps {
   content: MagnoliaContent | any;
 }
 
-function FlexBox({ content = null }: FlexBoxProps) {
+function FlexBox({ content = null }: FlexBoxProps): React.JSX.Element {
   const componentNames = content?.["@nodes"];
 
   return (

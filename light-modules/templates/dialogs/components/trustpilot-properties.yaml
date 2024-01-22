@@ -1,0 +1,38 @@
+label: TrustPilot List View Properties
+form:
+  properties:
+    logoType:
+      label: Logo Type
+      $type: comboBoxField
+      i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: mini
+            label: Mini
+            value: mini
+          - name: long
+            label: Long
+            value: long
+    listType:
+      label: Trustpilot List Type
+      $type: comboBoxField
+      i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: list_view
+            label: List View
+            value: list_view
+          - name: list_link
+            label: List View with link
+            value: list_link
+    pageCount:
+      label: Number of row contain in list
+      $type: textField
+      i18n: false
+    quoteView:
+      $type: checkBoxField
+      label: Quote View Enable
+      i18n: false
+      buttonLabel: 

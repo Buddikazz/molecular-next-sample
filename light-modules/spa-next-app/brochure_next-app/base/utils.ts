@@ -1,17 +1,32 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { EditorContextHelper } from "@magnolia/template-annotations";
-import { draftMode } from 'next/headers'
-import { nodeName, languages, pagesApi, pageNavApi, templateAnnotationsApi } from '@/config/base-config';
+import {
+  nodeName,
+  languages,
+  pagesApi,
+  pageNavApi,
+  templateAnnotationsApi,
+} from "@/config/base-config";
 
-export async function getProps(resolvedUrl:string) {
+// eslint-disable-next-line import/prefer-default-export
+export async function getProps(resolvedUrl: string) {
+  const magnoliaContext = EditorContextHelper.getMagnoliaContext(
+    resolvedUrl,
+    nodeName,
+    languages
+  );
 
-  const magnoliaContext = EditorContextHelper.getMagnoliaContext(resolvedUrl, nodeName, languages);
-  const props:any = {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const props: any = {
     nodeName,
     magnoliaContext,
   };
   // Fetching page content
-  let pageUrl:string = pagesApi + magnoliaContext.nodePath + magnoliaContext.search;
-  
+  const pageUrl: string =
+    pagesApi + magnoliaContext.nodePath + magnoliaContext.search;
+
+  // eslint-disable-next-line no-console
+  console.log("pageurl---------------", pageUrl);
   const response = await fetch(pageUrl, {
     method: "GET", // *GET, POST, PUT, DELETE, etc.
     mode: "cors", // no-cors, *cors, same-origin
@@ -22,26 +37,34 @@ export async function getProps(resolvedUrl:string) {
       // 'Content-Type': 'application/x-www-form-urlencoded',
     },
     redirect: "follow", // manual, *follow, error
-    referrerPolicy: "no-referrer",// body data type must match "Content-Type" header
+    referrerPolicy: "no-referrer", // body data type must match "Content-Type" header
   });
 
-  const data2 =await response.json(); // parses JSON response into native JavaScript objects
+  const data2 = await response.json(); // parses JSON response into native JavaScript objects
+  // eslint-disable-next-line no-console
   console.log("data2-------------------------------", data2);
-  props.page= data2;
+  props.page = data2;
   // Fetching page navigation
   const pageNavRes = await fetch(pageNavApi + nodeName);
   props.pagenav = await pageNavRes.json();
+  // eslint-disable-next-line no-console
   console.log("props.pagenav", props.pagenav);
   // Fetch template annotations only inside Magnolia WYSIWYG
   if (magnoliaContext.isMagnolia) {
-    const templateAnnotationsRes = await fetch(templateAnnotationsApi + magnoliaContext.nodePath);
+    // eslint-disable-next-line no-console
+    console.log(
+      "anotation url---------------",
+      templateAnnotationsApi + magnoliaContext.nodePath
+    );
+    const templateAnnotationsRes = await fetch(
+      templateAnnotationsApi + magnoliaContext.nodePath
+    );
     props.templateAnnotations = await templateAnnotationsRes.json();
   }
-  
-  global.mgnlInPageEditor = magnoliaContext.isMagnoliaEdit;
-  draftMode().enable()
+
+  // global.mgnlInPageEditor = magnoliaContext.isMagnoliaEdit;
 
   return {
-    props
+    props,
   };
 }

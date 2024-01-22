@@ -3,15 +3,14 @@
 import { EditablePage } from "@magnolia/react-editor";
 
 // pages
-import  StaysureBrochure  from "@/components/pages/StaysureBrochure";
+import StaysureBrochure from "@/components/pages/StaysureBrochure";
 // templates
 import Expander from "@/components/atoms/Expander";
 import Paragraph from "@/components/atoms/Paragraph";
 import Image from "@/components/atoms/Image";
 import Headline from "@/components/atoms/Headline";
 import Button from "@/components/atoms/Button";
-import CheckedIconContent from "@/components/atoms/CheckedIconContent";
-import { AccordionView } from "@/components/templates/AccordionView";
+import AccordionView from "@/components/templates/AccordionView";
 import { TextBoxWithImageView } from "@/components/templates/TextBoxWithImageView";
 import RichParagraph from "@/components/atoms/RichParagraph";
 import { HeaderSteper } from "@/components/molecules/HeaderSteper";
@@ -29,20 +28,19 @@ import HeroHeadline from "@/components/atoms/HeroHeadline";
 import { TableHeader } from "@/components/organisms/TableHeader";
 import { TableRow } from "@/components/molecules/TableRow";
 import { ExpertBox } from "@/components/templates/ExpertBox";
-import { TrustBlockView } from "@/components/templates/TrustBlockView";
+import TrustBlockView from "@/components/templates/TrustBlockView";
 import { TrustBlock } from "@/components/molecules/TrustBlock";
 import { Jumplink } from "@/components/molecules/Jumplink";
 import { JumplinksView } from "@/components/templates/JumplinksView";
 import CheckedParagraph from "@/components/atoms/CheckedParagraph";
 import { NavigationBlockView } from "@/components/templates/NavigationBlockView";
-import  NavigationBlock  from "@/components/molecules/NavigationBlock";
+import NavigationBlock from "@/components/molecules/NavigationBlock";
 import VideoComponent from "@/components/atoms/VideoComponent";
-import { VideoView } from "@/components/templates/VideoView";
 import { SupportTextBlock } from "@/components/molecules/SupportTextBlock";
 import { SupportTextBoxView } from "@/components/templates/SupportTextBoxView";
 import { PolicyTableView } from "@/components/templates/PolicyTableView";
 import TableElement from "@/components/atoms/TableElement";
-import  PopularArticle  from "@/components/molecules/PopularArticle";
+import PopularArticle from "@/components/molecules/PopularArticle";
 import { PopularArticleView } from "@/components/templates/PopularArticleView";
 import ColumnTextBoxView from "@/components/templates/ColumnTextBoxView";
 import CaveatBlockView from "@/components/templates/CaveatBlockView";
@@ -55,10 +53,27 @@ import BlogDetailsView from "@/components/templates/BlogDetailsView";
 //   page?:object|null,
 // }
 
-const PlatformPage = ({ props }: any): JSX.Element => {
+import { useReducer } from "react";
+import { VideoView } from "@/components/templates/VideoView";
+import { TrustBlockListView } from "@/components/templates/TrustPilotReviewList";
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function PlatformPage({ props }: any): JSX.Element {
+  // Refresh code --- Begin
+  // This segment of code is optional. If it is not provided, a default one will be used.
+  const [, forceUpdate] = useReducer((x) => x + 1, 0);
+  const refresh = () => {
+    forceUpdate();
+  };
+  // Refresh code --- End
+
+  const { pagenav = {}, magnoliaContext } = props;
+  const alwaysRender = magnoliaContext.isMagnoliaEdit;
   const config = {
+    clientRefreshMethod: refresh,
+    alwaysRender,
     componentMappings: {
-      //atom
+      // atom
       "atom:components/headline": Headline,
       "atom:components/paragraph": Paragraph,
       "atom:components/expander": Expander,
@@ -71,7 +86,7 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "atom:components/checked-paragraph": CheckedParagraph,
       "atom:components/hero-headline": HeroHeadline,
       "atom:components/video": VideoComponent,
-      //molecules
+      // molecules
       "molecules:components/header-steper": HeaderSteper,
       "molecules:components/number-steper": NumberSteper,
       "molecules:components/column-item": ColumnItem,
@@ -81,7 +96,7 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "molecules:components/support-text-box-element": SupportTextBlock,
       "molecules:components/table-row": TableRow,
       "molecules:components/popular-article": PopularArticle,
-      //organisms
+      // organisms
       "organisms:components/table-header": TableHeader,
       // pages
       "pages:pages/staysure-brochure": StaysureBrochure,
@@ -108,10 +123,15 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       "templates:components/cta-button-view": CTAButtonView,
       "templates:components/heading-view": HeadingView,
       "templates:components/blog-details-view": BlogDetailsView,
+      "templates:components/trustpilot-list-view": TrustBlockListView,
     },
   };
 
+  // eslint-disable-next-line no-console
   console.log("props.page=", props.page, props.templateAnnotations);
+
+  // eslint-disable-next-line no-console
+  console.log("props.page=", pagenav);
   return (
     <div>
       {props.page && (
@@ -123,6 +143,6 @@ const PlatformPage = ({ props }: any): JSX.Element => {
       )}
     </div>
   );
-};
+}
 
 export default PlatformPage;

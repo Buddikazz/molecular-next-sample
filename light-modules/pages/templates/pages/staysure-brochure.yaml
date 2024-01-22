@@ -56,3 +56,5 @@ areas:
         id: templates:components/cta-button-view
       blog-details-view:
         id: templates:components/blog-details-view
+      trustpilot-list-view:
+        id: templates:components/trustpilot-list-view

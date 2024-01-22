@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 import { FaCheck } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
 

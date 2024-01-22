@@ -8,10 +8,10 @@ function AccordionView({
   accordionView = null,
 }: AccordionViewProps): JSX.Element {
   return (
-    <div className="bg-white mt-4 mb-4 p-4">
+    <div className="bg-white mt-4 mb-4 pl-40 pr-40 2xl:pl-72 2xl:pr-72">
       {accordionView && <EditableArea content={accordionView} />}
     </div>
   );
 }
 
-export { AccordionView };
+export default AccordionView;

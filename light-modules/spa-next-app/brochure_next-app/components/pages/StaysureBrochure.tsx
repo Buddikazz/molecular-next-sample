@@ -13,6 +13,7 @@ function StaysureBrochure({
 }: Props): JSX.Element {
   return (
     <>
+      <div className="flex flex-col" />
       <div className="flex">
         {heroBanner && (
           <EditableArea content={heroBanner} className="fullWidth" />

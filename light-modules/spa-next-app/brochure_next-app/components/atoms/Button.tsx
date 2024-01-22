@@ -31,12 +31,12 @@ export default function Button({
 
   let buttonClasses = `block ${styleClass} justify-center flex flex-row border border-solid ${
     rounded ? "rounded" : ""
-  } px-4 py-2 min-w-64`;
+  } px-6 py-2 `;
 
   if (type === "primary") {
     buttonClasses += ` bg-${btnColor} text-${textColor} hover:bg-dark-orange border-${btnColor}`;
   } else if (type === "secondary") {
-    buttonClasses += ` bg-white text-${btnColor} border-${btnColor} hover:text-white hover:bg-${hoverColor}`;
+    buttonClasses += ` bg-white text-${textColor} border-orange hover:text-white hover:bg-${hoverColor}`;
   }
 
   // if (type === "primary") {
