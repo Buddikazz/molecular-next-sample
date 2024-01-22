@@ -6,11 +6,6 @@ dialog: pages:pages/staysure-brochure
 renderType: spa
 class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
 areas:
-  header:
-    title: Header
-    availableComponents:
-      header:
-        id: molecules:components/header
   heroBanner:
     title: Hero Banner
     availableComponents:

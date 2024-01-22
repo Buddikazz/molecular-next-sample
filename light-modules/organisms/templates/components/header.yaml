@@ -1,9 +1,0 @@
-title: Table Header
-areas:
-  tableHeader:
-    availableComponents:
-      ParaText:
-        id: atom:components/paragraph
-      Headline:
-        id: atom:components/headline
-        
