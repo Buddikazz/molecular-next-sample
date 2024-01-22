@@ -1,50 +1,35 @@
-import { draftMode } from 'next/headers'
-import {  languages, nodeName, pageNavApi } from "../../config/base-config";
-import PlatformPage from '@/base/PlatformPage';
-import { getProps } from '@/base/utils';
+import PlatformPage from "@/base/PlatformPage";
+import { getProps } from "@/base/utils";
+import { languages, nodeName, pageNavApi } from "../../config/base-config";
 
-export async function getPropsFromURL(params?:any, searchParams?:any) {
-  const {isEnabled} = draftMode();
-  let resolvedUrl = params.pathname ? "/" + params.pathname.join("/") : "";
-  if (isEnabled) {
-    const {...query} = searchParams;
-    let params = new URLSearchParams(query);
-    resolvedUrl = resolvedUrl + '?' + params.toString();
-  }
-  return await getProps(resolvedUrl);
-}
 
-export async function generateStaticParams() {
-
-  const navRes = await fetch(pageNavApi + nodeName);
-  const nav = await navRes.json();
-  const paths:any = [];
-  getStaticPath(nav, paths);
-
-  return paths;
-}
-
-function getStaticPath(node:any, paths:any) {
-  console.log("paths------------5-----------",node)
-
-  console.log("paths------------4-----------",paths)
-  let pathname = node["@path"].replace(nodeName, "");
-  console.log("pathname------------1-----------",pathname)
-  pathname = pathname.split("/");
-  console.log("pathname------------2-----------",pathname)
-  pathname.shift();
-  console.log("pathname------------3-----------",pathname)
-
-  languages.forEach((language:string, i:number) => {
-    let i18nPathname = JSON.parse(JSON.stringify(pathname));
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function getStaticPath(node: any, paths: any) {
+  const pathname = node["@path"].replace(nodeName, "");
+  languages.forEach((language: string, i: number) => {
+    const i18nPathname = JSON.parse(JSON.stringify(pathname));
 
     if (i !== 0) i18nPathname.unshift(language);
 
     paths.push({ pathname: i18nPathname });
   });
 
-  node["@nodes"].forEach((nodeName:any) => getStaticPath(node[nodeName], paths));
+  // eslint-disable-next-line @typescript-eslint/no-shadow, @typescript-eslint/no-explicit-any
+  node["@nodes"].forEach((nodeName: any) =>
+    getStaticPath(node[nodeName], paths),
+  );
 }
+
+export async function generateStaticParams() {
+  const navRes = await fetch(pageNavApi + nodeName);
+  const nav = await navRes.json();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const paths: any = [];
+  getStaticPath(nav, paths);
+
+  return paths;
+}
+
 // const [urlProps, setURLProps] = useState<any>("");
 
 // useEffect(() => {
@@ -57,12 +42,22 @@ function getStaticPath(node:any, paths:any) {
 //   fetchAPI();
 // }, []);
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function Pathname(params: any) {
 
+  let resolvedUrl = nodeName;
+  if (params.searchParams && params.searchParams.slug) {
+    const { searchParams } = params;
+    resolvedUrl = searchParams.slug ? searchParams.slug : nodeName;
+    if (searchParams.mgnlPreview === "false") {
+      resolvedUrl += "?mgnlPreview=false";
+    }
+  } else if (params.params) {
+    resolvedUrl = params.params.pathname
+      ? `/${params.params.pathname.join("/")}`
+      : "";
+  }
 
-export default async function Pathname({params, searchParams}:any) {
-  
-  console.log("paths-----------6-----------",params)
-  let urlProps = await getPropsFromURL(params, searchParams);
-  console.log("urlProps=", urlProps.props);
+  const urlProps = await getProps(resolvedUrl);
   return <PlatformPage props={urlProps.props} />;
 }

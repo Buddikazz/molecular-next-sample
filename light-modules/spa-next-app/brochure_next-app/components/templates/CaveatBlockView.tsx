@@ -4,9 +4,9 @@ export interface CaveatBlockProps {
   caveatBlockView: string;
 }
 
-const CaveatBlockView = ({ caveatBlockView }: CaveatBlockProps) => {
+function CaveatBlockView({ caveatBlockView }: CaveatBlockProps) {
   return (
-    <div>
+    <div className="bg-white p-5">
       {caveatBlockView && (
         <EditableArea name="caveatBlock" content={caveatBlockView} />
         // &#9733; - Astric (star)
@@ -15,6 +15,6 @@ const CaveatBlockView = ({ caveatBlockView }: CaveatBlockProps) => {
       )}
     </div>
   );
-};
+}
 
 export default CaveatBlockView;

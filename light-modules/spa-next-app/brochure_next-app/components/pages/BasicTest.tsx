@@ -2,20 +2,14 @@ import React from "react";
 import { EditableArea } from "@magnolia/react-editor";
 
 interface Props {
-  header?: object | null;
-  body?: object | null;
-  footer?: object | null;
-  heroBanner?: object | null;
+  body: object | null;
+  heroBanner: object | null;
 }
 
-const BasicTest = ({
-
-  body = null,
-  heroBanner=null,
-}: Props): JSX.Element => {
+function BasicTest({ body = null, heroBanner = null }: Props): JSX.Element {
   return (
-    <> 
-    {heroBanner && (
+    <>
+      {heroBanner && (
         <EditableArea content={heroBanner} className="fullWidth" />
       )}
       <div className="flex mb-10">
@@ -23,6 +17,6 @@ const BasicTest = ({
       </div>
     </>
   );
-};
+}
 
-export { BasicTest };
+export default BasicTest;

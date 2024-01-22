@@ -5,10 +5,22 @@ form:
       label: Text
       $type: textField
       i18n: true
-    styleClass:
-      label: Style Class
-      $type: textField
+    fontColor:
+      label: Font Color
+      $type: comboBoxField
       i18n: false
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: white
+            label: White
+            value: white
+          - name: orange
+            label: Orange
+            value: orange
+          - name: black
+            label: Black
+            value: black
     checkedIconColor:
       label: Checked Icon Color
       $type: comboBoxField

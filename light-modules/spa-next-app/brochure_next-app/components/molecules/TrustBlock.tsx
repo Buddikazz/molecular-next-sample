@@ -5,28 +5,28 @@ export interface TrustBlockProps {
   tBlockText: object | null;
 }
 
-const TrustBlock = ({
+function TrustBlock({
   tBlockImage = null,
   tBlockText = null,
-}: TrustBlockProps): JSX.Element => {
-  console.log(tBlockImage);
-  console.log("object");
+}: TrustBlockProps): JSX.Element {
   return (
-      <div className="flex flex-col w-full mx-5">
+    <div className="flex md:flex-col md:w-1/3  mx-auto ">
+      <div className="justify-center items-center ">
         {tBlockImage && (
-          <div className="flex justify-start items-start h-full">
+          <div className="flex justify-center items-center ">
             <EditableArea className="p-2" content={tBlockImage} />
           </div>
         )}
 
         {tBlockText && (
           <EditableArea
-            className="flex p-1 font-serif text-lg justify-end text-end"
+            className="p-1 font-serif text-lg text-center"
             content={tBlockText}
           />
         )}
       </div>
+    </div>
   );
-};
+}
 
 export { TrustBlock };

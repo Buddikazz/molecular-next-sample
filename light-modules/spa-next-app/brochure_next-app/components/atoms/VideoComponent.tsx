@@ -1,21 +1,19 @@
-import React from 'react';
+import React from "react";
 
 export interface VideoProps {
-  styleClass?: string,
-  url: string,
-  altText?: string,
-  width?: number | undefined,
-  height?: number | undefined,
+  url: string;
 }
-export default function VideoComponent({
-  url = "",
-}: VideoProps) {
-  return (<div><iframe
-    width="560"
-    height="315"
-    src={url}
-    title="YouTube Video"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowFullScreen
-  ></iframe></div>)
+export default function VideoComponent({ url = "" }: VideoProps) {
+  return (
+    <div>
+      <iframe
+        width="560"
+        height="315"
+        src={url}
+        title="YouTube Video"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    </div>
+  );
 }

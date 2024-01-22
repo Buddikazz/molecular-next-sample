@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
 
-interface ItemProps{
-    text:any,
-    metadata:any,
-    styleClass:string
-  }
+interface ItemProps {
+  text: string;
+}
 
-const Item = (props:ItemProps) => <li className="Item">{props.text}</li>;
+function Item(props: ItemProps): React.JSX.Element {
+  const { text } = props;
+  return <li className="Item">{text}</li>;
+}
 
 export default Item;

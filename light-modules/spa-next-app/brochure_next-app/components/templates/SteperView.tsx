@@ -1,14 +1,18 @@
 import { EditableArea } from "@magnolia/react-editor";
 
-export interface SteperViewProps {
-  stepperView: object | null;
-  metadata: any;
+interface MetadataType {
+  "mgnl:template": string;
 }
 
-const SteperView = ({
+export interface SteperViewProps {
+  stepperView: object | null;
+  metadata: MetadataType;
+}
+
+function SteperView({
   stepperView = null,
   metadata,
-}: SteperViewProps): JSX.Element => {
+}: SteperViewProps): JSX.Element {
   return (
     <div className="pl-40 pr-40 2xl:pl-72 2xl:pr-72">
       <EditableArea
@@ -18,6 +22,6 @@ const SteperView = ({
           />
     </div>
   );
-};
+}
 
 export { SteperView };

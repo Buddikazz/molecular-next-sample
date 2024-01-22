@@ -52,10 +52,10 @@ form:
       datasource:
         $type: optionListDatasource
         options:
-          - name: orange
+          - name: Orange
             label: Orange
             value: orange
-          - name: dark-orange
+          - name: Dark-orange
             label: Dark-orange
             value: dark-orange
     hoverColor:
@@ -66,10 +66,10 @@ form:
         $type: optionListDatasource
         options:
           - name: orange
-            label: Orange
+            label: orange
             value: orange
           - name: dark-orange
-            label: Dark-orange
+            label: dark-orange
             value: dark-orange
     textColor:
       label: Button Text Color

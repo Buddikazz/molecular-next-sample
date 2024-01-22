@@ -1,11 +1,14 @@
 import { EditableArea } from "@magnolia/react-editor";
 
+interface MetadataType {
+  "mgnl:template": string;
+}
 export interface TableProps {
   tableView: object | null;
-  metadata: any
+  metadata: MetadataType;
 }
 
-const TableView = ({ tableView = null, metadata }: TableProps): JSX.Element => {
+function TableView({ tableView = null, metadata }: TableProps): JSX.Element {
   return (
     <div className="flex flex-col pl-40 pr-40 2xl:pl-72 2xl:pr-72">
       <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -13,7 +16,10 @@ const TableView = ({ tableView = null, metadata }: TableProps): JSX.Element => {
           <div className="shadow overflow-hidden border-b border-gray-300 sm:rounded-sm">
             <table className="min-w-full divide-y divide-gray-200 items-start border-t border-b border-gray-400 ">
               <tbody>
-                <EditableArea content={tableView} parentTemplateId={metadata['mgnl:template']} />
+                <EditableArea
+                  content={tableView}
+                  parentTemplateId={metadata["mgnl:template"]}
+                />
               </tbody>
             </table>
           </div>
@@ -21,6 +27,6 @@ const TableView = ({ tableView = null, metadata }: TableProps): JSX.Element => {
       </div>
     </div>
   );
-};
+}
 
 export { TableView };

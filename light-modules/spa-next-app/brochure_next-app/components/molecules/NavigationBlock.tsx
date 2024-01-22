@@ -5,27 +5,31 @@ interface NavigationTopBlockProps {
   navigationBottomBlock: object | null;
 }
 
-const NavigationBlock = ({
+function NavigationBlock({
   navigationTopBlock,
   navigationBottomBlock,
-}: NavigationTopBlockProps) => {
+}: NavigationTopBlockProps) {
   return (
     <div className="grid bg-white text-center">
       <div className="">
         {navigationTopBlock && (
           <EditableArea
-            style={{ maxHeight:200}}
+            className="h-[225px] overflow-hidden"
+            style={{ maxHeight: 225 }}
             content={navigationTopBlock}
           />
         )}
       </div>
       <div className="my-3 px-5">
         {navigationBottomBlock && (
-          <EditableArea className="" content={navigationBottomBlock} />
+          <EditableArea
+            className="grid place-items-center"
+            content={navigationBottomBlock}
+          />
         )}{" "}
       </div>
     </div>
   );
-};
+}
 
-export { NavigationBlock };
+export default NavigationBlock;

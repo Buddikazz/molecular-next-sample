@@ -4,7 +4,7 @@ export interface CTAButtonViewProps {
   ctaButtonView: string;
 }
 
-const CTAButtonView = ({ ctaButtonView }: CTAButtonViewProps) => {
+function CTAButtonView({ ctaButtonView }: CTAButtonViewProps) {
   return (
     <div>
       {ctaButtonView && (
@@ -12,6 +12,6 @@ const CTAButtonView = ({ ctaButtonView }: CTAButtonViewProps) => {
       )}
     </div>
   );
-};
+}
 
 export default CTAButtonView;

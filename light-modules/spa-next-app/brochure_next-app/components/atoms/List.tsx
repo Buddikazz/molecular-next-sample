@@ -1,24 +1,30 @@
-import React from 'react';
-import {EditableArea} from "@magnolia/react-editor";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable react/destructuring-assignment */
+import React from "react";
+import { EditableArea } from "@magnolia/react-editor";
 
-interface ListProps{
-  items:any,
-  metadata:any,
-  styleClass:string
+interface MetadataType {
+  "mgnl:template": string;
+}
+interface ListProps {
+  items: any;
+  metadata: MetadataType;
 }
 
-
-const List = (props:ListProps) => {
+function List(props: ListProps) {
   const { items } = props;
 
   return (
     <>
-      <div className='hint'>[LIST]</div>
-      <ul className='List'>
-        <EditableArea content={items} parentTemplateId={props.metadata['mgnl:template']}/>
+      <div className="hint">[LIST]</div>
+      <ul className="List">
+        <EditableArea
+          content={items}
+          parentTemplateId={props.metadata["mgnl:template"]}
+        />
       </ul>
     </>
   );
-};
+}
 
 export default List;

@@ -1,4 +1,7 @@
+/* eslint-disable react/button-has-type */
+/* eslint-disable react/require-default-props */
 import { FaCaretRight } from "react-icons/fa";
+
 export interface ButtonProps {
   styleClass?: string;
   name: string;
@@ -11,7 +14,7 @@ export interface ButtonProps {
 }
 
 export default function Button({
-  styleClass="",
+  styleClass = "",
   name = "",
   type = "primary",
   rounded = false,
@@ -20,25 +23,28 @@ export default function Button({
   hoverColor = "",
   isCaretRightIcon = false,
 }: ButtonProps) {
-  // let buttonClasses = `${styleClass} justify-center flex flex-row border border-solid ${rounded ? "rounded" : ""
-  //   } px-4 py-2 min-w-64`;
-
-  let buttonClasses = `block mx-auto ${styleClass} justify-center flex flex-row border border-solid ${
+  let buttonClasses = `block ${styleClass} justify-center flex flex-row border border-solid ${
     rounded ? "rounded" : ""
   } px-6 py-2 `;
 
   if (type === "primary") {
-    buttonClasses += ` bg-${btnColor} text-${textColor} hover:bg-${hoverColor} border-${btnColor}`;
+    buttonClasses += ` bg-${btnColor} text-${textColor} hover:bg-dark-orange border-${btnColor}`;
   } else if (type === "secondary") {
     buttonClasses += ` bg-white text-${textColor} border-orange hover:text-white hover:bg-${hoverColor}`;
   }
 
+  // if (type === "primary") {
+  //   buttonClasses += ` bg-orange text-orange hover:bg-orange`;
+  // } else if (type === "secondary") {
+  //   buttonClasses += ` bg-white text-orange border-orange hover:text-white hover:bg-dark-orange`;
+  // }
+
   const btnIconClass = ` text-xl mr-2`;
 
   return (
-    <button className={buttonClasses}>
+    <button className={`${buttonClasses} flex justify-center`}>
       {isCaretRightIcon && <FaCaretRight className={btnIconClass} />}
-      {name}
+      <div className="ml-4">{name}</div>
     </button>
   );
 }
