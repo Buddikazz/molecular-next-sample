@@ -37,7 +37,7 @@ function getStaticPath(node: any, paths: any) {
 
   // eslint-disable-next-line @typescript-eslint/no-shadow, @typescript-eslint/no-explicit-any
   node["@nodes"].forEach((nodeName: any) =>
-    getStaticPath(node[nodeName], paths)
+    getStaticPath(node[nodeName], paths),
   );
 }
 
