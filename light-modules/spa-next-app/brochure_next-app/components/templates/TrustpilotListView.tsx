@@ -1,5 +1,3 @@
-
-
 export interface TrustpilotListProps {
   trustPilotListView: object | null;
 }

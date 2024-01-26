@@ -49,7 +49,7 @@ export function TrustpilotBlock({
     if (!setReviewData) {
       // eslint-disable-next-line no-console
       console.log(
-        "[TrustpilotBlock]: No Trustpilot data found. Skip rendering."
+        "[TrustpilotBlock]: No Trustpilot data found. Skip rendering.",
       );
     }
   }, []);

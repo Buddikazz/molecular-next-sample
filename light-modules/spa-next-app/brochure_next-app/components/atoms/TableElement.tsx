@@ -91,6 +91,12 @@ export default function TableElement({
   if (parentComponent === "thead") {
     if (text === "") {
       styles = `border-transparent bg-white`;
+    } else if (background === "violet") {
+      styles = `border-gray-500 bg-[#66509C]`;
+    } else if (background === "dark-violet") {
+      styles = `border-gray-500 bg-[#522367]`;
+    } else if (background === "cyan") {
+      styles = `border-gray-500 bg-[#006077]`;
     } else {
       styles = `border-gray-500 bg-${background}`;
     }
